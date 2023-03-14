@@ -1,0 +1,56 @@
+.about {
+    background-color: var(--color-de-fondo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Mejoramos el padding para que el nav no se coma la seccion */
+    padding: 7rem 10rem 3rem 10rem; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    color: var(--color-terciario);
+  }
+  
+  .about__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .about__title {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .about__paragraph {
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .about__div img {
+    max-width: 20%;
+    align-self: self-end;
+  }
+  
+#firma{
+    mix-blend-mode: darken;
+    filter: invert(100%);
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .about {
+      padding: 7rem 5rem 3rem 5rem;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .about {
+      padding: 3rem 2rem 3rem 2rem;
+    }
+    #firma{
+        display: none;
+    }
+}

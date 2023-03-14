@@ -1,0 +1,151 @@
+.titular{
+    margin-top: 100px;
+    padding-top: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.titular>.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;  
+}
+.title__profile{
+    padding-right: 10rem;
+}
+.title__container{
+    padding-left: 10rem;
+}
+.title__bio{
+    font-size: 2.5rem;
+    
+}
+.title__subsection{
+    font-size: 1rem;
+    margin: 20px 0;
+}
+.title__network{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.title__network>li{
+    margin-right: 20px;
+}
+.title__network__item > a {
+    color: var(--color-terciario);
+    font-size: 1rem;
+    position: relative;
+}
+
+.title__network__item > a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--color-terciario);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.title__network__item > a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.title__profile{
+    
+    opacity: 80%;
+}
+.boton-curriculum {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Ubuntu', sans-serif;
+    
+  }
+.boton-curriculum:hover {
+    background-color: var(--color-primario);
+    color: white;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .title__profile{
+        width: 20%;
+        padding-right: 5rem;
+        margin-bottom: 0;
+    }
+    .title__container{
+        padding-left: 5rem;
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    .title__bio{
+        font-size: 1.2rem;
+    }
+    .title__subsection{
+        font-size: 0.8rem;
+    }
+    .title__network__item>a{
+        display: flex;
+        font-size: 0.7rem;
+        flex-direction: row;
+
+    }
+    #download-btn {
+        font-size: 0.7rem;
+        height: 50%;
+        padding: 0.3rem;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .titular{
+        width: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title__profile{
+        width: 45%;
+        padding-right: 2rem;
+        margin-bottom: 0;
+
+    }
+    .title__container{
+        float: left;
+        width: 8rem;
+        height: 100%;
+        padding-left: 2rem;
+        margin-bottom: 20px;
+        
+    }
+    .title__bio{
+        width: 300px;
+        font-size: 1.2rem;
+    }
+    .title__subsection{
+        font-size: 0.8rem;
+    }
+    .title__network__item>a{
+        display: flex;
+        font-size: 0.7rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .boton-curriculum {
+       display: none;
+    }
+}

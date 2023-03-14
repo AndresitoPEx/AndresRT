@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&family=Play&family=Roboto+Condensed:wght@300&family=Tajawal:wght@500&family=Ubuntu:wght@300;400;500&display=swap');
+
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --color-de-fondo: #4b6bb748;
+   --color-de-link: #0D0D0D;
+   --color-fondo2: #0d0d0d7f;
+   --color-primario: #1828489f;
+   --color-secundario: #0D0D0D;
+   --color-terciario: rgba(255, 255, 255, 0.699);
+   --color-cuaternario: #4b6bb7d0;
+   --degradado-fondo: linear-gradient(to right, #4b6cb7, #182848);
+}
+
+
+
+body {
+    box-sizing: border-box;
+    background: var(--degradado-fondo);
+    color: var(--color-terciario);
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}

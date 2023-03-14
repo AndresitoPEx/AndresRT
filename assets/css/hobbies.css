@@ -1,0 +1,90 @@
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: -100px;
+}
+.hobbies__title{
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.hobbies__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+.hobbies__container>.hobbies__box{
+    margin: 50px 5px;
+}
+.hobbies__container>.hobbies__box>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 165px;
+    height: 165px;
+    border-radius: 10%;
+    background-color: var(--color-primario);
+    padding: 10px;
+    box-shadow: 0 0 10px var(--color-terciario);
+}
+.hobbies__container>.hobbies__box>ul{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    width: 165px;
+}
+.hobbies__container>.hobbies__box>ul>li{
+    margin: 15px 0 15px 15px;
+}
+.hobbies__container>.hobbies__box>ul>.hobbies__icon{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .hobbies{
+        padding: 5rem;
+    }
+    .hobbies__container {
+        flex-wrap: wrap;
+    }
+    .hobbies__box {
+        width: 30%;
+        margin: 20px;
+    }
+    .hobbies__container>.hobbies__box>ul{
+        width: 160px;
+        height: 160px;
+        border-radius: 10%;
+        background-color: var(--color-primario);
+        box-shadow: 0 0 10px var(--color-terciario);
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .hobbies{
+        padding: 5rem 2rem;
+    }
+    .hobbies__container {
+        flex-wrap: wrap;
+        margin-right: 10px;
+    }
+    .hobbies__box {
+        width: 40%;
+        margin: 20px;
+    }
+    .hobbies__container>.hobbies__box>ul{
+        width: 110px;
+        height: 110px;
+        border-radius: 10%;
+        background-color: var(--color-primario);
+        box-shadow: 0 0 10px var(--color-terciario);
+    }
+}

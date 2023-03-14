@@ -1,0 +1,95 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.skills__title{
+    font-size: 2rem;
+    margin: 10px 0;
+
+}
+.skills__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+.skills__container>.skills__box{
+    margin: 50px 5px;
+}
+.skills__container>.skills__box>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 165px;
+    height: 165px;
+    border-radius: 10%;
+    background-color: var(--color-primario);
+    padding: 10px;
+    box-shadow: 0 0 10px var(--color-terciario);
+}
+.skills__container>.skills__box>ul{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    width: 165px;
+}
+.skills__container>.skills__box>ul>li{
+    margin: 15px 0 15px 15px;
+}
+.skills__container>.skills__box>ul>.skill__icon{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .skills{
+        padding: 5rem;
+    }
+    .skills__container {
+        flex-wrap: wrap;
+    }
+    .skills__box {
+        width: 30%;
+        margin: 20px;
+    }
+    .skills__container>.skills__box>ul{
+        width: 160px;
+        height: 160px;
+        border-radius: 10%;
+        background-color: var(--color-primario);
+        box-shadow: 0 0 10px var(--color-terciario);
+    }
+}
+
+/*Mobile*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .skills{
+        padding: 5rem 2rem;
+    }
+    .skills__container {
+        flex-wrap: wrap;
+        margin-right: 10px; 
+    }
+    .skills__box {
+        width: 40%;
+        margin: 20px;
+    }
+    .skills__container>.skills__box>ul{
+        width: 110px;
+        height: 110px;
+        border-radius: 10%;
+        background-color: var(--color-primario);
+        box-shadow: 0 0 10px var(--color-terciario);
+        
+    }
+}
+
