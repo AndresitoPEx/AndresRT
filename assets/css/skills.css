@@ -33,6 +33,11 @@
     border-radius: 10%;
     background-color: var(--color-primario);
     padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);  
+}
+.skills__container>.skills__box>ul:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
     box-shadow: 0 0 10px var(--color-terciario);
 }
 .skills__container>.skills__box>ul{

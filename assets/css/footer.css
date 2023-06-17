@@ -4,6 +4,10 @@
     padding: 20px;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
+    
+}
+.footer>div>p{
+    font-size: 1rem;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
 

@@ -24,16 +24,15 @@
 
 <body>
     <!-- Sección del Menú  -->
-    <header class="header">
+    <header class="header" >
         <section class="menu">
             <div class="menu__header">
-                <img src="assets/img/miLogo.png">
+                <a href="/" ><img src="assets/img/miLogo.png"></a>
             </div>
             <nav>
                 <ul class="menu__list">
                     <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
                     <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
                     <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                     <li class="menu__list__item"><a href="#exp">Proyectos</a></li>
                     <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
@@ -78,16 +77,24 @@
     <section class="about" id="sobre-mi">
         <div class="about__div">
             <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Mi pasión por la tecnología se traduce en un compromiso constante por mejorar y
-                desarrollar mis habilidades en el desarrollo web y programación. Mi enfoque actual se centra en
-                especializarme en estos campos, lo que me permite estar actualizado en las últimas tendencias de la web.
+            <p class="about__paragraph">Apasionado de la tecnología y computación me especializo en React.
+                Constantemente busco oportunidades para aprender y mejorar mis habilidades, y estoy comprometido con el
+                desarrollo de proyectos desafiantes. Me enorgullece haber sido seleccionado para participar en el
+                programa Oracle Next Education de Alura Latam y Oracle, donde he perfeccionado mis habilidades.
+
             </p>
-            <p class="about__paragraph">Soy perseverante y colaborador, lo que me permite contribuir significativamente
-                en cualquier proyecto que emprendo. Me siento motivado por seguir creciendo en mi carrera y por tener la
-                oportunidad de aplicar mis habilidades en una empresa que valore y fomente el aprendizaje y la
-                innovación en el campo tecnológico.</p>
-            <!-- Si quieres, pon tú firma acá! -->
-            <img id="firma" src="assets/img/firma.png">
+            <p class="about__paragraph">Poseo una sólida formación en tecnologías como JavaScript, HTML y CSS. La
+                creciente ola de tecnología me
+                impulsa a seguir creciendo y especializándome en el desarrollo web y la programación, manteniéndome al
+                día con las últimas tendencias de la web. Soy perseverante y colaborador, lo que me permite contribuir
+                de manera significativa en cualquier proyecto que emprendo.</p>
+
+            <p class="about__paragraph">Me encanta compartir mis conocimientos y ayudar a otros a aprender, Me motiva
+                tambien el crecimiento en mi carrera y me entusiasma tener la oportunidad de aplicar mis
+                habilidades en una empresa que valore y promueva el aprendizaje y la innovación en el campo tecnológico.
+            </p>
+                <!-- Si quieres, pon tú firma acá! -->
+                <img id="firma" src="assets/img/firma.png">
         </div>
     </section>
 
@@ -98,15 +105,15 @@
         <div class="skills__container">
             <div class="skills__box">
                 <ul>
-                    <i class="fa-brands fa-html5 skill__icon"></i>
-                    <li class="skills__name"> HTML 5</li>
+                    <i class="fa-brands fa-js skill__icon"></i>
+                    <li class="skills__name">JavaScript</li>
                 </ul>
             </div>
 
             <div class="skills__box">
                 <ul>
-                    <i class="fa-brands fa-js skill__icon"></i>
-                    <li class="skills__name">JavaScript</li>
+                    <i class="fa-brands fa-html5 skill__icon"></i>
+                    <li class="skills__name"> HTML 5</li>
                 </ul>
             </div>
 
@@ -119,6 +126,29 @@
 
             <div class="skills__box">
                 <ul>
+                    <i class="fa-brands fa-react skill__icon"></i>
+                    <li class="skills__name">React JS</li>
+                </ul>
+            </div>
+
+            <div class="skills__box">
+                <ul>
+
+                    <i class="fa-brands fa-react skill__icon"></i>
+                    <li class="skills__name">React Native</li>
+                </ul>
+            </div>
+
+            <div class="skills__box">
+                <ul>
+                    <i class="fa-brands fa-git-alt skill__icon"></i>
+                    <li class="skills__name">Git</li>
+
+                </ul>
+            </div>
+            <!-- segunda linea de skills -->
+            <div class="skills__box">
+                <ul>
                     <i class="fa-brands fa-github skill__icon"></i>
                     <li class="skills__name">GitHub</li>
                 </ul>
@@ -126,67 +156,41 @@
 
             <div class="skills__box">
                 <ul>
-                    <i class="fa-brands fa-react skill__icon"></i>
-                    <li class="skills__name">React</li>
+                    <i class="fa-brands fa-figma skill__icon"></i>
+                    <li class="skills__name">Figma</li>
                 </ul>
             </div>
 
             <div class="skills__box">
                 <ul>
-                    <i class="fa-brands fa-php skill__icon"></i>
-                    <li class="skills__name">PHP</li>
+                    <i class="fa-brands fa-bootstrap skill__icon"></i>
+                    <li class="skills__name">Bootstrap</li>
+                </ul>
+            </div>
+
+            <div class="skills__box">
+                <ul>
+                    <i class="fa-solid fa-database skill__icon"></i>
+                    <li class="skills__name">SQL</li>
+                </ul>
+            </div>
+
+            <div class="skills__box">
+                <ul>
+                    <i class="fa-brands fa-wordpress skill__icon"></i>
+                    <li class="skills__name">Wordpress</li>
+                </ul>
+            </div>
+            <div class="skills__box">
+                <ul>
+                    <i class="fa-solid fa-list-check skill__icon"></i>
+                    <li class="skills__name">Scrum</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Hobbies -->
-    <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
-        <div class="hobbies__container">
-            <div class="hobbies__box">
-                <ul>
-                    <i class="fa-solid fa-bicycle hobbies__icon"></i>
-                    <li class="hobbies__name">Ciclismo</li>
-                </ul>
-            </div>
 
-            <div class="hobbies__box">
-                <ul>
-                    <i class="fa-solid fa-gamepad hobbies__icon"></i>
-                    <li class="hobbies__name">Jugar play</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <i class="fa-solid fa-headphones hobbies__icon"></i>
-                    <li class="hobbies__name">Oir música</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <i class="fa-solid fa-tv hobbies__icon"></i>
-                    <li class="hobbies__name">Ver series</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <i class="fa-solid fa-utensils hobbies__icon"></i>
-                    <li class="hobbies__name">Cocinar</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <i class="fa-solid fa-video hobbies__icon"></i>
-                    <li class="hobbies__name">Hacer videos</li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
     <!-- Sección de Formación académica -->
     <section class="academic" id="formacion">
@@ -201,7 +205,7 @@
                     <h4>Desarrollo de Sistemas de información</h4>
                 </div>
                 <div class="academic__courses__item__subtitle">
-                    <p>2021 - Actualidad</p>
+                    <p>2021 - 2023, En Curso</p>
                 </div>
             </div>
             <div class="academic__courses__box">
@@ -210,10 +214,10 @@
                     <li class="academic__courses__item__img"><img src="assets/img/alura.png"></li>
                 </ul>
                 <div class="academic__courses__item__title">
-                    <h4>Desarrollo Frontend con React</h4>
+                    <h4>Programa Oracle Next Education Front-end</h4>
                 </div>
                 <div class="academic__courses__item__subtitle">
-                    <p>2022 - Actualidad</p>
+                    <p>2022 - 2023</p>
                 </div>
             </div>
             <div class="academic__courses__box">
@@ -225,7 +229,7 @@
                     <h4>Desarrollo Web Responsivo</h4>
                 </div>
                 <div class="academic__courses__item__subtitle">
-                    <p>2021 - Actualidad</p>
+                    <p>2021 - 2023</p>
                 </div>
             </div>
         </div>
@@ -243,6 +247,53 @@
                             <span class="overlay"></span>
 
                             <div class="card-image">
+                                <img src="assets/img/exp9.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Delta Ecommerce</h2>
+                            <p class="description">Aplicacion en desarrollo que servirá de ventana digital para mejorar
+                                y promocionar los productos de la empresa Delta Tactical Gear, desarrollado con React
+                                JS.</p>
+
+                            <div class="botones">
+                                <button class="button"><a target="_blank"
+                                        href="https://delta-home.vercel.app/">Demo</a></button>
+                                <button class="button"><a target="_blank"
+                                        href="https://github.com/AndresitoPEx/delta-home">Repo</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="assets/img/exp8.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Fake Shop</h2>
+                            <p class="description">Fake Shop es una aplicacion que simula el comportamiento de un
+                                Ecommerce, desorrallado con tecnologías como Vite, React JS, Tailwind y FakeApi.</p>
+
+                            <div class="botones">
+                                <button class="button"><a target="_blank"
+                                        href="https://fake-store-fawn.vercel.app/">Demo</a></button>
+                                <button class="button"><a target="_blank"
+                                        href="https://github.com/AndresitoPEx/fake-store">Repo</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
                                 <img src="assets/img/exp7.png" alt="" class="card-img">
                             </div>
                         </div>
@@ -250,13 +301,33 @@
                         <div class="card-content">
                             <h2 class="name">Small Tube</h2>
                             <p class="description">SmallTube es una aplicación que guarda tus videos favoritos en un
-                                solo lugar para que no los pierdas.</p>
-
+                                solo lugar, se puede personalizar las categorias, desorrallado con React JS y Material
+                                UI.</p>
                             <div class="botones">
                                 <button class="button"><a target="_blank"
                                         href="https://small-tube.vercel.app/">Demo</a></button>
                                 <button class="button"><a target="_blank"
                                         href="https://github.com/AndresitoPEx/SmallTube">Repo</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="assets/img/exp10.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Pediatra Perú</h2>
+                            <p class="description">Diseño e implementación de página web para el Dr. Cesar Zaambrano que proporciona información sobre servicios pediatricos. Construido con Wordpress</p>
+
+                            <div class="botones">
+                                <button class="button"><a target="_blank" href="https://pediatraperu.com/">Demo</a></button>
+                                
                             </div>
                         </div>
                     </div>
@@ -274,7 +345,7 @@
                         <div class="card-content">
                             <h2 class="name">Dev on Fire</h2>
                             <p class="description">Aplicacion Web que muestra equipos de desarrolladores organizados por
-                                especialidad. Desorrallado con React JS</p>
+                                especialidad, Se puede agregar usuarios y categorias. Desorrallado con React JS</p>
 
                             <div class="botones">
                                 <button class="button"><a target="_blank"
@@ -330,6 +401,7 @@
 
                         </div>
                     </div>
+
 
                     <div class="card swiper-slide">
                         <div class="image-content">
@@ -398,67 +470,6 @@
                         </div>
                     </div>
 
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/aviso.jpg" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">LUGAR RESERVADO</h2>
-                            <p class="description">The lorem text the section that contains header with having open
-                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                            <div class="botones">
-                                <button class="button"><a target="_blank" href="#">Demo</a></button>
-                                <button class="button"><a target="_blank" href="#">Repo</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/aviso.jpg" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">LUGAR RESERVADO</h2>
-                            <p class="description">The lorem text the section that contains header with having open
-                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                            <div class="botones">
-                                <button class="button"><a target="_blank" href="#">Demo</a></button>
-                                <button class="button"><a target="_blank" href="#">Repo</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/aviso.jpg" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">LUGAR RESERVADO</h2>
-                            <p class="description">The lorem text the section that contains header with having open
-                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-                            <div class="botones">
-                                <button class="button"><a target="_blank" href="#">Demo</a></button>
-                                <button class="button"><a target="_blank" href="#">Repo</a></button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
