@@ -27,9 +27,12 @@
   }
   
   .about__paragraph {
-    font-size: 1rem;
-    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 0.5rem 0;
     font-family: 'Ubuntu', sans-serif;
+    text-align: center;
   }
   
   .about__div img {
