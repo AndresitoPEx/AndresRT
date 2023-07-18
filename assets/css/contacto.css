@@ -1,31 +1,34 @@
-.formcontacto{
+.formcontacto {
     background-color: var(--color-de-fondo);
     padding: 5rem 10rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-family: 'Ubuntu', sans-serif;
+    transition: transform 0.5s ease;
 }
-.formcontacto__contacto{
+
+.formcontacto__contacto {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.formcontato__text{
+.formcontato__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 80%;
     margin: 2rem 5rem;
-    
-    
+
 }
-.formcontato__text>.formcontato__title{
+
+.formcontato__text>.formcontato__title {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-.formcontato__text>.formcontato__subtext{
+
+.formcontato__text>.formcontato__subtext {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +36,8 @@
     margin-bottom: 1rem;
 
 }
-.formcontato__form{
+
+.formcontato__form {
     padding: 2rem 5rem;
     display: flex;
     flex-direction: column;
@@ -42,10 +46,10 @@
     width: 50%;
     background-color: #657fbb;
     border-radius: 10px;
-    
+
 }
 
-.formcontato__form>input{
+.formcontato__form>input {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
@@ -54,7 +58,8 @@
     outline: none;
     font-family: 'Ubuntu', sans-serif;
 }
-.formcontato__form>textarea{
+
+.formcontato__form>textarea {
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
     margin: 10px 0;
@@ -63,7 +68,8 @@
     border: none;
     outline: none;
 }
-.formcontato__form>button{
+
+.formcontato__form>button {
     font-family: 'Ubuntu', sans-serif;
     width: 50%;
     margin-top: 50px;
@@ -71,52 +77,97 @@
     border-radius: 10px;
     border: none;
     outline: none;
-    background-color: #008CBA;;
+    background-color: #008CBA;
+    ;
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
 }
-.formcontato__form>button:hover{
+
+.formcontato__form>button:hover {
     background-color: var(--color-primario);
     cursor: pointer;
 }
-.formcontato__text>h2{
+
+.formcontato__text>h2 {
     font-size: 30px;
     margin-bottom: 1rem;
 }
 
+.formcontato__message {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
 
-@media only screen and (min-width: 768px) and (max-width: 1023px){
-    .formcontacto{
+.formcontato__message {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 1rem;
+    transition: transform 0.5s ease;
+
+}
+
+.success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    
+}
+
+.error-message {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .formcontacto {
         padding: 5rem;
     }
-    .formcontato__text{
+
+    .formcontato__text {
         width: 100%;
         margin: 2rem 0;
     }
-    .formcontato__form{
+
+    .formcontato__form {
         width: 100%;
     }
-    .formcontato__text>.formcontato__subtext{
+
+    .formcontato__text>.formcontato__subtext {
         font-size: 0.8rem;
     }
 }
+
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .formcontacto{
+    .formcontacto {
         padding: 0 5rem;
     }
-    .formcontato__text{
+
+    .formcontato__text {
         width: 100%;
         margin: 2rem 0;
     }
-    .formcontato__form{
+
+    .formcontato__form {
         width: 100%;
     }
-    .formcontato__text>.formcontato__subtext{
+
+    .formcontato__text>.formcontato__subtext {
         font-size: 0.8rem;
     }
-    .formcontato__form>.formcontato__boton{
+
+    .formcontato__form>.formcontato__boton {
         width: 250px;
     }
 }
-

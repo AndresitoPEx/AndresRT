@@ -24,7 +24,7 @@
 
 <body>
     <!-- Sección del Menú  -->
-    <header class="header">
+    <header class="header" id="navbar">
         <section class="menu">
             <div class="menu__header">
                 <a href="/"><img src="assets/img/miLogo.png"></a>
@@ -78,11 +78,18 @@
         <div class="about__div">
             <h3 class="about__title">Sobre mi</h3>
             <p class="about__paragraph">Mi especialización se centra en
-                tecnologías como JavaScript, HTML y CSS. Tengo experiencia usando frameworks como React JS, React Native y .NET, además de librerias de estilos como Bootstrap, Tailwind CSS, Material UI y herramientas de diseño como Figma y Photoshop. También estoy familiarizado con el uso de bases de datos como MySQL, SQL Server y PostgreSQL. Me enorgullece ser graduado del programa Oracle Next Education de Alura Latam y Oracle, donde he perfeccionado mis habilidades y mi proyecto SmallTube fue seleccionado como ejemplo destacado al final del programa.
+                tecnologías como JavaScript, HTML y CSS. Tengo experiencia usando frameworks como React JS, React Native
+                y .NET, además de librerias de estilos como Bootstrap, Tailwind CSS, Material UI y herramientas de
+                diseño como Figma y Photoshop. También estoy familiarizado con el uso de bases de datos como MySQL, SQL
+                Server y PostgreSQL. Me enorgullece ser graduado del programa Oracle Next Education de Alura Latam y
+                Oracle, donde he perfeccionado mis habilidades y mi proyecto SmallTube fue seleccionado como ejemplo
+                destacado al final del programa.
             </p>
             <p class="about__paragraph"> Soy perseverante y colaborador, lo que me permite contribuir de manera
                 significativa en cualquier proyecto que emprendo. Me encanta compartir mis conocimientos y ayudar a
-                otros a aprender, Mi próximo hito es completar mi carrera de desarrollo de sistemas en el Instituto Continental, lo cual me motiva a seguir adelante y me entusiasma tener la oportunidad de aplicar mis habilidades en una empresa que valore y promueva el aprendizaje y la innovación en el campo
+                otros a aprender, Mi próximo hito es completar mi carrera de desarrollo de sistemas en el Instituto
+                Continental, lo cual me motiva a seguir adelante y me entusiasma tener la oportunidad de aplicar mis
+                habilidades en una empresa que valore y promueva el aprendizaje y la innovación en el campo
                 tecnológico.
             </p>
             <!-- Si quieres, pon tú firma acá! -->
@@ -188,7 +195,7 @@
     <section class="academic" id="formacion">
         <h2 class="academic__title">Formación académica</h2>
         <div class="academic__courses">
-            
+
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!--Pon el logotipo de la institución de formación -->
@@ -252,9 +259,9 @@
 
                             <div class="botones">
                                 <button class="button"><a target="_blank"
-                                        href="https://delta-home.vercel.app/">Demo</a></button>
+                                        href="https://deltavite.vercel.app/">Demo</a></button>
                                 <button class="button"><a target="_blank"
-                                        href="https://github.com/AndresitoPEx/delta-home">Repo</a></button>
+                                        href="https://github.com/AndresitoPEx/deltavite">Repo</a></button>
                             </div>
                         </div>
                     </div>
@@ -482,39 +489,39 @@
     <section class="formcontacto" id="contacto">
         <div class="formcontacto__contacto">
             <div class="formcontato__text">
-                <h2 class="formcontato__title">Contacto</h2>
-                <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo
+                <h2 class="formcontato__title">¿Quieres contactarme?</h2>
+                <h3 class="formcontato__subtext"></h3>
+                <h3 class="formcontato__subtext">Completa el siguiente formulario y me pondré en contacto con usted lo
                     antes posible. </h3>
                 <form id="form" class="formcontato__form" name="form" action="https://formspree.io/f/mvonqqko"
                     method="POST">
                     <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" required>
-
                     <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-
                     <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto" required>
-
                     <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje"
                         placeholder="Mensaje" required></textarea>
-
                     <button type="submit" class="formcontato__boton">Enviar mensaje</button>
+                    <p id="form-message" class="formcontato__message"></p>
                 </form>
             </div>
         </div>
     </section>
 
+
+
     <!-- Sección de Footer -->
     <section class="footer">
-        <div class="footer__rodape">
-            <p>
-                Todos los derechos reservados | Este sitio web fue creado por Andrés Romo
+        <div class="footer__content">
+            <p class="footer__text">
+                Todos los derechos reservados &copy; 2023. Andrés Romo
             </p>
-            <p>2023</p>
         </div>
     </section>
+    
     </div>
     <!-- Script del documento JavaScript -->
+    <script src="assets/js/scroll-nav.js"></script>
     <script src="assets/js/validacion.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/slider.js"></script>
