@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10rem;
+    padding: 3rem 10rem;
     font-family: 'Ubuntu', sans-serif;
 
 }
@@ -53,6 +53,12 @@
     width: 50px;
     height: 50px;
     margin-left: 15px;
+}
+.warning>.skill__icon{
+    
+    text-align: center;
+    width: 60px;
+    height: 50px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
