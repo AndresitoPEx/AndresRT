@@ -3,8 +3,7 @@
 
 
 :root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    /* Variables de tema - Modo Claro (por defecto) */
    --color-de-fondo: #4b6bb748;
    --color-de-link: #0D0D0D;
    --color-fondo2: #0d0d0d7f;
@@ -13,6 +12,40 @@
    --color-terciario: rgba(255, 255, 255, 0.699);
    --color-cuaternario: #4b6bb7d0;
    --degradado-fondo: linear-gradient(to right, #4b6cb7, #182848);
+   
+   /* Variables específicas para theming */
+   --bg-primary: #f8fafc;
+   --bg-secondary: #ffffff;
+   --bg-tertiary: rgba(255, 255, 255, 0.9);
+   --text-primary: #1a202c;
+   --text-secondary: #4a5568;
+   --text-muted: #718096;
+   --border-color: rgba(0, 0, 0, 0.1);
+   --shadow-color: rgba(0, 0, 0, 0.1);
+   --accent-color: #008CBA;
+}
+
+/* Modo Oscuro */
+[data-theme="dark"] {
+   --color-de-fondo: #1a1a2e48;
+   --color-de-link: #e2e8f0;
+   --color-fondo2: #16213e7f;
+   --color-primario: #2d3748bf;
+   --color-secundario: #1a202c;
+   --color-terciario: rgba(226, 232, 240, 0.9);
+   --color-cuaternario: #2b6cb0d0;
+   --degradado-fondo: linear-gradient(to right, #1a1a2e, #16213e);
+   
+   /* Variables específicas para modo oscuro */
+   --bg-primary: #0f172a;
+   --bg-secondary: #1e293b;
+   --bg-tertiary: rgba(30, 41, 59, 0.9);
+   --text-primary: #f1f5f9;
+   --text-secondary: #cbd5e1;
+   --text-muted: #94a3b8;
+   --border-color: rgba(255, 255, 255, 0.1);
+   --shadow-color: rgba(0, 0, 0, 0.3);
+   --accent-color: #0ea5e9;
 }
 
 
@@ -25,6 +58,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 ol, ul,li {
     list-style: none;

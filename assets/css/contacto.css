@@ -52,41 +52,102 @@
 .formcontato__form>input {
     width: 100%;
     margin: 10px 0;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 2px solid transparent;
     outline: none;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255, 255, 255, 0.9);
+    color: #1a202c;
+}
+
+[data-theme="dark"] .formcontato__form>input {
+    background: rgba(30, 41, 59, 0.9);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+.formcontato__form>input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(75, 107, 183, 0.1);
+    transform: translateY(-2px);
+}
+
+[data-theme="dark"] .formcontato__form>input:focus {
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
 }
 
 .formcontato__form>textarea {
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
     margin: 10px 0;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 2px solid transparent;
     outline: none;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255, 255, 255, 0.9);
+    color: #1a202c;
+    resize: vertical;
+    min-height: 120px;
+}
+
+[data-theme="dark"] .formcontato__form>textarea {
+    background: rgba(30, 41, 59, 0.9);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+.formcontato__form>textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(75, 107, 183, 0.1);
+    transform: translateY(-2px);
+}
+
+[data-theme="dark"] .formcontato__form>textarea:focus {
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
 }
 
 .formcontato__form>button {
     font-family: 'Ubuntu', sans-serif;
-    width: 50%;
-    margin-top: 50px;
-    padding: 10px;
-    border-radius: 10px;
+    width: 60%;
+    margin-top: 30px;
+    padding: 15px 20px;
+    border-radius: 8px;
     border: none;
     outline: none;
-    background-color: #008CBA;
-    ;
+    background: linear-gradient(45deg, #008CBA, var(--color-primario));
     color: white;
     font-size: 1.2rem;
+    font-weight: 500;
     cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.formcontato__form>button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.6s ease;
 }
 
 .formcontato__form>button:hover {
-    background-color: var(--color-primario);
-    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 140, 186, 0.4);
+    background: linear-gradient(45deg, var(--color-primario), #008CBA);
+}
+
+.formcontato__form>button:hover::before {
+    left: 100%;
 }
 
 .formcontato__text>h2 {

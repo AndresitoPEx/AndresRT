@@ -33,12 +33,14 @@
     border-radius: 10%;
     background-color: var(--color-primario);
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);  
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 .skills__container>.skills__box>ul:hover{
-    transition: transform 0.5s ease;
-    transform: scale(1.05);
-    box-shadow: 0 0 10px var(--color-terciario);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px var(--color-terciario);
+    background: linear-gradient(135deg, var(--color-primario), var(--color-cuaternario));
 }
 .skills__container>.skills__box>ul{
     display: flex;

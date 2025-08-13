@@ -3,15 +3,60 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
-    box-sizing: border-box;
+    /* Controles de experiencia eliminados */
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    padding: 5rem; /* coherente con otras secciones */
+}
+
+  .source-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .source-btn.active {
+    background: #008CBA;
+    color: white;
+  }
+
+  /* Deprecated - mantener para compatibilidad */
+  .chip {
+    border: 1px solid rgba(255,255,255,0.3);
+    color: var(--color-terciario);
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.25s ease;
+  }
+  .chip:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+  }
+  .chip.is-active {
+    background: #008CBA;
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 6px 16px rgba(0, 140, 186, 0.3);
   }
   
   .experience__section__title {
     font-size: 2rem;
     margin-bottom: 2rem;
     overflow: hidden;
+    position: relative;
+    color: var(--color-terciario);
+  }
+  .experience__section__title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    width: 120px;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #008CBA, var(--color-primario));
   }
   
   .slide-container {
@@ -23,9 +68,18 @@
     margin: 0 40px;
     overflow: hidden;
     border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    backdrop-filter: blur(2px);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
   }
   
-  .card {
+  [data-theme="dark"] .slide-content {
+    border-color: var(--border-color);
+    background: rgba(30, 41, 59, 0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  }  .card {
     width: 100%;
     height: 400px;
     display: flex;
@@ -35,6 +89,23 @@
     border-radius: 25px;
     background-color: var(--color-fondo2);
     font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  
+  [data-theme="dark"] .card {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+  }
+  
+  [data-theme="dark"] .card:hover {
+    box-shadow: 0 12px 28px rgba(0,0,0,0.5);
   }
   
   .image-content {
@@ -58,18 +129,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 0 10px;
   }
   
   .botones > button {
-    width: 100px;
-    height: 40px;
+    min-width: 80px;
+    max-width: 120px;
+    width: auto;
+    height: 36px;
     border: none;
+    padding: 0 12px;
+    border-radius: 6px;
+    background-color: #008CBA;
+    transition: all 0.3s ease;
+    flex: 1;
   }
   
   .botones > button > a {
-    margin: 0 10px;
     color: white;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 36px;
   }
   
   .card-image {
@@ -79,6 +166,19 @@
     width: 100%;
     height: 250px;
     border-radius: 25px 25px 0 0; 
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* Degradado para legibilidad sobre las imágenes */
+  .image-content .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45%;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+    z-index: 2;
+    pointer-events: none;
   }
   
   .card-img {
@@ -88,6 +188,90 @@
     object-fit: cover;
     border-radius: inherit;
     z-index: 1;
+    transform: scale(1.02);
+    transition: transform 0.4s ease;
+  }
+  .card:hover .card-img {
+    transform: scale(1.08);
+  }
+
+  /* GitHub Projects - Nuevos elementos */
+  .project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tech-badge {
+    background: rgba(0, 140, 186, 0.8);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  .stars, .updated {
+    font-size: 0.75rem;
+  }
+
+  .github-loading, .github-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: var(--color-terciario);
+    text-align: center;
+    width: 100%;
+  }
+
+  .github-loading .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid var(--color-terciario);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+
+  .github-error button {
+    background: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+  }
+
+  .github-error button:hover {
+    background: var(--color-primario);
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Responsive para meta info */
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .project-meta {
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .tech-badge {
+      order: -1;
+      margin-bottom: 5px;
+    }
   }
   
   .name {
@@ -104,22 +288,46 @@
   }
   
   .button {
-    width: 100%;
+    min-width: 80px;
+    max-width: 120px;
+    width: auto;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
-    padding: 8px 16px;
+    padding: 8px 12px;
     background-color: #008CBA;
     border-radius: 6px;
-    margin: 14px;
+    margin: 6px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    flex: 1;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.6s ease;
   }
   
   .button:hover {
-    background-color: var(--color-cuaternario);
-    border: 1px solid #fff;
+    background: linear-gradient(45deg, #008CBA, var(--color-cuaternario));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 140, 186, 0.4);
+  }
+  
+  .button:hover::before {
+    left: 100%;
   }
   
   .swiper-navBtn {
@@ -154,15 +362,53 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 5rem;
+      padding: 4rem 2rem;
       font-family: 'Ubuntu', sans-serif;
       
     }
-    .slide-content {
-      margin: 0;
-    }
+    .slide-content { margin: 0 10px; }
     #flechas{
       display: none;
+    }
+    
+    /* Ajustes de botones para tablet */
+    .botones > button {
+      min-width: 70px;
+      max-width: 100px;
+      font-size: 13px;
+    }
+    
+    .botones > button > a {
+      font-size: 13px;
+    }
+  }
+
+  /* Mejoras para móviles */
+  @media only screen and (max-width: 767px) {
+    .botones {
+      gap: 6px;
+      padding: 0 8px;
+    }
+    
+    .botones > button {
+      min-width: 65px;
+      max-width: 90px;
+      height: 32px;
+      padding: 0 8px;
+      font-size: 12px;
+    }
+    
+    .botones > button > a {
+      font-size: 12px;
+      line-height: 32px;
+    }
+    
+    .button {
+      min-width: 65px;
+      max-width: 90px;
+      font-size: 12px;
+      padding: 6px 8px;
+      margin: 4px;
     }
   }
   
@@ -172,14 +418,12 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 2rem;
+      padding: 3rem 1rem;
       font-family: 'Ubuntu', sans-serif;
     }
-    .experience>.experience__section__title{
-      margin-left: 4rem;
-    }
+    .experience>.experience__section__title{ margin-left: 0; text-align: center; }
     .slide-content {
-      margin: 0 10px;
+      margin: 0 6px;
     }
   
     .swiper-navBtn {

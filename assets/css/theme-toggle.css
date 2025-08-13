@@ -1,0 +1,182 @@
+/* Theme Toggle Button - Diseño mejorado */
+.theme-toggle {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: visible;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tooltip */
+.theme-toggle::before {
+    content: attr(aria-label);
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-50%) translateY(5px);
+    z-index: 1001;
+}
+
+.theme-toggle:hover::before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Fondo gradiente interno */
+.theme-toggle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, var(--accent-color), var(--color-cuaternario));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: inherit;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    border-color: var(--accent-color);
+    box-shadow: 0 8px 25px rgba(0, 140, 186, 0.3);
+}
+
+.theme-toggle:hover::after {
+    opacity: 0.1;
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
+/* Iconos mejorados */
+.theme-icon {
+    position: absolute;
+    font-size: 1.3rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--color-terciario);
+    z-index: 1;
+}
+
+.theme-icon.sun {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.theme-icon.moon {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5);
+}
+
+[data-theme="dark"] .theme-icon.sun {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
+}
+
+[data-theme="dark"] .theme-icon.moon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+    color: #fbbf24;
+}
+
+/* Animación de switching mejorada */
+.theme-toggle.switching {
+    animation: themeSwitch 0.6s ease;
+}
+
+.theme-toggle.switching .theme-icon {
+    animation: iconSpin 0.6s ease;
+}
+
+@keyframes themeSwitch {
+    0% { transform: scale(1); }
+    50% { 
+        transform: scale(1.2);
+        box-shadow: 0 0 20px var(--accent-color);
+    }
+    100% { transform: scale(1); }
+}
+
+@keyframes iconSpin {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(0.8); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+/* Efecto ripple al hacer clic - actualizado */
+.ripple-effect {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+    pointer-events: none;
+}
+
+.theme-toggle:active .ripple-effect {
+    width: 60px;
+    height: 60px;
+}
+
+/* Estados del modo oscuro */
+[data-theme="dark"] .theme-toggle {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    border-color: #fbbf24;
+    box-shadow: 0 8px 25px rgba(251, 191, 36, 0.3);
+}
+
+/* Responsive mejorado */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .theme-toggle {
+        width: 44px;
+        height: 44px;
+        margin-left: auto;
+    }
+    
+    .theme-icon {
+        font-size: 1.1rem;
+    }
+}
+
+/* Transiciones globales mejoradas para el cambio de tema */
+*, *::before, *::after {
+    transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Excepciones para elementos que no necesitan transición */
+.swiper-slide, .card-img, .loader, .loading-spinner {
+    transition-property: transform, opacity;
+}
