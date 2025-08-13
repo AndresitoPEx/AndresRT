@@ -8,6 +8,9 @@
     <!-- Referencia de la hoja de estilo de Css -->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/theme-toggle.css">
+    <link rel="stylesheet" href="assets/css/language-toggle.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/titular.css">
@@ -18,30 +21,53 @@
     <link rel="stylesheet" href="assets/css/exp.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/contacto.css">
-    <title>Andres portafolio</title>
+    <link rel="stylesheet" href="assets/css/contact-modern.css">
+    <title data-i18n="title">Andres portafolio</title>
+    <meta name="description" content="Portafolio profesional de Jorge Andrés - Desarrollador Web">
 </head>
 
 <body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p data-i18n="loading">Cargando</p>
+        </div>
+    </div>
+
     <!-- Sección del Menú  -->
     <header class="header" id="navbar">
         <section class="menu">
             <div class="menu__header">
                 <a href="/"><img src="assets/img/miLogo.png"></a>
             </div>
-            <nav>
+            <nav id="main-nav">
                 <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                    <li class="menu__list__item"><a href="#exp">Proyectos</a></li>
-                    <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
+                    <li class="menu__list__item"><a href="#sobre-mi" data-i18n="about">Sobre mi</a></li>
+                    <li class="menu__list__item"><a href="#skills" data-i18n="skills">Skills</a></li>
+                    <li class="menu__list__item"><a href="#formacion" data-i18n="education">Formación</a></li>
+                    <li class="menu__list__item"><a href="#exp" data-i18n="projects">Proyectos</a></li>
+                    <li class="menu__list__item"><a href="#contacto" data-i18n="contact">Contacto</a></li>
+                    <li class="menu__list__item mobile-cv"><a href="https://drive.google.com/file/d/1Mmz-VlKgvGZEFhDhjm7r8Bo5eQF927C1/view?usp=sharing"
+                            class="boton-cv-mobile" target="_blank"><i class="fa-solid fa-eye"></i> <span data-i18n="resume">Currículum</span></a></li>
                 </ul>
             </nav>
+            <div class="header-controls">
+                <button class="language-toggle" id="language-toggle" aria-label="Cambiar idioma" title="Change to English">
+                    <span class="flag-text">EN</span>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                    <i class="fa-solid fa-sun theme-icon sun"></i>
+                    <i class="fa-solid fa-moon theme-icon moon"></i>
+                </button>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
             <nav class="menu-celular">
                 <ul class="menu-celular__list">
-                    <li><a href="https://drive.google.com/file/d/1oQDbosLBR5nrpzb2ttYgSeWfKptAIl0x/view?usp=sharing"
-                            class="boton-cv" target="_blank"><i class="fa-solid fa-eye"></i> Currículum</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Mmz-VlKgvGZEFhDhjm7r8Bo5eQF927C1/view?usp=sharing"
+                            class="boton-cv" target="_blank"><i class="fa-solid fa-eye"></i> <span data-i18n="resume">Currículum</span></a></li>
                 </ul>
             </nav>
         </section>
@@ -52,17 +78,17 @@
         <div class="title__div">
             <img class="title__profile" src="assets/img/perfil.png">
             <div class="title__container">
-                <h2 class="title__bio">Hola Mi nombre es Jorge Andrés .</h2>
+                <h2 class="title__bio" data-i18n="greeting">Hola Mi nombre es Jorge Andrés .</h2>
                 <ul class="title__network">
                     <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a href="https://github.com/AndresitoPEx" target="_blank"><i
+                    <li class="title__network__item"><a href="https://github.com/AndresitoPEx" target="_blank" class="hover-lift"><i
                                 class="fa-brands fa-github"></i> Github </a></li>
                     <li class="title__network__item"><a href="https://www.linkedin.com/in/andres-rt-xd/"
-                            target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn </a></li>
-                    <li class="title__network__item"><a href="https://wa.me/+51930172021" target="_blank"><i
+                            target="_blank" class="hover-lift"><i class="fa-brands fa-linkedin"></i> LinkedIn </a></li>
+                    <li class="title__network__item"><a href="https://wa.me/+51955583026" target="_blank" class="hover-lift"><i
                                 class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
-                    <li><a href="https://drive.google.com/file/d/1oQDbosLBR5nrpzb2ttYgSeWfKptAIl0x/view?usp=sharing"
-                            class="boton-curriculum" target="_blank"><i class="fa-solid fa-eye"></i> Currículum</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Mmz-VlKgvGZEFhDhjm7r8Bo5eQF927C1/view?usp=sharing"
+                            class="boton-curriculum btn-gradient hover-lift" target="_blank"><i class="fa-solid fa-eye"></i> <span data-i18n="resume">Currículum</span></a></li>
                 </ul>
             </div>
         </div>
@@ -71,18 +97,23 @@
     <!-- Sección sobre mi -->
     <section class="about" id="sobre-mi">
         <div class="about__div">
-            <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Apasionado por el aprendizaje continuo, avanzo profesionalmente liderando el desarrollo integral de aplicaciones web. Mi enfoque se centra en alcanzar la excelencia, optimizar el rendimiento y fomentar la mejora continua. He superado retos, consolidando mi experiencia y capitalizando oportunidades para destacar en este dinámico campo tecnológico. Siempre ansío adquirir y aplicar nuevas habilidades, contribuyendo al éxito continuo de cada proyecto.
+            <h3 class="about__title" data-i18n="aboutTitle">Sobre mi</h3>
+            <div class="about__divider" aria-hidden="true"></div>
+            <p class="about__paragraph" data-i18n="aboutText">Apasionado por el aprendizaje continuo, avanzo profesionalmente liderando el desarrollo integral de aplicaciones web. Mi enfoque se centra en alcanzar la excelencia, optimizar el rendimiento y fomentar la mejora continua. He superado retos, consolidando mi experiencia y capitalizando oportunidades para destacar en este dinámico campo tecnológico. Siempre ansío adquirir y aplicar nuevas habilidades, contribuyendo al éxito continuo de cada proyecto.
             </p>
-            <!-- Si quieres, pon tú firma acá! -->
-            <img id="firma" src="assets/img/firma.png">
+            <ul class="about__meta" role="list" aria-label="Highlights">
+                <li class="about__meta-item" role="listitem"><i class="fa-solid fa-rocket"></i><span data-i18n="aboutChipPerformance">Performance</span></li>
+                <li class="about__meta-item" role="listitem"><i class="fa-solid fa-shield-halved"></i><span data-i18n="aboutChipCleanCode">Clean Code</span></li>
+                <li class="about__meta-item" role="listitem"><i class="fa-solid fa-users-gear"></i><span data-i18n="aboutChipTeamwork">Teamwork</span></li>
+                <li class="about__meta-item" role="listitem"><i class="fa-solid fa-wand-magic-sparkles"></i><span data-i18n="aboutChipUX">UX-first</span></li>
+            </ul>
         </div>
     </section>
 
 
     <!-- Sección de Skills -->
     <section class="skills" id="skills">
-        <h3 class="skills__title">Skills</h3>
+        <h3 class="skills__title" data-i18n="skillsTitle">Skills</h3>
         <div class="skills__container">
             <div class="skills__box">
                 <ul>
@@ -218,7 +249,7 @@
 
     <!-- Sección de Formación académica -->
     <section class="academic" id="formacion">
-        <h2 class="academic__title">Formación académica</h2>
+        <h2 class="academic__title" data-i18n="educationTitle">Formación académica</h2>
         <div class="academic__courses">
 
             <div class="academic__courses__box">
@@ -261,300 +292,133 @@
     </section>
 
     <!-- Sección de Experiencia Profesional/Proyectos-->
-    <section class="experience" id="exp">
-        <h2 class="experience__section__title">Experiencia Profesional</h2>
+    <section class="experience" id="exp" aria-labelledby="exp-title">
+        <h2 class="experience__section__title" id="exp-title" data-i18n="projectsTitle">Experiencia Profesional</h2>
         <div class="slide-container swiper">
             <div class="slide-content">
-                <div class="card-wrapper swiper-wrapper">
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/exp11.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Landing FlyAlone</h2>
-                            <p class="description">Sitio web responsivo, incluye landing page con proyeccion a
-                                convertirse en Market place. Desarrollado con React con Vite, Tailwind CSS y Material UI
-                            </p>
-
-                            <div class="botones">
-                                <button class="button"><a target="_blank"
-                                        href="https://app-fly.vercel.app/">Demo</a></button>
-                                <button class="button"><a target="_blank"
-                                        href="https://github.com/AndresitoPEx/app-fly">Repo</a></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/exp4.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">ToDo List</h2>
-                            <p class="description">CRUD de tareas usando Next JS, PostgreSQL y Prisma ORM. Aplicamos POO
-                                para lograr ver, crear, editar y eliminar las tareas ingresadas</p>
-
-                            <div class="botones">
-                                <button class="button"><a target="_blank"
-                                        href="https://greetings-iota.vercel.app/">Demo</a></button>
-                                <button class="button"><a target="_blank"
-                                        href="https://github.com/AndresitoPEx/greetings/">Repo</a></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/exp9.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Delta Ecommerce</h2>
-                            <p class="description">Aplicacion en desarrollo que servirá de ventana digital para mejorar
-                                y promocionar los productos de la empresa Delta Tactical Gear, desarrollado con React
-                                JS.</p>
-
-                            <div class="botones">
-                                <button class="button"><a target="_blank"
-                                        href="https://deltavite.vercel.app/">Demo</a></button>
-                                <button class="button"><a target="_blank"
-                                        href="https://github.com/AndresitoPEx/deltavite">Repo</a></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/exp8.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Fake Shop</h2>
-                            <p class="description">Fake Shop es una aplicacion que simula el comportamiento de un
-                                Ecommerce, desorrallado con tecnologías como Vite, React JS, Tailwind y FakeApi.</p>
-
-                            <div class="botones">
-                                <button class="button"><a target="_blank"
-                                        href="https://fake-store-fawn.vercel.app/">Demo</a></button>
-                                <button class="button"><a target="_blank"
-                                        href="https://github.com/AndresitoPEx/fake-store">Repo</a></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/exp7.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Small Tube</h2>
-                            <p class="description">SmallTube es una aplicación que guarda tus videos favoritos en un
-                                solo lugar, se puede personalizar las categorias, desorrallado con React JS y Material
-                                UI.</p>
-                            <div class="botones">
-                                <button class="button"><a target="_blank"
-                                        href="https://small-tube.vercel.app/">Demo</a></button>
-                                <button class="button"><a target="_blank"
-                                        href="https://github.com/AndresitoPEx/SmallTube">Repo</a></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/exp10.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Pediatra Perú</h2>
-                            <p class="description">Diseño e implementación de página web para el Dr. Cesar Zaambrano que
-                                proporciona información sobre servicios pediatricos. Construido con Wordpress</p>
-
-                            <div class="botones">
-                                <button class="button"><a target="_blank"
-                                        href="https://pediatraperu.com/">Demo</a></button>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/exp6.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Dev on Fire</h2>
-                            <p class="description">Aplicacion Web que muestra equipos de desarrolladores organizados por
-                                especialidad, Se puede agregar usuarios y categorias. Desorrallado con React JS</p>
-
-                            <div class="botones">
-                                <button class="button"><a target="_blank"
-                                        href="https://devs-beta.vercel.app/">Demo</a></button>
-                                <button class="button"><a target="_blank"
-                                        href="https://github.com/AndresitoPEx/devs">Repo</a></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/exp5.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Geek Store</h2>
-                            <p class="description">Aplicacion Web de una tienda geek donde se aprecian los productos en
-                                venta y ofertas, Modelo en desarrollo - Primera parte, hecho con JS, HTML y CSS.</p>
-
-                            <div class="botones">
-                                <button class="button"><a target="_blank"
-                                        href="https://andresitopex.github.io/alura-geek/">Demo</a></button>
-                                <button class="button"><a target="_blank"
-                                        href="https://github.com/AndresitoPEx/alura-geek">Repo</a></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/exp1.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Encriptador de textos</h2>
-                            <p class="description">Pagina web que encripta y esencripta textos ingresados deacuerdo a
-                                una logica establecida. Contruido con herramientas como JS, HTML y CSS</p>
-                            <div class="botones">
-                                <button class="button"><a target="_blank"
-                                        href="https://andresitopex.github.io/reto1/">Demo</a></button>
-                                <button class="button"><a target="_blank"
-                                        href="https://github.com/AndresitoPEx/reto1">Repo</a></button>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/exp2.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">PlatCont Landing Page</h2>
-                            <p class="description">Pagina informativa sobre los productos y servicios de la finaciera
-                                PlatCont. Construida con herramientas como JS, HTML y CSS</p>
-
-                            <div class="botones">
-                                <button class="button"><a target="_blank"
-                                        href="https://andresitopex.github.io/platcont/">Demo</a></button>
-                                <button class="button"><a target="_blank"
-                                        href="https://github.com/AndresitoPEx/platcont">Repo</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="assets/img/exp3.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Batman Blog</h2>
-                            <p class="description">Homenaje a un personaje icono de la cultura pop donde se puede
-                                encontrar detalles de su historia. Construido con herramientas como JS, HTML y CSS</p>
-
-                            <div class="botones">
-                                <button class="button"><a target="_blank"
-                                        href="https://andresitopex.github.io/bat/ ">Demo</a></button>
-                                <button class="button"><a target="_blank"
-                                        href="https://github.com/AndresitoPEx/bat">Repo</a></button>
-                            </div>
-                        </div>
-                    </div>
-
-
+                <div class="card-wrapper swiper-wrapper" role="list">
+                    <!-- Los proyectos se cargarán dinámicamente aquí -->
                 </div>
             </div>
-
-            <div id="flechas" class="swiper-button-next swiper-navBtn flechas"></div>
-            <div id="flechas" class="swiper-button-prev swiper-navBtn flechas"></div>
-            <p class="swiper__parrafo">
-                <br><br><br>
-            </p>
-            <div id="paginacion" class="swiper-pagination"></div>
         </div>
-
     </section>
 
-    <!-- Sección de Contacto -->
-    <section class="formcontacto" id="contacto">
-        <div class="formcontacto__contacto">
-            <div class="formcontato__text">
-                <h2 class="formcontato__title">¿Quieres contactarme?</h2>
-                <h3 class="formcontato__subtext"></h3>
-                <h3 class="formcontato__subtext">Completa el siguiente formulario y me pondré en contacto con usted lo
-                    antes posible. </h3>
-                <form id="form" class="formcontato__form" name="form" action="https://formspree.io/f/mvonqqko"
-                    method="POST">
-                    <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" required>
-                    <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                    <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto" required>
-                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje"
-                        placeholder="Mensaje" required></textarea>
-                    <button type="submit" class="formcontato__boton">Enviar mensaje</button>
-                    <p id="form-message" class="formcontato__message"></p>
-                </form>
+    <!-- Sección de Contacto - Estilo Minimalista -->
+    <section class="contact-section" id="contacto">
+        <div class="contact__wrapper">
+            <div class="contact__header">
+                <h2 class="contact__main-title" data-i18n="contactTitle">Contacto</h2>
+                <p class="contact__subtitle" data-i18n="contactSubtitle">¿Quieres contactarme?</p>
+                <div class="contact__divider"></div>
+            </div>
+            
+            <div class="contact__grid">
+                <!-- Información Personal -->
+                <div class="contact__info-section">
+                    <div class="contact__profile">
+                        <div class="contact__avatar">
+                            <img src="assets/img/perfil.png" alt="Jorge Andrés">
+                            <div class="contact__status">
+                                <span class="status-dot"></span>
+                                <span data-i18n="contactAvailable">Disponible para proyectos</span>
+                            </div>
+                        </div>
+                        <div class="contact__details">
+                            <h3 class="contact__name">Jorge Andrés Romo Turco</h3>
+                            <p class="contact__role" data-i18n="contactRole">Desarrollador Full Stack</p>
+                            <p class="contact__location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Huancayo, Perú
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__methods">
+                        <a href="mailto:andresrt952@gmail.com" class="contact__method email">
+                            <div class="method__icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="method__info">
+                                <span class="method__label" data-i18n="contactEmailMe">Email</span>
+                                <span class="method__value">andresrt952@gmail.com</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square method__arrow"></i>
+                        </a>
+                        
+                        <a href="https://wa.me/51930172021" class="contact__method whatsapp" target="_blank">
+                            <div class="method__icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="method__info">
+                                <span class="method__label">WhatsApp</span>
+                                <span class="method__value">+51 930 172 021</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square method__arrow"></i>
+                        </a>
+                        
+                        <a href="tel:+51930172021" class="contact__method phone">
+                            <div class="method__icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="method__info">
+                                <span class="method__label" data-i18n="contactPhone">Teléfono</span>
+                                <span class="method__value">+51 930 172 021</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square method__arrow"></i>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/andres-rt-xd" class="contact__method linkedin" target="_blank">
+                            <div class="method__icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div class="method__info">
+                                <span class="method__label">LinkedIn</span>
+                                <span class="method__value">andres-rt-xd</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square method__arrow"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Formulario -->
+                <div class="contact__form-section">
+                    <div class="form__header">
+                        <h3 class="form__title" data-i18n="contactFormTitle">Envíame un mensaje</h3>
+                        <p class="form__description" data-i18n="contactText">
+                            Me pondré en contacto contigo en menos de 24 horas.
+                        </p>
+                    </div>
+                    
+                    <form class="contact__form" id="contact-form" action="https://formspree.io/f/mvonqqko" method="POST">
+                        <div class="form__row">
+                            <div class="form__field">
+                                <label class="form__label" data-i18n="contactNameLabel">Nombre</label>
+                                <input type="text" name="nombre" class="form__input" required>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" data-i18n="contactEmailLabel">Email</label>
+                                <input type="email" name="email" class="form__input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form__field">
+                            <label class="form__label" data-i18n="contactSubjectLabel">Asunto</label>
+                            <input type="text" name="asunto" class="form__input" required>
+                        </div>
+                        
+                        <div class="form__field">
+                            <label class="form__label" data-i18n="contactMessageLabel">Mensaje</label>
+                            <textarea name="mensaje" class="form__textarea" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form__submit">
+                            <span data-i18n="sendButton">Enviar mensaje</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        
+                        <div class="form__status" id="form-message"></div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -564,22 +428,28 @@
     <!-- Sección de Footer -->
     <section class="footer">
         <div class="footer__content">
-            <p class="footer__text">
-                &copy; 2023. Andrés Romo
+            <p class="footer__text" data-i18n="footerText">
+                &copy; 2025. Andrés Romo
             </p>
         </div>
     </section>
 
     </div>
     <!-- Script del documento JavaScript -->
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/menu-toggle.js"></script>
     <script src="assets/js/scroll-nav.js"></script>
     <script src="assets/js/validacion.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/slider.js"></script>
+    <script src="assets/js/github-projects.js"></script>
     <script src="assets/js/scroll.js"></script>
     <script src="assets/js/all.min.js"></script>
     <script src="assets/js/boton-cv.js"></script>
-    <script src="assets/js/enviar-formulario.js"></script>
+    <script src="assets/js/contact-modern.js"></script>
 </body>
 
 </html>
