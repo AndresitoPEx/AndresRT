@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/titular.css">
+    <link rel="stylesheet" href="assets/css/summary.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/css/skills.css">
     <link rel="stylesheet" href="assets/css/hobbies.css">
@@ -22,8 +23,8 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/contact-modern.css">
-    <title data-i18n="title">Andres portafolio</title>
-    <meta name="description" content="Portafolio profesional de Jorge Andrés - Desarrollador Web">
+    <title data-i18n="title">Portafolio de Andrés Romo</title>
+    <meta name="description" content="Portafolio profesional de Jorge Andrés - Zoho Developer & Desk Support">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
         </div>
     </div>
 
-    <!-- Sección del Menú  -->
+    <!-- Sección del Menú -->
     <header class="header" id="navbar">
         <section class="menu">
             <div class="menu__header">
@@ -43,12 +44,13 @@
             </div>
             <nav id="main-nav">
                 <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobre-mi" data-i18n="about">Sobre mi</a></li>
-                    <li class="menu__list__item"><a href="#skills" data-i18n="skills">Skills</a></li>
+                    <li class="menu__list__item"><a href="#sobre-mi" data-i18n="about">Sobre mí</a></li>
+                    <li class="menu__list__item"><a href="#skills" data-i18n="skills">Habilidades</a></li>
                     <li class="menu__list__item"><a href="#formacion" data-i18n="education">Formación</a></li>
+                    <li class="menu__list__item"><a href="#exp-prof" data-i18n="experience">Experiencia</a></li>
                     <li class="menu__list__item"><a href="#exp" data-i18n="projects">Proyectos</a></li>
                     <li class="menu__list__item"><a href="#contacto" data-i18n="contact">Contacto</a></li>
-                    <li class="menu__list__item mobile-cv"><a href="https://drive.google.com/file/d/1Mmz-VlKgvGZEFhDhjm7r8Bo5eQF927C1/view?usp=sharing"
+                    <li class="menu__list__item mobile-cv"><a href="https://drive.google.com/file/d/17gYRCie5Nq3oadm3GvB_j3xiO78p5K3V/view?usp=drive_link"
                             class="boton-cv-mobile" target="_blank"><i class="fa-solid fa-eye"></i> <span data-i18n="resume">Currículum</span></a></li>
                 </ul>
             </nav>
@@ -66,7 +68,7 @@
             </div>
             <nav class="menu-celular">
                 <ul class="menu-celular__list">
-                    <li><a href="https://drive.google.com/file/d/17gYRCie5Nq3oadm3GvB_j3xiO78p5K3V/view?usp=sharing"
+                    <li><a href="https://drive.google.com/file/d/17gYRCie5Nq3oadm3GvB_j3xiO78p5K3V/view?usp=drive_link"
                             class="boton-cv" target="_blank"><i class="fa-solid fa-eye"></i> <span data-i18n="resume">Currículum</span></a></li>
                 </ul>
             </nav>
@@ -76,36 +78,75 @@
     <!-- Sección del Header/Title/Hero -->
     <section class="titular">
         <div class="title__div">
-            <img class="title__profile" src="assets/img/perfil.png">
             <div class="title__container">
-                <h2 class="title__bio" data-i18n="greeting">Hola Mi nombre es Jorge Andrés .</h2>
+                <h2 class="title__bio" data-i18n="greeting">Hola, soy Jorge Andrés Romo Turco, Zoho Developer & Desk Support.</h2>
+                <p class="title__subsection" data-i18n="headline">Especialista en Zoho CRM, Zoho Desk, automatización y soporte técnico.</p>
+                <div class="hero__cta">
+                    <a href="#exp-prof" class="hero__btn hero__btn--primary" data-i18n="heroCtaExperience">Ver experiencia</a>
+                    <a href="#contacto" class="hero__btn hero__btn--secondary" data-i18n="heroCtaContact">Contactar</a>
+                    <button type="button" class="hero__btn hero__btn--tertiary" data-summary-open aria-haspopup="dialog" aria-controls="summary-modal"
+                        data-i18n="heroCtaSummary">Resumen ejecutivo</button>
+                </div>
                 <ul class="title__network">
                     <!-- Pon los enlaces de tus redes sociales favoritas -->
                     <li class="title__network__item"><a href="https://github.com/AndresitoPEx" target="_blank" class="hover-lift"><i
                                 class="fa-brands fa-github"></i> Github </a></li>
                     <li class="title__network__item"><a href="https://www.linkedin.com/in/andres-rt-xd/"
                             target="_blank" class="hover-lift"><i class="fa-brands fa-linkedin"></i> LinkedIn </a></li>
-                    <li class="title__network__item"><a href="https://wa.me/+51955583026" target="_blank" class="hover-lift"><i
+                    <li class="title__network__item"><a href="https://wa.me/51955583026" target="_blank" class="hover-lift"><i
                                 class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
-                    <li><a href="https://drive.google.com/file/d/17gYRCie5Nq3oadm3GvB_j3xiO78p5K3V/view?usp=sharing"
+                    <li><a href="https://drive.google.com/file/d/17gYRCie5Nq3oadm3GvB_j3xiO78p5K3V/view?usp=drive_link"
                             class="boton-curriculum btn-gradient hover-lift" target="_blank"><i class="fa-solid fa-eye"></i> <span data-i18n="resume">Currículum</span></a></li>
                 </ul>
+            </div>
+            <div class="title__media">
+                <img class="title__profile" src="assets/img/perfil.png" alt="Jorge Andrés Romo Turco">
             </div>
         </div>
     </section>
 
-    <!-- Sección sobre mi -->
+    <div class="summary-modal" id="summary-modal" aria-hidden="true">
+        <button type="button" class="summary-modal__backdrop" data-summary-close tabindex="-1" aria-hidden="true"></button>
+        <div class="summary-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="summary-modal-title" tabindex="-1">
+            <button type="button" class="summary-modal__close" data-summary-close data-i18n-aria="summaryCloseAria" aria-label="Cerrar resumen ejecutivo">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+            <p class="summary-modal__eyebrow" data-i18n="summaryEyebrow">Resumen rápido</p>
+            <h3 class="summary-modal__title" id="summary-modal-title" data-i18n="summaryTitle">Resumen Ejecutivo</h3>
+            <p class="summary-modal__subtitle" data-i18n="summarySubtitle">Perfil orientado a implementación, soporte y optimización continua de Zoho CRM y Zoho Desk en entornos empresariales.</p>
+            <div class="summary-modal__metrics">
+                <article class="summary-modal__metric">
+                    <span class="summary-modal__metric-value" data-i18n="metricYearsValue">+3</span>
+                    <span class="summary-modal__metric-label" data-i18n="metricYearsLabel">Años de experiencia profesional</span>
+                </article>
+                <article class="summary-modal__metric">
+                    <span class="summary-modal__metric-value" data-i18n="metricZohoValue">3</span>
+                    <span class="summary-modal__metric-label" data-i18n="metricZohoLabel">Roles enfocados en Zoho CRM/Desk</span>
+                </article>
+                <article class="summary-modal__metric">
+                    <span class="summary-modal__metric-value" data-i18n="metricScopeValue">LATAM + USA</span>
+                    <span class="summary-modal__metric-label" data-i18n="metricScopeLabel">Experiencia con partners y clientes finales</span>
+                </article>
+                <article class="summary-modal__metric">
+                    <span class="summary-modal__metric-value" data-i18n="metricLangValue">B2</span>
+                    <span class="summary-modal__metric-label" data-i18n="metricLangLabel">Inglés intermedio profesional</span>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Sobre Mí -->
     <section class="about" id="sobre-mi">
         <div class="about__div">
-            <h3 class="about__title" data-i18n="aboutTitle">Sobre mi</h3>
+            <h3 class="about__title" data-i18n="aboutTitle">Sobre mí</h3>
             <div class="about__divider" aria-hidden="true"></div>
-            <p class="about__paragraph" data-i18n="aboutText">Apasionado por el aprendizaje continuo, avanzo profesionalmente liderando el desarrollo integral de aplicaciones web. Mi enfoque se centra en alcanzar la excelencia, optimizar el rendimiento y fomentar la mejora continua. He superado retos, consolidando mi experiencia y capitalizando oportunidades para destacar en este dinámico campo tecnológico. Siempre ansío adquirir y aplicar nuevas habilidades, contribuyendo al éxito continuo de cada proyecto.
+            <p class="about__paragraph" data-i18n="aboutText">Especialista en Zoho CRM y Zoho Desk con experiencia práctica en soporte técnico, gestión de tickets y automatización de procesos. He trabajado con Zoho Partners y empresas finales resolviendo incidencias, documentando soluciones y optimizando flujos para mejorar la atención al cliente.
             </p>
             <ul class="about__meta" role="list" aria-label="Highlights">
-                <li class="about__meta-item" role="listitem"><i class="fa-solid fa-rocket"></i><span data-i18n="aboutChipPerformance">Performance</span></li>
-                <li class="about__meta-item" role="listitem"><i class="fa-solid fa-shield-halved"></i><span data-i18n="aboutChipCleanCode">Clean Code</span></li>
-                <li class="about__meta-item" role="listitem"><i class="fa-solid fa-users-gear"></i><span data-i18n="aboutChipTeamwork">Teamwork</span></li>
-                <li class="about__meta-item" role="listitem"><i class="fa-solid fa-wand-magic-sparkles"></i><span data-i18n="aboutChipUX">UX-first</span></li>
+                <li class="about__meta-item" role="listitem"><i class="fa-solid fa-headset"></i><span data-i18n="aboutChipSupport">Soporte técnico</span></li>
+                <li class="about__meta-item" role="listitem"><i class="fa-solid fa-gear"></i><span data-i18n="aboutChipAutomation">Automatización</span></li>
+                <li class="about__meta-item" role="listitem"><i class="fa-solid fa-gears"></i><span data-i18n="aboutChipProcesses">Mejora de procesos</span></li>
+                <li class="about__meta-item" role="listitem"><i class="fa-solid fa-comments"></i><span data-i18n="aboutChipCustomer">Atención al cliente</span></li>
             </ul>
         </div>
     </section>
@@ -113,133 +154,78 @@
 
     <!-- Sección de Skills -->
     <section class="skills" id="skills">
-        <h3 class="skills__title" data-i18n="skillsTitle">Skills</h3>
+        <h3 class="skills__title" data-i18n="skillsTitle">Habilidades Técnicas</h3>
         <div class="skills__container">
             <div class="skills__box">
                 <ul>
+                    <i class="fa-solid fa-users-gear skill__icon"></i>
+                    <li class="skills__name" data-i18n="skillZohoCrm">Zoho CRM</li>
+                </ul>
+            </div>
+            <div class="skills__box">
+                <ul>
+                    <i class="fa-solid fa-ticket skill__icon"></i>
+                    <li class="skills__name" data-i18n="skillZohoDesk">Zoho Desk</li>
+                </ul>
+            </div>
+            <div class="skills__box">
+                <ul>
+                    <i class="fa-solid fa-robot skill__icon"></i>
+                    <li class="skills__name" data-i18n="skillSalesIQ">Zoho SalesIQ</li>
+                </ul>
+            </div>
+            <div class="skills__box">
+                <ul>
+                    <i class="fa-solid fa-sitemap skill__icon"></i>
+                    <li class="skills__name" data-i18n="skillWorkflows">Workflows y Blueprints</li>
+                </ul>
+            </div>
+            <div class="skills__box">
+                <ul>
+                    <i class="fa-solid fa-code skill__icon"></i>
+                    <li class="skills__name" data-i18n="skillDelugeCoql">Deluge y COQL</li>
+                </ul>
+            </div>
+            <div class="skills__box">
+                <ul>
+                    <i class="fa-solid fa-plug skill__icon"></i>
+                    <li class="skills__name" data-i18n="skillFlowIntegrations">Zoho Flow / Integraciones</li>
+                </ul>
+            </div>
+            <div class="skills__box">
+                <ul>
+                    <i class="fa-solid fa-chart-line skill__icon"></i>
+                    <li class="skills__name" data-i18n="skillAnalytics">Zoho Analytics</li>
+                </ul>
+            </div>
+            <div class="skills__box">
+                <ul>
                     <i class="fa-brands fa-js skill__icon"></i>
-                    <li class="skills__name">JavaScript</li>
+                    <li class="skills__name" data-i18n="skillJsTs">JavaScript / TypeScript</li>
                 </ul>
             </div>
-
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-brands fa-html5 skill__icon"></i>
-                    <li class="skills__name"> HTML 5</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-brands fa-css3-alt skill__icon"></i>
-                    <li class="skills__name">CSS 3</li>
-                </ul>
-            </div>
-
             <div class="skills__box">
                 <ul>
                     <i class="fa-brands fa-react skill__icon"></i>
-                    <li class="skills__name">React JS</li>
+                    <li class="skills__name" data-i18n="skillReactAngular">React / Angular</li>
                 </ul>
             </div>
-
             <div class="skills__box">
                 <ul>
-
                     <i class="fa-brands fa-node-js skill__icon"></i>
-                    <li class="skills__name">Node JS</li>
+                    <li class="skills__name" data-i18n="skillNodeExpress">Node.js / Express</li>
                 </ul>
             </div>
-
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-brands fa-git-alt skill__icon"></i>
-                    <li class="skills__name">Git</li>
-
-                </ul>
-            </div>
-            <!-- segunda linea de skills -->
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-brands fa-github skill__icon"></i>
-                    <li class="skills__name">GitHub</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-lines-leaning skill__icon"></i>
-                    <li class="skills__name">Material UI</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-brands fa-bootstrap skill__icon"></i>
-                    <li class="skills__name">Bootstrap</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-brands fa-figma skill__icon"></i>
-                    <li class="skills__name">Figma</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-brands fa-php skill__icon"></i>
-                    <li class="skills__name">PHP</li>
-                </ul>
-            </div>
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-brands fa-python skill__icon"></i>
-                    <li class="skills__name">Python</li>
-
-                </ul>
-            </div>
-            <!-- tercera linea de skills -->
-            <div class="skills__box">
-                <ul>
-                    <div class="warning"><i class="fa-solid fa-c skill__icon"></i><i class="fa-solid fa-hashtag "></i>
-                    </div>
-                    <li class="skills__name">C sharp</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-cloud skill__icon"></i>
-                    <li class="skills__name">Azure</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-diagram-project skill__icon"></i>
-                    <li class="skills__name">NoSQL</li>
-                </ul>
-            </div>
-
             <div class="skills__box">
                 <ul>
                     <i class="fa-solid fa-database skill__icon"></i>
-                    <li class="skills__name">SQL</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-brands fa-wordpress skill__icon"></i>
-                    <li class="skills__name">Wordpress</li>
+                    <li class="skills__name" data-i18n="skillDatabases">PostgreSQL / SQL Server</li>
                 </ul>
             </div>
             <div class="skills__box">
                 <ul>
-                    <i class="fa-solid fa-code-compare skill__icon"></i>
-                    <li class="skills__name">Scrum</li>
+                    <i class="fa-brands fa-git-alt skill__icon"></i>
+                    <li class="skills__name" data-i18n="skillGitGithub">Git / GitHub</li>
                 </ul>
             </div>
         </div>
@@ -249,16 +235,16 @@
 
     <!-- Sección de Formación académica -->
     <section class="academic" id="formacion">
-        <h2 class="academic__title" data-i18n="educationTitle">Formación académica</h2>
+        <h2 class="academic__title" data-i18n="educationTitle">Formación académica y certificaciones</h2>
         <div class="academic__courses">
 
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
-                    <!--Pon el logotipo de la institución de formación -->
+                    <!-- Pon el logotipo de la institución de formación -->
                     <li class="academic__courses__item__img"><img src="assets/img/ONE.png"></li>
                 </ul>
                 <div class="academic__courses__item__title">
-                    <h4>Programa Oracle Next Education Front-end</h4>
+                    <h4 data-i18n="eduOneTitle">Programa Oracle Next Education Front-end</h4>
                 </div>
                 <div class="academic__courses__item__subtitle">
                     <p>2022 - 2023</p>
@@ -270,7 +256,7 @@
                     <li class="academic__courses__item__img"><img src="assets/img/conti.png"></li>
                 </ul>
                 <div class="academic__courses__item__title">
-                    <h4>Desarrollo de Sistemas de información</h4>
+                    <h4 data-i18n="eduContiTitle">Técnico en Desarrollo de Sistemas de Información</h4>
                 </div>
                 <div class="academic__courses__item__subtitle">
                     <p>2021 - 2023</p>
@@ -282,33 +268,115 @@
                     <li class="academic__courses__item__img"><img src="assets/img/free.png"></li>
                 </ul>
                 <div class="academic__courses__item__title">
-                    <h4>Desarrollo Web Responsivo</h4>
+                    <h4 data-i18n="eduCertTitle">Cursos y certificaciones técnicas (SQL, Cloud, IA, Scrum)</h4>
                 </div>
                 <div class="academic__courses__item__subtitle">
-                    <p>2021 - 2022</p>
+                    <p data-i18n="eduCertPeriod">2021 - 2024</p>
                 </div>
+            </div>
+        </div>
+        <div class="academic__extras">
+            <h3 class="academic__extras__title" data-i18n="certsTitle">Certificaciones destacadas</h3>
+            <div class="academic__cert-grid">
+                <article class="academic__cert-card">
+                    <span class="academic__cert-icon"><i class="fa-solid fa-award"></i></span>
+                    <p class="academic__cert-text" data-i18n="cert1">Fundamentos profesionales de IA generativa (Microsoft - LinkedIn, 2024)</p>
+                </article>
+                <article class="academic__cert-card">
+                    <span class="academic__cert-icon"><i class="fa-solid fa-cloud"></i></span>
+                    <p class="academic__cert-text" data-i18n="cert2">Oracle Cloud Infrastructure (ONE Alura Latam, 2023)</p>
+                </article>
+                <article class="academic__cert-card">
+                    <span class="academic__cert-icon"><i class="fa-solid fa-chart-line"></i></span>
+                    <p class="academic__cert-text" data-i18n="cert3">Python, Data Science y Oracle Analytics (ONE Alura Latam, 2023)</p>
+                </article>
+                <article class="academic__cert-card">
+                    <span class="academic__cert-icon"><i class="fa-solid fa-database"></i></span>
+                    <p class="academic__cert-text" data-i18n="cert4">Gestión de datos con Microsoft 365 (LinkedIn Learning, 2023)</p>
+                </article>
+                <article class="academic__cert-card">
+                    <span class="academic__cert-icon"><i class="fa-solid fa-server"></i></span>
+                    <p class="academic__cert-text" data-i18n="cert5">Formación SQL con MySQL (ONE Alura Latam, 2023)</p>
+                </article>
+                <article class="academic__cert-card">
+                    <span class="academic__cert-icon"><i class="fa-solid fa-people-group"></i></span>
+                    <p class="academic__cert-text" data-i18n="cert6">SCRUM Fundamentals (SCRUMstudy, 2021)</p>
+                </article>
+            </div>
+
+            <div class="academic__language-block">
+                <h3 class="academic__extras__title" data-i18n="languagesTitle">Idiomas</h3>
+                <p class="academic__language" data-i18n="languageLevel">Inglés: Intermedio B2</p>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Experiencia Profesional/Proyectos-->
+    <section class="experience-summary" id="exp-prof" aria-labelledby="exp-prof-title">
+        <h2 class="experience-summary__title" id="exp-prof-title" data-i18n="experienceTitle">Experiencia Profesional</h2>
+        <p class="experience-summary__intro" data-i18n="experienceIntro">Implementación, soporte y optimización de procesos en Zoho CRM y Zoho Desk para clientes LATAM y USA.</p>
+        <div class="experience-summary__timeline">
+            <article class="experience-summary__card">
+                <h3 data-i18n="expInterRole">Zoho CRM & Desk Specialist / Support Consultant</h3>
+                <p data-i18n="expInterCompany">InterConnecta - Zoho Premium Partner | Ago 2025 - Dic 2025 | Remoto</p>
+                <p class="experience-summary__impact" data-i18n="expInterImpact">Impacto: mejora en tiempos de respuesta y continuidad del soporte.</p>
+                <ul>
+                    <li data-i18n="expInter1">Gestión diaria de tickets en Zoho Desk y soporte a usuarios finales.</li>
+                    <li data-i18n="expInter2">Diagnóstico y resolución de incidencias en Zoho CRM y Desk.</li>
+                    <li data-i18n="expInter3">Documentación de soluciones y escalamiento técnico cuando fue requerido.</li>
+                </ul>
+            </article>
+            <article class="experience-summary__card">
+                <h3 data-i18n="expSmfRole">Zoho Developer / CRM Support</h3>
+                <p data-i18n="expSmfCompany">SMF360 - Zoho Partner (USA / LATAM) | Dic 2024 - Feb 2025 | Remoto</p>
+                <p class="experience-summary__impact" data-i18n="expSmfImpact">Impacto: reducción de errores operativos al optimizar blueprints y workflows.</p>
+                <ul>
+                    <li data-i18n="expSmf1">Implementación y ajuste de blueprints, workflows, validaciones y automatizaciones.</li>
+                    <li data-i18n="expSmf2">Desarrollo de bots en Zoho SalesIQ para atención y soporte.</li>
+                    <li data-i18n="expSmf3">Uso de Deluge y COQL para consultas, validaciones y lógica de negocio.</li>
+                </ul>
+            </article>
+            <article class="experience-summary__card">
+                <h3 data-i18n="expCableRole">Zoho Developer</h3>
+                <p data-i18n="expCableCompany">Cable Red Perú | Feb 2024 - Jun 2025 | Huancayo, Perú</p>
+                <p class="experience-summary__impact" data-i18n="expCableImpact">Impacto: centralización comercial y adopción más efectiva del CRM.</p>
+                <ul>
+                    <li data-i18n="expCable1">Automatización de procesos comerciales en Zoho CRM.</li>
+                    <li data-i18n="expCable2">Integración de Zoho SalesIQ, Zoho Desk y Zoho Sign con CRM.</li>
+                    <li data-i18n="expCable3">Generación de reportes automáticos para el área comercial.</li>
+                </ul>
+            </article>
+            <article class="experience-summary__card">
+                <h3 data-i18n="expDeltaRole">Full Stack Developer</h3>
+                <p data-i18n="expDeltaCompany">Delta Tactical Gear | May 2022 - Dic 2023 | Lima, Perú</p>
+                <p class="experience-summary__impact" data-i18n="expDeltaImpact">Impacto: implementación de e-commerce y automatización del flujo comercial.</p>
+                <ul>
+                    <li data-i18n="expDelta1">Desarrollo de e-commerce con React, Tailwind y Vite.</li>
+                    <li data-i18n="expDelta2">Backend con Node.js, Express, Prisma y PostgreSQL.</li>
+                    <li data-i18n="expDelta3">Automatización de reportes de ventas e integración de pagos.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
     <section class="experience" id="exp" aria-labelledby="exp-title">
-        <h2 class="experience__section__title" id="exp-title" data-i18n="projectsTitle">Experiencia Profesional</h2>
+        <h2 class="experience__section__title" id="exp-title" data-i18n="projectsTitle">Proyectos destacados</h2>
+        <p class="experience__section__intro" data-i18n="projectsIntro">Selección de proyectos de desarrollo web y frontend publicados en GitHub.</p>
         <div class="slide-container swiper">
             <div class="slide-content">
-                <div class="card-wrapper swiper-wrapper" role="list">
+                <div class="card-wrapper swiper-wrapper" role="list" aria-live="polite">
                     <!-- Los proyectos se cargarán dinámicamente aquí -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Contacto - Estilo Minimalista -->
+    <!-- Sección de Contacto -->
     <section class="contact-section" id="contacto">
         <div class="contact__wrapper">
             <div class="contact__header">
                 <h2 class="contact__main-title" data-i18n="contactTitle">Contacto</h2>
-                <p class="contact__subtitle" data-i18n="contactSubtitle">¿Quieres contactarme?</p>
+                <p class="contact__subtitle" data-i18n="contactSubtitle">¿Buscas soporte Zoho o implementación CRM?</p>
                 <div class="contact__divider"></div>
             </div>
             
@@ -320,12 +388,12 @@
                             <img src="assets/img/perfil.png" alt="Jorge Andrés">
                             <div class="contact__status">
                                 <span class="status-dot"></span>
-                                <span data-i18n="contactAvailable">Disponible para proyectos</span>
+                                <span data-i18n="contactAvailable">Disponible para proyectos y consultoría</span>
                             </div>
                         </div>
                         <div class="contact__details">
                             <h3 class="contact__name">Jorge Andrés Romo Turco</h3>
-                            <p class="contact__role" data-i18n="contactRole">Desarrollador Full Stack</p>
+                            <p class="contact__role" data-i18n="contactRole">Zoho Developer & Desk Support</p>
                             <p class="contact__location">
                                 <i class="fa-solid fa-location-dot"></i>
                                 Huancayo, Perú
@@ -345,24 +413,24 @@
                             <i class="fa-solid fa-arrow-up-right-from-square method__arrow"></i>
                         </a>
                         
-                        <a href="https://wa.me/51930172021" class="contact__method whatsapp" target="_blank">
+                        <a href="https://wa.me/51955583026" class="contact__method whatsapp" target="_blank">
                             <div class="method__icon">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </div>
                             <div class="method__info">
                                 <span class="method__label">WhatsApp</span>
-                                <span class="method__value">+51 930 172 021</span>
+                                <span class="method__value">+51 955 583 026</span>
                             </div>
                             <i class="fa-solid fa-arrow-up-right-from-square method__arrow"></i>
                         </a>
                         
-                        <a href="tel:+51930172021" class="contact__method phone">
+                        <a href="tel:+51955583026" class="contact__method phone">
                             <div class="method__icon">
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <div class="method__info">
                                 <span class="method__label" data-i18n="contactPhone">Teléfono</span>
-                                <span class="method__value">+51 930 172 021</span>
+                                <span class="method__value">+51 955 583 026</span>
                             </div>
                             <i class="fa-solid fa-arrow-up-right-from-square method__arrow"></i>
                         </a>
@@ -429,14 +497,14 @@
     <section class="footer">
         <div class="footer__content">
             <p class="footer__text" data-i18n="footerText">
-                &copy; 2025. Andrés Romo
+                &copy; 2026. Andrés Romo
             </p>
         </div>
     </section>
 
-    </div>
     <!-- Script del documento JavaScript -->
     <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/summary-modal.js"></script>
     <script src="assets/js/theme-toggle.js"></script>
     <script src="assets/js/loader.js"></script>
     <script src="assets/js/animations.js"></script>
@@ -448,8 +516,8 @@
     <script src="assets/js/github-projects.js"></script>
     <script src="assets/js/scroll.js"></script>
     <script src="assets/js/all.min.js"></script>
-    <script src="assets/js/boton-cv.js"></script>
     <script src="assets/js/contact-modern.js"></script>
 </body>
 
 </html>
+

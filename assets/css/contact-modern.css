@@ -16,6 +16,53 @@
     padding: 0 2rem;
 }
 
+/* Light mode tuning: más contraste y tarjetas con más carácter */
+html:not([data-theme="dark"]) .contact__profile,
+html:not([data-theme="dark"]) .contact__method,
+html:not([data-theme="dark"]) .contact__form-section {
+    background: linear-gradient(165deg, rgba(255, 255, 255, 0.96), rgba(237, 244, 255, 0.92));
+    border-color: rgba(54, 85, 138, 0.24);
+    box-shadow: 0 14px 28px rgba(15, 35, 74, 0.16);
+}
+
+html:not([data-theme="dark"]) .contact__subtitle,
+html:not([data-theme="dark"]) .contact__status,
+html:not([data-theme="dark"]) .contact__role,
+html:not([data-theme="dark"]) .contact__location,
+html:not([data-theme="dark"]) .method__label,
+html:not([data-theme="dark"]) .method__arrow,
+html:not([data-theme="dark"]) .form__description {
+    color: #3d4f6c;
+}
+
+html:not([data-theme="dark"]) .contact__divider {
+    background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+}
+
+html:not([data-theme="dark"]) .contact__method:hover {
+    border-color: rgba(42, 91, 176, 0.55);
+    box-shadow: 0 16px 30px rgba(15, 35, 74, 0.2);
+}
+
+html:not([data-theme="dark"]) .form__input,
+html:not([data-theme="dark"]) .form__textarea {
+    background: rgba(247, 251, 255, 0.95);
+    border-color: rgba(57, 95, 160, 0.28);
+    color: #1b2a42;
+}
+
+html:not([data-theme="dark"]) .form__input::placeholder,
+html:not([data-theme="dark"]) .form__textarea::placeholder {
+    color: #667a99;
+}
+
+html:not([data-theme="dark"]) .form__input:focus,
+html:not([data-theme="dark"]) .form__textarea:focus {
+    background: rgba(255, 255, 255, 0.98);
+    border-color: #3a6ab3;
+    box-shadow: 0 0 0 3px rgba(58, 106, 179, 0.16), 0 10px 18px rgba(15, 35, 74, 0.16);
+}
+
 /* Header de la sección */
 .contact__header {
     text-align: center;
@@ -266,6 +313,7 @@
 /* Sección del formulario */
 .contact__form-section {
     background: var(--bg-cuaternario);
+    color: var(--text-primary);
     padding: 2.5rem;
     border-radius: 20px;
     border: 1px solid var(--border-color);
@@ -284,7 +332,7 @@
 .form__title {
     font-size: 1.75rem;
     font-weight: 600;
-    color: var(--color-terciario);
+    color: var(--text-primary);
     margin-bottom: 0.75rem;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -327,7 +375,7 @@
     width: 100%;
     padding: 1rem 1.25rem;
     font-size: 1rem;
-    color: var(--color-terciario);
+    color: var(--text-primary);
     background: var(--bg-primary);
     border: 1px solid var(--border-color);
     border-radius: 10px;

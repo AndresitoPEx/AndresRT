@@ -32,13 +32,14 @@ header>section{
 
 header>section>nav{
     display: flex;
-    width: 50%;  
+    width: 58%;  
     font-family: 'Ubuntu', sans-serif; 
 }
 header>section>nav>ul{
     display: flex;
     transition: all 0.3s ease;
-    width: 100%; /* aumentar el ancho al 80% */
+    width: 100%;
+    gap: 0.6rem;
     
 }
 header>section>nav>ul>li{
@@ -46,7 +47,7 @@ header>section>nav>ul>li{
 }
 
 header>section>nav>ul>li>a{
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-weight: 300;
     position: relative;
     transition: all 0.3s ease;
@@ -67,9 +68,21 @@ header>section>nav>ul>li>a:hover::after{
     left: 0%;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1366px){
+    header > section {
+        padding: 0 3rem;
+    }
+    header > section > nav {
+        width: 65%;
+    }
+    header > section > nav > ul > li > a {
+        font-size: 0.95rem;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1023px){
     header > section {
-        padding: 0 5rem;
+        padding: 0 1.6rem;
     }
     header > section > nav {
         width: 70%;
@@ -171,7 +184,7 @@ header>section>nav>ul>li>a:hover::after{
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
+        width: min(82%, 320px);
         height: 100vh;
         background-color: var(--color-primario);
         display: flex;

@@ -5,11 +5,41 @@
 
 ## Habilidades
 
-- Desarrollo de aplicaciones web con React
-- Manejo de herramientas de gestión de estado como Redux o Context
-- Creación y consumo de APIs con JavaScript y Node.js
-- Diseño y desarrollo de interfaces web con HTML y CSS
-- Uso de herramientas de control de versiones como Git y GitHub
+- JavaScript, HTML5, CSS3, React JS, Node JS
+- Git, GitHub, Material UI, Bootstrap, Figma
+- PHP, Python, C#, Azure, SQL, NoSQL, Wordpress, Scrum
+
+## 🎓 Formación académica
+
+- Oracle Next Education Front-end (2022-2023)
+- Desarrollo de Sistemas de Información (2021-2023)
+- Desarrollo Web Responsivo (2021-2022)
+
+## 💼 Experiencia y proyectos
+Los proyectos y experiencia profesional se muestran en la sección "Experiencia Profesional" y se cargan dinámicamente en el portafolio.
+
+## 📬 Contacto
+
+- **Email:** andresrt952@gmail.com
+- **WhatsApp:** +51 930 172 021
+- **LinkedIn:** [andres-rt-xd](https://linkedin.com/in/andres-rt-xd)
+- **Ubicación:** Huancayo, Perú
+
+## 👀 Visualizar el portafolio
+
+Abre el archivo `index.html` en tu navegador preferido para ver el portafolio completo.
+
+## 🌐 Redes sociales
+
+- [GitHub](https://github.com/AndresitoPEx)
+- [LinkedIn](https://linkedin.com/in/andres-rt-xd)
+
+## 📄 Currículum
+
+Puedes ver y descargar mi currículum [aquí](https://drive.google.com/file/d/17gYRCie5Nq3oadm3GvB_j3xiO78p5K3V/view?usp=drive_link).
+
+---
+© 2025. Jorge Andrés Romo Turco
 
 
 

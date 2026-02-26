@@ -17,12 +17,15 @@
    --bg-primary: #f8fafc;
    --bg-secondary: #ffffff;
    --bg-tertiary: rgba(255, 255, 255, 0.9);
+   --bg-cuaternario: rgba(255, 255, 255, 0.92);
    --text-primary: #1a202c;
    --text-secondary: #4a5568;
+   --text-cuaternario: #5b6b83;
    --text-muted: #718096;
    --border-color: rgba(0, 0, 0, 0.1);
    --shadow-color: rgba(0, 0, 0, 0.1);
    --accent-color: #008CBA;
+   --color-primario-rgb: 24, 40, 72;
 }
 
 /* Modo Oscuro */
@@ -40,12 +43,15 @@
    --bg-primary: #0f172a;
    --bg-secondary: #1e293b;
    --bg-tertiary: rgba(30, 41, 59, 0.9);
+   --bg-cuaternario: rgba(22, 33, 62, 0.78);
    --text-primary: #f1f5f9;
    --text-secondary: #cbd5e1;
+   --text-cuaternario: #b9c7df;
    --text-muted: #94a3b8;
    --border-color: rgba(255, 255, 255, 0.1);
    --shadow-color: rgba(0, 0, 0, 0.3);
    --accent-color: #0ea5e9;
+   --color-primario-rgb: 43, 108, 176;
 }
 
 
@@ -57,8 +63,13 @@ body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1;
+    line-height: 1.4;
     transition: background 0.3s ease, color 0.3s ease;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 ol, ul,li {
     list-style: none;

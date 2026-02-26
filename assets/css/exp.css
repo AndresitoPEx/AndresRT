@@ -9,6 +9,109 @@
     padding: 5rem; /* coherente con otras secciones */
 }
 
+.experience-summary {
+  padding: 4rem 5rem 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+}
+
+.experience-summary__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #eaf4ff;
+}
+
+.experience-summary__intro {
+  max-width: 860px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  line-height: 1.6;
+  color: #c8dcf7;
+}
+
+.experience-summary__timeline {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.experience-summary__timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.4rem;
+  top: 0.2rem;
+  bottom: 0.2rem;
+  width: 3px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #008cba, var(--color-cuaternario));
+}
+
+.experience-summary__card {
+  position: relative;
+  margin-left: 1.8rem;
+  background: linear-gradient(145deg, rgba(18, 34, 67, 0.72), rgba(8, 18, 41, 0.78));
+  border: 1px solid rgba(162, 220, 255, 0.28);
+  border-radius: 14px;
+  padding: 1rem 1.2rem 1.1rem;
+  box-shadow: 0 12px 24px rgba(5, 14, 31, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.experience-summary__card::before {
+  content: '';
+  position: absolute;
+  left: -1.65rem;
+  top: 1.2rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00a3d7;
+  border: 2px solid #cdefff;
+  box-shadow: 0 0 0 4px rgba(0, 140, 186, 0.18);
+}
+
+.experience-summary__card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 140, 186, 0.6);
+  box-shadow: 0 14px 26px var(--shadow-color);
+}
+
+.experience-summary__card h3 {
+  color: #eaf4ff;
+  margin-bottom: 0.4rem;
+  line-height: 1.35;
+  font-size: 1.08rem;
+}
+
+.experience-summary__card p {
+  margin-bottom: 0.8rem;
+  color: #c8dbf3;
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+
+.experience-summary__impact {
+  margin-top: -0.1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: #8ed7ff;
+}
+
+.experience-summary__card ul {
+  padding-left: 1.1rem;
+}
+
+.experience-summary__card li {
+  margin-bottom: 0.45rem;
+  line-height: 1.45;
+  color: #b7d1ee;
+}
+
   .source-btn:hover {
     background: rgba(255, 255, 255, 0.1);
   }
@@ -57,6 +160,14 @@
     height: 3px;
     border-radius: 3px;
     background: linear-gradient(90deg, #008CBA, var(--color-primario));
+  }
+
+  .experience__section__intro {
+    text-align: center;
+    color: #c8dcf7;
+    margin: -0.7rem auto 1.4rem;
+    max-width: 760px;
+    line-height: 1.6;
   }
   
   .slide-container {
@@ -385,6 +496,38 @@
 
   /* Mejoras para móviles */
   @media only screen and (max-width: 767px) {
+    .experience-summary {
+      padding: 3rem 1rem 0;
+    }
+
+    .experience-summary__intro {
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .experience-summary__timeline {
+      padding-left: 0.6rem;
+    }
+
+    .experience-summary__timeline::before {
+      left: 0.25rem;
+    }
+
+    .experience-summary__card {
+      margin-left: 1.2rem;
+      padding: 0.95rem 1rem;
+    }
+
+    .experience-summary__card::before {
+      left: -1.15rem;
+      top: 1rem;
+    }
+
+    .experience__section__intro {
+      font-size: 0.95rem;
+      margin: -0.6rem auto 1.1rem;
+    }
+
     .botones {
       gap: 6px;
       padding: 0 8px;
