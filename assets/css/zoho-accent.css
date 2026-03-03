@@ -1,0 +1,353 @@
+:root {
+    --zoho-red: #e42527;
+    --zoho-blue: #1f66ff;
+    --zoho-green: #3aae3f;
+    --zoho-yellow: #f6bd16;
+    --zoho-red-soft: rgba(228, 37, 39, 0.2);
+    --zoho-blue-soft: rgba(31, 102, 255, 0.2);
+    --zoho-green-soft: rgba(58, 174, 63, 0.2);
+    --zoho-yellow-soft: rgba(246, 189, 22, 0.2);
+}
+
+[data-theme="dark"] {
+    --zoho-red-soft: rgba(228, 37, 39, 0.24);
+    --zoho-blue-soft: rgba(31, 102, 255, 0.26);
+    --zoho-green-soft: rgba(58, 174, 63, 0.22);
+    --zoho-yellow-soft: rgba(246, 189, 22, 0.22);
+}
+
+header > section > nav > ul > li > a::after {
+    background: linear-gradient(
+        90deg,
+        var(--zoho-red),
+        var(--zoho-blue),
+        var(--zoho-green),
+        var(--zoho-yellow)
+    );
+}
+
+.titular,
+.services,
+.experience-summary,
+.experience,
+.contact-section {
+    position: relative;
+    isolation: isolate;
+}
+
+.titular,
+.services,
+.experience-summary {
+    overflow: hidden;
+}
+
+.contact-section {
+    overflow-x: clip;
+}
+
+@supports not (overflow: clip) {
+    .contact-section {
+        overflow-x: hidden;
+    }
+}
+
+.titular > *,
+.services > *,
+.experience-summary > *,
+.experience > *,
+.contact-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+.titular::before,
+.titular::after,
+.services::before,
+.experience-summary::before,
+.contact-section::before {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.titular::before {
+    width: 360px;
+    height: 360px;
+    top: -180px;
+    right: -100px;
+    background:
+        radial-gradient(circle at 30% 35%, var(--zoho-red-soft), transparent 58%),
+        radial-gradient(circle at 70% 35%, var(--zoho-yellow-soft), transparent 62%);
+}
+
+.titular::after {
+    width: 380px;
+    height: 380px;
+    bottom: -220px;
+    left: -140px;
+    background:
+        radial-gradient(circle at 50% 40%, var(--zoho-blue-soft), transparent 60%),
+        radial-gradient(circle at 70% 70%, var(--zoho-green-soft), transparent 64%);
+}
+
+.title__media::before {
+    content: "";
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    top: -20px;
+    left: -20px;
+    border-radius: 18px;
+    background:
+        linear-gradient(135deg, rgba(228, 37, 39, 0.55), rgba(31, 102, 255, 0.55)),
+        linear-gradient(315deg, rgba(58, 174, 63, 0.45), rgba(246, 189, 22, 0.45));
+    box-shadow:
+        52px -6px 0 -14px rgba(31, 102, 255, 0.52),
+        -7px 52px 0 -14px rgba(58, 174, 63, 0.52),
+        56px 48px 0 -14px rgba(246, 189, 22, 0.52);
+    transform: rotate(-14deg);
+    opacity: 0.45;
+    filter: saturate(1.06);
+    pointer-events: none;
+}
+
+.hero__btn--primary {
+    position: relative;
+    overflow: hidden;
+    color: #eaf4ff;
+    border: 1px solid rgba(146, 214, 255, 0.44);
+    background: linear-gradient(145deg, rgba(8, 22, 45, 0.44), rgba(8, 22, 45, 0.24));
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.hero__btn--primary::after {
+    content: "";
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    bottom: 0;
+    height: 1px;
+    border-radius: 0 0 9px 9px;
+    background: linear-gradient(
+        90deg,
+        var(--zoho-red),
+        var(--zoho-blue) 38%,
+        var(--zoho-green) 70%,
+        var(--zoho-yellow)
+    );
+    opacity: 0.9;
+    pointer-events: none;
+    transition: height 0.25s ease, opacity 0.25s ease;
+}
+
+.hero__btn--primary:hover {
+    background: linear-gradient(145deg, rgba(8, 22, 45, 0.56), rgba(8, 22, 45, 0.35));
+    border-color: rgba(172, 226, 255, 0.62);
+}
+
+.hero__btn--primary:hover::after {
+    height: 2px;
+    opacity: 1;
+}
+
+.summary-modal__dialog::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 22px 22px 0 0;
+    background: linear-gradient(
+        90deg,
+        var(--zoho-red),
+        var(--zoho-blue),
+        var(--zoho-green),
+        var(--zoho-yellow)
+    );
+}
+
+.services::before {
+    inset: -90px -100px auto auto;
+    width: 420px;
+    height: 420px;
+    background:
+        radial-gradient(circle at 22% 24%, var(--zoho-red-soft), transparent 58%),
+        radial-gradient(circle at 78% 24%, var(--zoho-blue-soft), transparent 60%),
+        radial-gradient(circle at 42% 82%, var(--zoho-green-soft), transparent 62%),
+        radial-gradient(circle at 84% 74%, var(--zoho-yellow-soft), transparent 62%);
+    opacity: 0.8;
+}
+
+.services__card {
+    position: relative;
+    overflow: hidden;
+}
+
+.services__card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+}
+
+.services__card:nth-child(4n + 1)::after {
+    background: linear-gradient(90deg, var(--zoho-red), #f6703f);
+}
+
+.services__card:nth-child(4n + 2)::after {
+    background: linear-gradient(90deg, var(--zoho-blue), #4da6ff);
+}
+
+.services__card:nth-child(4n + 3)::after {
+    background: linear-gradient(90deg, var(--zoho-green), #7ddf57);
+}
+
+.services__card:nth-child(4n + 4)::after {
+    background: linear-gradient(90deg, var(--zoho-yellow), #ffd76c);
+}
+
+.services__card:nth-child(4n + 1) .services__icon {
+    background: rgba(228, 37, 39, 0.18);
+    border-color: rgba(228, 37, 39, 0.5);
+    color: #ffd6d7;
+}
+
+.services__card:nth-child(4n + 2) .services__icon {
+    background: rgba(31, 102, 255, 0.18);
+    border-color: rgba(31, 102, 255, 0.5);
+    color: #d9e6ff;
+}
+
+.services__card:nth-child(4n + 3) .services__icon {
+    background: rgba(58, 174, 63, 0.18);
+    border-color: rgba(58, 174, 63, 0.5);
+    color: #d7ffd4;
+}
+
+.services__card:nth-child(4n + 4) .services__icon {
+    background: rgba(246, 189, 22, 0.2);
+    border-color: rgba(246, 189, 22, 0.52);
+    color: #fff0c5;
+}
+
+.experience-summary::before {
+    width: 420px;
+    height: 420px;
+    top: -190px;
+    left: -160px;
+    background:
+        radial-gradient(circle at 34% 34%, var(--zoho-red-soft), transparent 58%),
+        radial-gradient(circle at 70% 30%, var(--zoho-yellow-soft), transparent 60%),
+        radial-gradient(circle at 62% 74%, var(--zoho-blue-soft), transparent 60%);
+    opacity: 0.7;
+}
+
+.experience-summary__timeline::before {
+    background: linear-gradient(
+        180deg,
+        var(--zoho-red),
+        var(--zoho-blue) 38%,
+        var(--zoho-green) 68%,
+        var(--zoho-yellow)
+    );
+}
+
+.experience-summary__card:nth-child(4n + 1)::before {
+    background: var(--zoho-red);
+    border-color: #ffd3d3;
+}
+
+.experience-summary__card:nth-child(4n + 2)::before {
+    background: var(--zoho-blue);
+    border-color: #d8e8ff;
+}
+
+.experience-summary__card:nth-child(4n + 3)::before {
+    background: var(--zoho-green);
+    border-color: #d7ffd4;
+}
+
+.experience-summary__card:nth-child(4n + 4)::before {
+    background: var(--zoho-yellow);
+    border-color: #fff2cb;
+}
+
+.experience__section__title::after,
+.services__title::after {
+    content: "";
+    display: block;
+    width: 118px;
+    height: 3px;
+    margin: 0.7rem auto 0;
+    border-radius: 3px;
+    background: linear-gradient(
+        90deg,
+        var(--zoho-red),
+        var(--zoho-blue),
+        var(--zoho-green),
+        var(--zoho-yellow)
+    );
+}
+
+.contact-section::before {
+    width: 340px;
+    height: 340px;
+    right: 0;
+    bottom: -120px;
+    transform: translateX(38%);
+    background:
+        radial-gradient(circle at 26% 30%, var(--zoho-blue-soft), transparent 58%),
+        radial-gradient(circle at 65% 28%, var(--zoho-red-soft), transparent 58%),
+        radial-gradient(circle at 50% 76%, var(--zoho-green-soft), transparent 60%),
+        radial-gradient(circle at 86% 62%, var(--zoho-yellow-soft), transparent 58%);
+    opacity: 0.48;
+}
+
+.contact__divider {
+    background: linear-gradient(
+        90deg,
+        var(--zoho-red),
+        var(--zoho-blue),
+        var(--zoho-green),
+        var(--zoho-yellow)
+    );
+}
+
+@media only screen and (max-width: 767px) {
+    .title__media::before {
+        width: 64px;
+        height: 64px;
+        border-radius: 14px;
+        top: -14px;
+        left: -14px;
+        box-shadow:
+            36px -4px 0 -12px rgba(31, 102, 255, 0.46),
+            -5px 34px 0 -12px rgba(58, 174, 63, 0.44),
+            38px 33px 0 -12px rgba(246, 189, 22, 0.44);
+    }
+
+    .titular::before,
+    .titular::after,
+    .services::before,
+    .experience-summary::before,
+    .contact-section::before {
+        opacity: 0.48;
+        transform: scale(0.76);
+        transform-origin: top right;
+    }
+
+    .hero__btn--primary::after {
+        left: 1px;
+        right: 1px;
+        height: 1px;
+    }
+
+    .contact-section::before {
+        transform: translateX(24%) scale(0.7);
+        opacity: 0.34;
+    }
+}

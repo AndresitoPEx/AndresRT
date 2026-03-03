@@ -6,13 +6,14 @@ class I18nManager {
             es: {
                 // Meta
                 title: 'Portafolio de Andrés Romo',
-                description: 'Portafolio profesional de Jorge Andrés Romo Turco - Zoho Developer & Desk Support',
+                description: 'Consultor freelance Zoho: implementación de CRM/Desk, automatizaciones con Deluge/COQL e integraciones para equipos comerciales y de soporte.',
 
                 // Loader
                 loading: 'Cargando portafolio...',
 
                 // Navigation
                 about: 'Sobre mí',
+                servicesNav: 'Servicios',
                 skills: 'Habilidades',
                 education: 'Formación',
                 experience: 'Experiencia',
@@ -25,8 +26,8 @@ class I18nManager {
                 languageToggle: 'Change to English',
 
                 // Hero
-                greeting: 'Optimizo Zoho CRM y Zoho Desk para mejorar tiempos de atención y operación.',
-                headline: 'Zoho Developer & Desk Support enfocado en automatización, soporte y experiencia del cliente.',
+                greeting: 'Implemento y optimizo Zoho para que tu equipo venda más, atienda mejor y pierda menos tiempo.',
+                headline: 'Zoho Developer & CRM Consultant freelance enfocado en automatización, integración y adopción del CRM.',
                 heroCtaExperience: 'Ver experiencia',
                 heroCtaContact: 'Contactar',
                 heroCtaSummary: 'Resumen ejecutivo',
@@ -34,12 +35,12 @@ class I18nManager {
                 // Executive summary
                 summaryEyebrow: 'Resumen rápido',
                 summaryTitle: 'Resumen Ejecutivo',
-                summarySubtitle: 'Perfil orientado a implementación, soporte y optimización continua de Zoho CRM y Zoho Desk en entornos empresariales.',
+                summarySubtitle: 'Consultor freelance orientado a implementación, soporte y optimización continua de Zoho CRM y Zoho Desk para equipos comerciales y de atención.',
                 summaryCloseAria: 'Cerrar resumen ejecutivo',
                 metricYearsValue: '+3',
                 metricYearsLabel: 'Años de experiencia profesional',
-                metricZohoValue: '3',
-                metricZohoLabel: 'Roles enfocados en Zoho CRM/Desk',
+                metricZohoValue: '11',
+                metricZohoLabel: 'Productos Zoho implementados y soportados',
                 metricScopeValue: 'LATAM + USA',
                 metricScopeLabel: 'Experiencia con partners y clientes finales',
                 metricLangValue: 'B2',
@@ -47,26 +48,42 @@ class I18nManager {
 
                 // About
                 aboutTitle: 'Sobre mí',
-                aboutText: 'Especialista en Zoho CRM y Zoho Desk con experiencia práctica en soporte técnico, gestión de tickets y automatización de procesos. He trabajado con Zoho Partners y empresas finales resolviendo incidencias, documentando soluciones y optimizando flujos para mejorar la atención al cliente.',
-                aboutChipSupport: 'Soporte técnico',
-                aboutChipAutomation: 'Automatización',
-                aboutChipProcesses: 'Mejora de procesos',
-                aboutChipCustomer: 'Atención al cliente',
+                aboutText: 'Trabajo con empresas que necesitan convertir Zoho en un sistema operativo comercial real: implemento CRM y Desk, automatizo procesos con Deluge y COQL, integro herramientas y capacito al equipo para asegurar adopción.',
+                aboutChipSupport: 'Implementación end-to-end',
+                aboutChipAutomation: 'Automatización con Deluge y COQL',
+                aboutChipProcesses: 'Integraciones API y Zoho Sign',
+                aboutChipCustomer: 'Soporte y capacitación',
+
+                // Services
+                servicesTitle: 'Servicios Freelance',
+                servicesSubtitle: 'Soluciones orientadas a resultados para ventas, soporte y operación.',
+                service1Title: 'Implementación Zoho',
+                service1Text: 'Configuración de Zoho CRM, Desk, SalesIQ, Books, Analytics, Flow, Forms, Inventory y Projects.',
+                service2Title: 'Automatización',
+                service2Text: 'Workflows, blueprints, validaciones y reportes automáticos con Deluge y COQL.',
+                service3Title: 'Integraciones',
+                service3Text: 'Conexión de Zoho con Zoho Sign, pasarelas de pago y APIs externas.',
+                service4Title: 'Bots y atención',
+                service4Text: 'Diseño de bots en Zoho SalesIQ integrados con CRM y Desk.',
+                service5Title: 'Soporte post-implementación',
+                service5Text: 'Resolución de incidencias, mantenimiento evolutivo y mejora continua.',
+                service6Title: 'Capacitación y documentación',
+                service6Text: 'Entrenamiento a usuarios y documentación técnica reutilizable para tu equipo.',
 
                 // Skills
-                skillsTitle: 'Habilidades Técnicas',
+                skillsTitle: 'Stack técnico Zoho y desarrollo',
                 skillZohoCrm: 'Zoho CRM',
                 skillZohoDesk: 'Zoho Desk',
                 skillSalesIQ: 'Zoho SalesIQ',
                 skillWorkflows: 'Workflows y Blueprints',
                 skillDelugeCoql: 'Deluge y COQL',
-                skillFlowIntegrations: 'Zoho Flow / Integraciones',
+                skillFlowIntegrations: 'Zoho Flow / APIs',
                 skillAnalytics: 'Zoho Analytics',
-                skillJsTs: 'JavaScript / TypeScript',
-                skillReactAngular: 'React / Angular',
-                skillNodeExpress: 'Node.js / Express',
-                skillDatabases: 'PostgreSQL / SQL Server',
-                skillGitGithub: 'Git / GitHub',
+                skillJsTs: 'Zoho Sign',
+                skillReactAngular: 'Zoho Books / Inventory',
+                skillNodeExpress: 'Zoho Forms / Projects',
+                skillDatabases: 'JavaScript / TypeScript',
+                skillGitGithub: 'Soporte y capacitación',
                 hobbiesTitle: 'Hobbies',
 
                 // Education
@@ -87,28 +104,28 @@ class I18nManager {
 
                 // Experience
                 experienceTitle: 'Experiencia Profesional',
-                experienceIntro: 'Implementación, soporte y optimización de procesos en Zoho CRM y Zoho Desk para clientes LATAM y USA.',
+                experienceIntro: 'Implementación, soporte y optimización del ecosistema Zoho para clientes de LATAM y USA.',
 
                 expInterRole: 'Zoho CRM & Desk Specialist / Support Consultant',
                 expInterCompany: 'InterConnecta - Zoho Premium Partner | Ago 2025 - Dic 2025 | Remoto',
-                expInterImpact: 'Impacto: mejora en tiempos de respuesta y continuidad del soporte.',
+                expInterImpact: 'Impacto: reducción de tiempos de respuesta y +30 soluciones técnicas documentadas.',
                 expInter1: 'Gestión diaria de tickets en Zoho Desk y soporte a usuarios finales.',
                 expInter2: 'Diagnóstico y resolución de incidencias en Zoho CRM y Zoho Desk.',
-                expInter3: 'Documentación de soluciones y escalamiento técnico cuando fue requerido.',
+                expInter3: 'Capacitación a usuarios finales para mejorar adopción y continuidad operativa.',
 
                 expSmfRole: 'Zoho Developer / CRM Support',
                 expSmfCompany: 'SMF360 - Zoho Partner (USA / LATAM) | Dic 2024 - Feb 2025 | Remoto',
-                expSmfImpact: 'Impacto: reducción de errores operativos al optimizar blueprints y workflows.',
-                expSmf1: 'Implementación y ajuste de blueprints, workflows, validaciones y automatizaciones.',
-                expSmf2: 'Desarrollo de bots en Zoho SalesIQ para atención y soporte.',
-                expSmf3: 'Uso de Deluge y COQL para consultas, validaciones y lógica de negocio.',
+                expSmfImpact: 'Impacto: menos tareas manuales y menor tasa de error operativo.',
+                expSmf1: 'Automatización de procesos con Deluge y COQL para eliminar tareas repetitivas.',
+                expSmf2: 'Desarrollo de bots en Zoho SalesIQ integrados con CRM y Desk.',
+                expSmf3: 'Optimización de blueprints y workflows para estandarizar operación.',
 
                 expCableRole: 'Zoho Developer',
                 expCableCompany: 'Cable Red Perú | Feb 2024 - Jun 2025 | Huancayo, Perú',
-                expCableImpact: 'Impacto: centralización comercial y adopción más efectiva del CRM.',
-                expCable1: 'Automatización de procesos comerciales en Zoho CRM.',
-                expCable2: 'Integración de Zoho SalesIQ, Zoho Desk y Zoho Sign con CRM.',
-                expCable3: 'Generación de reportes automáticos para el área comercial.',
+                expCableImpact: 'Impacto: centralización comercial y automatización del ciclo de contratos.',
+                expCable1: 'Implementación de Zoho SalesIQ integrado con CRM y Desk para ventas y soporte.',
+                expCable2: 'Automatización de contratos con Zoho Sign + CRM.',
+                expCable3: 'Centralización de información comercial y documental del equipo de ventas.',
 
                 expDeltaRole: 'Full Stack Developer',
                 expDeltaCompany: 'Delta Tactical Gear | May 2022 - Dic 2023 | Lima, Perú',
@@ -119,7 +136,7 @@ class I18nManager {
 
                 // Projects
                 projectsTitle: 'Proyectos destacados',
-                projectsIntro: 'Selección de proyectos de desarrollo web y frontend publicados en GitHub.',
+                projectsIntro: 'Proyectos enfocados en automatización de procesos, integraciones y desarrollo web aplicado a negocio.',
                 viewRepository: 'Ver repositorio',
                 viewDemo: 'Ver demo',
                 projectUpdatedLabel: 'Actualizado',
@@ -130,10 +147,10 @@ class I18nManager {
 
                 // Contact
                 contactTitle: 'Contacto',
-                contactSubtitle: '¿Buscas soporte Zoho o implementación CRM?',
-                contactAvailable: 'Disponible para proyectos y consultoría',
+                contactSubtitle: '¿Necesitas implementar Zoho, automatizar procesos o integrar herramientas?',
+                contactAvailable: 'Disponible para proyectos freelance de implementación y consultoría Zoho',
                 contactFormTitle: 'Envíame un mensaje',
-                contactText: 'Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.',
+                contactText: 'Cuéntame tu proceso actual y te propongo una solución clara, escalable y medible.',
                 contactNameLabel: 'Nombre completo',
                 contactEmailLabel: 'Correo electrónico',
                 contactSubjectLabel: 'Asunto',
@@ -144,7 +161,7 @@ class I18nManager {
                 contactEmailMe: 'Escríbeme',
                 contactWhatsApp: 'Chatear',
                 contactConnect: 'Conectar',
-                contactRole: 'Zoho Developer & Desk Support',
+                contactRole: 'Zoho Developer & CRM Consultant Freelance',
                 sendButton: 'Enviar mensaje',
                 sending: 'Enviando...',
                 contactSuccess: 'Mensaje enviado. Te contactaré pronto.',
@@ -171,13 +188,14 @@ class I18nManager {
             en: {
                 // Meta
                 title: 'Andrés Romo Portfolio',
-                description: 'Professional portfolio of Jorge Andrés Romo Turco - Zoho Developer & Desk Support',
+                description: 'Freelance Zoho consultant: CRM/Desk implementation, Deluge/COQL automation, and integrations for sales and support teams.',
 
                 // Loader
                 loading: 'Loading portfolio...',
 
                 // Navigation
                 about: 'About me',
+                servicesNav: 'Services',
                 skills: 'Skills',
                 education: 'Education',
                 experience: 'Experience',
@@ -190,8 +208,8 @@ class I18nManager {
                 languageToggle: 'Cambiar a Español',
 
                 // Hero
-                greeting: 'I optimize Zoho CRM and Zoho Desk to improve response times and operations.',
-                headline: 'Zoho Developer & Desk Support focused on automation, support, and customer experience.',
+                greeting: 'I implement and optimize Zoho so your team sells more, serves better, and wastes less time.',
+                headline: 'Freelance Zoho Developer & CRM Consultant focused on automation, integration, and CRM adoption.',
                 heroCtaExperience: 'View experience',
                 heroCtaContact: 'Contact',
                 heroCtaSummary: 'Executive summary',
@@ -199,12 +217,12 @@ class I18nManager {
                 // Executive summary
                 summaryEyebrow: 'Quick snapshot',
                 summaryTitle: 'Executive Summary',
-                summarySubtitle: 'Profile focused on implementation, support, and continuous optimization of Zoho CRM and Zoho Desk in business environments.',
+                summarySubtitle: 'Freelance consultant focused on implementation, support, and continuous optimization of Zoho CRM and Zoho Desk for sales and support teams.',
                 summaryCloseAria: 'Close executive summary',
                 metricYearsValue: '+3',
                 metricYearsLabel: 'Years of professional experience',
-                metricZohoValue: '3',
-                metricZohoLabel: 'Roles focused on Zoho CRM/Desk',
+                metricZohoValue: '11',
+                metricZohoLabel: 'Zoho products implemented and supported',
                 metricScopeValue: 'LATAM + USA',
                 metricScopeLabel: 'Experience with partners and end clients',
                 metricLangValue: 'B2',
@@ -212,26 +230,42 @@ class I18nManager {
 
                 // About
                 aboutTitle: 'About me',
-                aboutText: 'Zoho CRM and Zoho Desk specialist with hands-on experience in technical support, ticket management, and process automation. I have worked with Zoho Partners and end clients, resolving incidents, documenting solutions, and improving service workflows.',
-                aboutChipSupport: 'Technical Support',
-                aboutChipAutomation: 'Automation',
-                aboutChipProcesses: 'Process Improvement',
-                aboutChipCustomer: 'Customer Service',
+                aboutText: 'I work with companies that need to turn Zoho into a real commercial operating system: I implement CRM and Desk, automate processes with Deluge and COQL, integrate tools, and train teams to ensure adoption.',
+                aboutChipSupport: 'End-to-end implementation',
+                aboutChipAutomation: 'Deluge and COQL automation',
+                aboutChipProcesses: 'API and Zoho Sign integrations',
+                aboutChipCustomer: 'Support and training',
+
+                // Services
+                servicesTitle: 'Freelance Services',
+                servicesSubtitle: 'Result-driven solutions for sales, support, and operations.',
+                service1Title: 'Zoho Implementation',
+                service1Text: 'Setup of Zoho CRM, Desk, SalesIQ, Books, Analytics, Flow, Forms, Inventory, and Projects.',
+                service2Title: 'Automation',
+                service2Text: 'Workflows, blueprints, validations, and automated reports with Deluge and COQL.',
+                service3Title: 'Integrations',
+                service3Text: 'Connect Zoho with Zoho Sign, payment gateways, and external APIs.',
+                service4Title: 'Bots and support',
+                service4Text: 'Design of Zoho SalesIQ bots integrated with CRM and Desk.',
+                service5Title: 'Post-implementation support',
+                service5Text: 'Incident resolution, continuous improvement, and evolutionary maintenance.',
+                service6Title: 'Training and documentation',
+                service6Text: 'User onboarding and reusable technical documentation for your team.',
 
                 // Skills
-                skillsTitle: 'Technical Skills',
+                skillsTitle: 'Zoho and Development Stack',
                 skillZohoCrm: 'Zoho CRM',
                 skillZohoDesk: 'Zoho Desk',
                 skillSalesIQ: 'Zoho SalesIQ',
                 skillWorkflows: 'Workflows and Blueprints',
                 skillDelugeCoql: 'Deluge and COQL',
-                skillFlowIntegrations: 'Zoho Flow / Integrations',
+                skillFlowIntegrations: 'Zoho Flow / APIs',
                 skillAnalytics: 'Zoho Analytics',
-                skillJsTs: 'JavaScript / TypeScript',
-                skillReactAngular: 'React / Angular',
-                skillNodeExpress: 'Node.js / Express',
-                skillDatabases: 'PostgreSQL / SQL Server',
-                skillGitGithub: 'Git / GitHub',
+                skillJsTs: 'Zoho Sign',
+                skillReactAngular: 'Zoho Books / Inventory',
+                skillNodeExpress: 'Zoho Forms / Projects',
+                skillDatabases: 'JavaScript / TypeScript',
+                skillGitGithub: 'Support and training',
                 hobbiesTitle: 'Hobbies',
 
                 // Education
@@ -252,28 +286,28 @@ class I18nManager {
 
                 // Experience
                 experienceTitle: 'Professional Experience',
-                experienceIntro: 'Implementation, support, and process optimization in Zoho CRM and Zoho Desk for LATAM and USA clients.',
+                experienceIntro: 'Implementation, support, and optimization of the Zoho ecosystem for LATAM and USA clients.',
 
                 expInterRole: 'Zoho CRM & Desk Specialist / Support Consultant',
                 expInterCompany: 'InterConnecta - Zoho Premium Partner | Aug 2025 - Dec 2025 | Remote',
-                expInterImpact: 'Impact: improved response times and support continuity.',
+                expInterImpact: 'Impact: faster response times and 30+ reusable technical solutions documented.',
                 expInter1: 'Daily ticket management in Zoho Desk and end-user support.',
                 expInter2: 'Incident diagnosis and resolution in Zoho CRM and Zoho Desk.',
-                expInter3: 'Solution documentation and technical escalation when required.',
+                expInter3: 'End-user training to improve CRM adoption and operational continuity.',
 
                 expSmfRole: 'Zoho Developer / CRM Support',
                 expSmfCompany: 'SMF360 - Zoho Partner (USA / LATAM) | Dec 2024 - Feb 2025 | Remote',
-                expSmfImpact: 'Impact: reduced operational errors by optimizing blueprints and workflows.',
-                expSmf1: 'Implementation and tuning of blueprints, workflows, validations, and automations.',
-                expSmf2: 'Development of Zoho SalesIQ bots for support and customer service.',
-                expSmf3: 'Use of Deluge and COQL for queries, validations, and business logic.',
+                expSmfImpact: 'Impact: fewer manual tasks and lower operational error rates.',
+                expSmf1: 'Process automation with Deluge and COQL to eliminate repetitive manual work.',
+                expSmf2: 'Development of Zoho SalesIQ bots integrated with CRM and Desk.',
+                expSmf3: 'Blueprint and workflow optimization to standardize operations.',
 
                 expCableRole: 'Zoho Developer',
                 expCableCompany: 'Cable Red Perú | Feb 2024 - Jun 2025 | Huancayo, Peru',
-                expCableImpact: 'Impact: commercial information centralization and stronger CRM adoption.',
-                expCable1: 'Commercial process automation in Zoho CRM.',
-                expCable2: 'Integration of Zoho SalesIQ, Zoho Desk, and Zoho Sign with CRM.',
-                expCable3: 'Automated reporting for the sales area.',
+                expCableImpact: 'Impact: centralized sales operations and contract-cycle automation.',
+                expCable1: 'Implementation of Zoho SalesIQ integrated with CRM and Desk for sales and support.',
+                expCable2: 'Contract automation with Zoho Sign + CRM.',
+                expCable3: 'Centralization of sales and documentation data for the commercial team.',
 
                 expDeltaRole: 'Full Stack Developer',
                 expDeltaCompany: 'Delta Tactical Gear | May 2022 - Dec 2023 | Lima, Peru',
@@ -284,7 +318,7 @@ class I18nManager {
 
                 // Projects
                 projectsTitle: 'Featured Projects',
-                projectsIntro: 'Selection of web development and frontend projects published on GitHub.',
+                projectsIntro: 'Projects focused on process automation, integrations, and business-oriented web development.',
                 viewRepository: 'View repository',
                 viewDemo: 'View demo',
                 projectUpdatedLabel: 'Updated',
@@ -295,10 +329,10 @@ class I18nManager {
 
                 // Contact
                 contactTitle: 'Contact',
-                contactSubtitle: 'Need Zoho support or CRM implementation?',
-                contactAvailable: 'Available for projects and consulting',
+                contactSubtitle: 'Need Zoho implementation, process automation, or tool integrations?',
+                contactAvailable: 'Available for freelance Zoho implementation and consulting projects',
                 contactFormTitle: 'Send me a message',
-                contactText: 'Complete the form below and I will get back to you as soon as possible.',
+                contactText: 'Tell me about your current process and I will propose a clear, scalable, and measurable solution.',
                 contactNameLabel: 'Full name',
                 contactEmailLabel: 'Email address',
                 contactSubjectLabel: 'Subject',
@@ -309,7 +343,7 @@ class I18nManager {
                 contactEmailMe: 'Email me',
                 contactWhatsApp: 'Chat',
                 contactConnect: 'Connect',
-                contactRole: 'Zoho Developer & Desk Support',
+                contactRole: 'Freelance Zoho Developer & CRM Consultant',
                 sendButton: 'Send message',
                 sending: 'Sending...',
                 contactSuccess: 'Message sent. I will contact you soon.',

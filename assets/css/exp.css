@@ -28,6 +28,7 @@
   text-align: center;
   line-height: 1.6;
   color: #c8dcf7;
+  text-wrap: pretty;
 }
 
 .experience-summary__timeline {
@@ -93,6 +94,7 @@
   color: #c8dbf3;
   line-height: 1.45;
   font-size: 0.95rem;
+  text-wrap: pretty;
 }
 
 .experience-summary__impact {
@@ -103,13 +105,30 @@
 }
 
 .experience-summary__card ul {
-  padding-left: 1.1rem;
+  margin: 0;
+  padding-left: 0;
+  display: grid;
+  gap: 0.42rem;
 }
 
 .experience-summary__card li {
-  margin-bottom: 0.45rem;
+  position: relative;
+  margin-bottom: 0;
+  padding-left: 1rem;
   line-height: 1.45;
   color: #b7d1ee;
+}
+
+.experience-summary__card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.53rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(137, 213, 255, 0.88);
+  box-shadow: 0 0 0 3px rgba(0, 140, 186, 0.16);
 }
 
   .source-btn:hover {
@@ -526,6 +545,16 @@
     .experience__section__intro {
       font-size: 0.95rem;
       margin: -0.6rem auto 1.1rem;
+    }
+
+    .experience-summary__card li {
+      padding-left: 0.9rem;
+    }
+
+    .experience-summary__card li::before {
+      top: 0.5rem;
+      width: 5px;
+      height: 5px;
     }
 
     .botones {
