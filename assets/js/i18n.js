@@ -2,6 +2,10 @@
 class I18nManager {
     constructor() {
         this.currentLanguage = 'es';
+        this.resumeLinks = {
+            es: 'https://drive.google.com/uc?export=download&id=1jKX0yIV_BjUj5T172AEZlGlQ7MYMVnzj',
+            en: 'https://drive.google.com/uc?export=download&id=1qkJ3Ag4QJVk79lrqOX6cNcT1zjlP6gXz'
+        };
         this.translations = {
             es: {
                 // Meta
@@ -442,6 +446,7 @@ class I18nManager {
         });
 
         this.updateLanguageToggle(language);
+        this.updateResumeLinks(language, texts);
         this.updateFormValidations(texts);
 
         document.dispatchEvent(new CustomEvent('languageChanged', {
@@ -473,6 +478,15 @@ class I18nManager {
                 messageRequired: texts.messageRequired
             });
         }
+    }
+
+    updateResumeLinks(language, texts) {
+        const resumeLink = this.resumeLinks[language] || this.resumeLinks.es;
+        document.querySelectorAll('[data-resume-link]').forEach((link) => {
+            link.setAttribute('href', resumeLink);
+            link.setAttribute('title', texts.resume);
+            link.setAttribute('aria-label', texts.resume);
+        });
     }
 
     createLanguageToggleEffect() {
