@@ -182,7 +182,7 @@ class I18nManager {
                 swiperSlideLabel: 'Slide',
 
                 // Footer
-                footerText: 'JART Desarrollo y Tecnología',
+                footerText: 'Hecho con ❤️ + ☕ por Andrés RT',
                 footerYear: '2026'
             },
             en: {
@@ -364,7 +364,7 @@ class I18nManager {
                 swiperSlideLabel: 'Slide',
 
                 // Footer
-                footerText: 'JART Development and Technology',
+                footerText: 'Made with ❤️ + ☕ by Andrés RT',
                 footerYear: '2026'
             }
         };
