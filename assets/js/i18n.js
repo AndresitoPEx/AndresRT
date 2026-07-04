@@ -155,13 +155,13 @@ class I18nManager {
                 case1Solution: 'Script en Deluge con consulta COQL que reconcilia ambos sistemas: encuentra la carpeta de cada franquicia por coincidencia de sufijo (tolerante a mayúsculas y espacios), crea la subcarpeta estándar de documentación si falta y vincula la URL solo si el campo está vacío. Idempotente, con log de auditoría y pre-validación antes de tocar datos en producción.',
                 case1Result: '94 de 95 franquicias vinculadas automáticamente; la restante era una discrepancia real (carpeta nunca creada), detectada y reportada en vez de fallar en silencio. Re-ejecutable sin duplicar carpetas ni sobrescribir enlaces válidos.',
 
-                case2Client: 'Cable Red Perú · Telecomunicaciones',
+                case2Client: 'Empresa de telecomunicaciones · Perú',
                 case2Title: 'Automatización del ciclo de contratos con Zoho Sign',
                 case2Problem: 'Los contratos del equipo comercial se generaban y firmaban manualmente, con documentación dispersa: seguimiento lento, errores de versión y poca visibilidad del estado de cada contrato.',
                 case2Solution: 'Flujo CRM + Zoho Sign que genera el contrato desde el registro, lo envía a firma y actualiza el estado automáticamente, con la documentación comercial centralizada en el CRM; SalesIQ integrado con CRM y Desk para ventas y soporte.',
                 case2Result: 'Ciclo de contratos automatizado de extremo a extremo e información comercial y documental centralizada para todo el equipo de ventas.',
 
-                case3Client: 'SMF360 · Zoho Partner (USA / LATAM)',
+                case3Client: 'Clientes de partner Zoho · USA / LATAM',
                 case3Title: 'Bots de SalesIQ integrados con CRM y Desk',
                 case3Problem: 'La atención de primera línea y varios procesos internos dependían de tareas manuales repetitivas, con tiempos de respuesta variables y errores operativos.',
                 case3Solution: 'Bots en Zoho SalesIQ conectados con CRM y Desk para calificar y enrutar conversaciones, más automatizaciones en Deluge y COQL y optimización de blueprints para estandarizar la operación.',
@@ -366,13 +366,13 @@ class I18nManager {
                 case1Solution: 'A Deluge script with a COQL query that reconciles both systems: it matches each franchise to its WorkDrive folder by name suffix (case- and whitespace-tolerant), creates the standard documentation subfolder when missing, and links the URL only when the field is empty. Idempotent, with an audit log and a pre-validation pass before touching production data.',
                 case1Result: '94 of 95 franchises linked automatically; the remaining one was a genuine discrepancy (folder never created), detected and reported instead of failing silently. Safe to re-run without duplicating folders or overwriting valid links.',
 
-                case2Client: 'Cable Red Perú · Telecommunications',
+                case2Client: 'Telecommunications company · Peru',
                 case2Title: 'Contract-cycle automation with Zoho Sign',
                 case2Problem: 'Sales contracts were generated and signed manually, with documentation scattered across tools: slow follow-up, version errors, and little visibility into each contract\'s status.',
                 case2Solution: 'A CRM + Zoho Sign flow that generates the contract from the record, sends it for signature, and updates the status automatically, with sales documentation centralized in the CRM; SalesIQ integrated with CRM and Desk for sales and support.',
                 case2Result: 'End-to-end automated contract cycle and centralized sales and documentation data for the whole commercial team.',
 
-                case3Client: 'SMF360 · Zoho Partner (USA / LATAM)',
+                case3Client: 'Zoho partner clients · USA / LATAM',
                 case3Title: 'SalesIQ bots integrated with CRM and Desk',
                 case3Problem: 'First-line support and several internal processes relied on repetitive manual tasks, with inconsistent response times and operational errors.',
                 case3Solution: 'Zoho SalesIQ bots connected to CRM and Desk to qualify and route conversations, plus Deluge and COQL automations and blueprint optimization to standardize operations.',
