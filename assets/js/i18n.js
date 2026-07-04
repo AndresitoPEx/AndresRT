@@ -114,6 +114,13 @@ class I18nManager {
                 experienceTitle: 'Experiencia Profesional',
                 experienceIntro: 'Implementación, soporte y optimización del ecosistema Zoho para clientes de LATAM y USA.',
 
+                expMkRole: 'Zoho Developer',
+                expMkCompany: 'Marketeros Agencia - Zoho Partner | May 2026 - Actualidad | Remoto',
+                expMkImpact: 'Impacto: gestión multi-cliente del ecosistema Zoho con automatizaciones reutilizables entre proyectos.',
+                expMk1: 'Implementación de Zoho CRM y automatización con Deluge para múltiples clientes.',
+                expMk2: 'Diseño de blueprints, integraciones API y vinculación con WorkDrive adaptados al proceso de cada cliente.',
+                expMk3: 'Levantamiento de requerimientos y soporte técnico continuo como partner Zoho.',
+
                 expInterRole: 'Zoho CRM & Desk Specialist / Support Consultant',
                 expInterCompany: 'InterConnecta - Zoho Premium Partner | Ago 2025 - Dic 2025 | Remoto',
                 expInterImpact: 'Impacto: reducción de tiempos de respuesta y +30 soluciones técnicas documentadas.',
@@ -324,6 +331,13 @@ class I18nManager {
                 // Experience
                 experienceTitle: 'Professional Experience',
                 experienceIntro: 'Implementation, support, and optimization of the Zoho ecosystem for LATAM and USA clients.',
+
+                expMkRole: 'Zoho Developer',
+                expMkCompany: 'Marketeros Agencia - Zoho Partner | May 2026 - Present | Remote',
+                expMkImpact: 'Impact: multi-client management of the Zoho ecosystem with automations reused across projects.',
+                expMk1: 'Zoho CRM implementation and Deluge automation for multiple clients.',
+                expMk2: 'Blueprint design, API integrations, and WorkDrive linking tailored to each client\'s process.',
+                expMk3: 'Requirements gathering and ongoing technical support as a Zoho partner.',
 
                 expInterRole: 'Zoho CRM & Desk Specialist / Support Consultant',
                 expInterCompany: 'InterConnecta - Zoho Premium Partner | Aug 2025 - Dec 2025 | Remote',
