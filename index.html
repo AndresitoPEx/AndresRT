@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/hobbies.css">
     <link rel="stylesheet" href="assets/css/formacion.css">
     <link rel="stylesheet" href="assets/css/exp.css">
+    <link rel="stylesheet" href="assets/css/case-studies.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/contact-modern.css">
@@ -51,7 +52,7 @@
                     <li class="menu__list__item"><a href="#skills" data-i18n="skills">Habilidades</a></li>
                     <li class="menu__list__item"><a href="#formacion" data-i18n="education">Formación</a></li>
                     <li class="menu__list__item"><a href="#exp-prof" data-i18n="experience">Experiencia</a></li>
-                    <li class="menu__list__item"><a href="#exp" data-i18n="projects">Proyectos</a></li>
+                    <li class="menu__list__item"><a href="#casos" data-i18n="projects">Proyectos</a></li>
                     <li class="menu__list__item"><a href="#contacto" data-i18n="contact">Contacto</a></li>
                     <li class="menu__list__item mobile-cv"><a href="https://drive.google.com/file/d/1jKX0yIV_BjUj5T172AEZlGlQ7MYMVnzj/view?usp=sharing" data-resume-link
                             class="boton-cv-mobile" target="_blank"><i class="fa-solid fa-eye"></i> <span data-i18n="resume">Currículum</span></a></li>
@@ -82,14 +83,28 @@
     <section class="titular">
         <div class="title__div">
             <div class="title__container">
-                <h2 class="title__bio" data-i18n="greeting">Implemento y optimizo Zoho para que tu equipo venda más, atienda mejor y pierda menos tiempo.</h2>
-                <p class="title__subsection" data-i18n="headline">Zoho Developer & CRM Consultant freelance enfocado en automatización, integración y adopción del CRM.</p>
+                <h1 class="title__bio" data-i18n="greeting">Implemento y optimizo Zoho para que tu equipo venda más, atienda mejor y pierda menos tiempo.</h1>
+                <p class="title__subsection" data-i18n="headline">Andrés Romo · Zoho Developer | Automatización de Procesos | Especialista en Deluge & APIs</p>
                 <div class="hero__cta">
                     <a href="#exp-prof" class="hero__btn hero__btn--primary" data-i18n="heroCtaExperience">Ver experiencia</a>
                     <a href="#contacto" class="hero__btn hero__btn--secondary" data-i18n="heroCtaContact">Contactar</a>
                     <button type="button" class="hero__btn hero__btn--tertiary" data-summary-open aria-haspopup="dialog" aria-controls="summary-modal"
                         data-i18n="heroCtaSummary">Resumen ejecutivo</button>
                 </div>
+                <ul class="hero__metrics" role="list">
+                    <li class="hero__metrics-item">
+                        <span class="hero__metrics-value" data-i18n="metricYearsValue">+3</span>
+                        <span class="hero__metrics-label" data-i18n="metricYearsLabel">Años de experiencia profesional</span>
+                    </li>
+                    <li class="hero__metrics-item">
+                        <span class="hero__metrics-value" data-i18n="metricZohoValue">11</span>
+                        <span class="hero__metrics-label" data-i18n="metricZohoLabel">Productos Zoho implementados y soportados</span>
+                    </li>
+                    <li class="hero__metrics-item">
+                        <span class="hero__metrics-value" data-i18n="metricScopeValue">LATAM + USA</span>
+                        <span class="hero__metrics-label" data-i18n="metricScopeLabel">Experiencia con partners y clientes finales</span>
+                    </li>
+                </ul>
                 <ul class="title__network">
                     <!-- Pon los enlaces de tus redes sociales favoritas -->
                     <li class="title__network__item"><a href="https://github.com/AndresitoPEx" target="_blank" class="hover-lift"><i
@@ -194,79 +209,99 @@
 
     <!-- Sección de Skills -->
     <section class="skills" id="skills">
-        <h3 class="skills__title" data-i18n="skillsTitle">Habilidades Técnicas</h3>
-        <div class="skills__container">
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-users-gear skill__icon"></i>
-                    <li class="skills__name" data-i18n="skillZohoCrm">Zoho CRM</li>
-                </ul>
+        <h2 class="skills__title" data-i18n="skillsTitle">Stack técnico Zoho y desarrollo</h2>
+        <div class="skills__group">
+            <h3 class="skills__subtitle" data-i18n="skillsGroupZoho">Especialidad Zoho</h3>
+            <div class="skills__container">
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-solid fa-users-gear skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillZohoCrm">Zoho CRM</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-solid fa-ticket skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillZohoDesk">Zoho Desk</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-solid fa-robot skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillSalesIQ">Zoho SalesIQ</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-solid fa-file-signature skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillZohoSign">Zoho Sign</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-solid fa-file-invoice-dollar skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillZohoBooks">Zoho Books / Inventory</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-solid fa-rectangle-list skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillZohoForms">Zoho Forms / Projects</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-solid fa-chart-line skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillAnalytics">Zoho Analytics</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-solid fa-plug skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillFlowIntegrations">Zoho Flow / APIs</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-solid fa-sitemap skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillWorkflows">Workflows y Blueprints</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-solid fa-code skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillDelugeCoql">Deluge y COQL</li>
+                    </ul>
+                </div>
             </div>
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-ticket skill__icon"></i>
-                    <li class="skills__name" data-i18n="skillZohoDesk">Zoho Desk</li>
-                </ul>
-            </div>
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-robot skill__icon"></i>
-                    <li class="skills__name" data-i18n="skillSalesIQ">Zoho SalesIQ</li>
-                </ul>
-            </div>
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-sitemap skill__icon"></i>
-                    <li class="skills__name" data-i18n="skillWorkflows">Workflows y Blueprints</li>
-                </ul>
-            </div>
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-code skill__icon"></i>
-                    <li class="skills__name" data-i18n="skillDelugeCoql">Deluge y COQL</li>
-                </ul>
-            </div>
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-plug skill__icon"></i>
-                    <li class="skills__name" data-i18n="skillFlowIntegrations">Zoho Flow / Integraciones</li>
-                </ul>
-            </div>
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-chart-line skill__icon"></i>
-                    <li class="skills__name" data-i18n="skillAnalytics">Zoho Analytics</li>
-                </ul>
-            </div>
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-file-signature skill__icon"></i>
-                    <li class="skills__name" data-i18n="skillJsTs">JavaScript / TypeScript</li>
-                </ul>
-            </div>
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-book-open skill__icon"></i>
-                    <li class="skills__name" data-i18n="skillReactAngular">React / Angular</li>
-                </ul>
-            </div>
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-folder-open skill__icon"></i>
-                    <li class="skills__name" data-i18n="skillNodeExpress">Node.js / Express</li>
-                </ul>
-            </div>
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-brands fa-js skill__icon"></i>
-                    <li class="skills__name" data-i18n="skillDatabases">PostgreSQL / SQL Server</li>
-                </ul>
-            </div>
-            <div class="skills__box">
-                <ul>
-                    <i class="fa-solid fa-chalkboard-user skill__icon"></i>
-                    <li class="skills__name" data-i18n="skillGitGithub">Git / GitHub</li>
-                </ul>
+        </div>
+        <div class="skills__group skills__group--dev">
+            <h3 class="skills__subtitle" data-i18n="skillsGroupDev">Desarrollo web (complemento)</h3>
+            <div class="skills__container">
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-brands fa-js skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillDevJsTs">JavaScript / TypeScript</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-brands fa-react skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillDevReactNode">React / Node.js</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-solid fa-database skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillDevDatabases">PostgreSQL / SQL Server</li>
+                    </ul>
+                </div>
+                <div class="skills__box">
+                    <ul>
+                        <i class="fa-brands fa-git-alt skill__icon"></i>
+                        <li class="skills__name" data-i18n="skillDevGit">Git / GitHub</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -394,10 +429,91 @@
         </div>
     </section>
 
+    <!-- Sección de Casos de estudio -->
+    <section class="cases" id="casos" aria-labelledby="cases-title">
+        <h2 class="cases__title" id="cases-title" data-i18n="casesTitle">Casos de estudio</h2>
+        <p class="cases__intro" data-i18n="casesIntro">Problema, solución y resultado de automatizaciones reales construidas con Deluge, COQL y APIs del ecosistema Zoho.</p>
+        <div class="cases__grid">
+            <article class="cases__card">
+                <p class="cases__eyebrow" data-i18n="case1Client">Red de franquicias inmobiliarias · vía partner Zoho</p>
+                <h3 class="cases__card-title" data-i18n="case1Title">Sincronización CRM ↔ WorkDrive</h3>
+                <ul class="cases__tags" role="list">
+                    <li>Zoho CRM</li>
+                    <li>WorkDrive</li>
+                    <li>Deluge</li>
+                    <li>COQL</li>
+                </ul>
+                <dl class="cases__blocks">
+                    <div class="cases__block">
+                        <dt data-i18n="caseProblemLabel">Problema</dt>
+                        <dd data-i18n="case1Problem">Tras una migración, ~95 registros del módulo de Franquicias quedaron sin el enlace a su carpeta de documentación en WorkDrive: la automatización original solo corría para registros nuevos. Los agentes no tenían acceso directo a los documentos desde el CRM.</dd>
+                    </div>
+                    <div class="cases__block">
+                        <dt data-i18n="caseSolutionLabel">Solución</dt>
+                        <dd data-i18n="case1Solution">Script en Deluge con consulta COQL que reconcilia ambos sistemas: encuentra la carpeta de cada franquicia por coincidencia de sufijo (tolerante a mayúsculas y espacios), crea la subcarpeta estándar de documentación si falta y vincula la URL solo si el campo está vacío. Idempotente, con log de auditoría y pre-validación antes de tocar datos en producción.</dd>
+                    </div>
+                    <div class="cases__block cases__block--result">
+                        <dt data-i18n="caseResultLabel">Resultado</dt>
+                        <dd data-i18n="case1Result">94 de 95 franquicias vinculadas automáticamente; la restante era una discrepancia real (carpeta nunca creada), detectada y reportada en vez de fallar en silencio. Re-ejecutable sin duplicar carpetas ni sobrescribir enlaces válidos.</dd>
+                    </div>
+                </dl>
+            </article>
+            <article class="cases__card">
+                <p class="cases__eyebrow" data-i18n="case2Client">Cable Red Perú · Telecomunicaciones</p>
+                <h3 class="cases__card-title" data-i18n="case2Title">Automatización del ciclo de contratos con Zoho Sign</h3>
+                <ul class="cases__tags" role="list">
+                    <li>Zoho CRM</li>
+                    <li>Zoho Sign</li>
+                    <li>SalesIQ</li>
+                    <li>Deluge</li>
+                </ul>
+                <dl class="cases__blocks">
+                    <div class="cases__block">
+                        <dt data-i18n="caseProblemLabel">Problema</dt>
+                        <dd data-i18n="case2Problem">Los contratos del equipo comercial se generaban y firmaban manualmente, con documentación dispersa: seguimiento lento, errores de versión y poca visibilidad del estado de cada contrato.</dd>
+                    </div>
+                    <div class="cases__block">
+                        <dt data-i18n="caseSolutionLabel">Solución</dt>
+                        <dd data-i18n="case2Solution">Flujo CRM + Zoho Sign que genera el contrato desde el registro, lo envía a firma y actualiza el estado automáticamente, con la documentación comercial centralizada en el CRM; SalesIQ integrado con CRM y Desk para ventas y soporte.</dd>
+                    </div>
+                    <div class="cases__block cases__block--result">
+                        <dt data-i18n="caseResultLabel">Resultado</dt>
+                        <dd data-i18n="case2Result">Ciclo de contratos automatizado de extremo a extremo e información comercial y documental centralizada para todo el equipo de ventas.</dd>
+                    </div>
+                </dl>
+            </article>
+            <article class="cases__card">
+                <p class="cases__eyebrow" data-i18n="case3Client">SMF360 · Zoho Partner (USA / LATAM)</p>
+                <h3 class="cases__card-title" data-i18n="case3Title">Bots de SalesIQ integrados con CRM y Desk</h3>
+                <ul class="cases__tags" role="list">
+                    <li>SalesIQ</li>
+                    <li>Zoho CRM</li>
+                    <li>Zoho Desk</li>
+                    <li>Deluge</li>
+                    <li>COQL</li>
+                </ul>
+                <dl class="cases__blocks">
+                    <div class="cases__block">
+                        <dt data-i18n="caseProblemLabel">Problema</dt>
+                        <dd data-i18n="case3Problem">La atención de primera línea y varios procesos internos dependían de tareas manuales repetitivas, con tiempos de respuesta variables y errores operativos.</dd>
+                    </div>
+                    <div class="cases__block">
+                        <dt data-i18n="caseSolutionLabel">Solución</dt>
+                        <dd data-i18n="case3Solution">Bots en Zoho SalesIQ conectados con CRM y Desk para calificar y enrutar conversaciones, más automatizaciones en Deluge y COQL y optimización de blueprints para estandarizar la operación.</dd>
+                    </div>
+                    <div class="cases__block cases__block--result">
+                        <dt data-i18n="caseResultLabel">Resultado</dt>
+                        <dd data-i18n="case3Result">Menos tareas manuales, menor tasa de error operativo y una operación estandarizada sobre blueprints y workflows.</dd>
+                    </div>
+                </dl>
+            </article>
+        </div>
+    </section>
+
     <!-- Sección de Proyectos -->
     <section class="experience" id="exp" aria-labelledby="exp-title">
-        <h2 class="experience__section__title" id="exp-title" data-i18n="projectsTitle">Proyectos destacados</h2>
-        <p class="experience__section__intro" data-i18n="projectsIntro">Proyectos enfocados en automatización de procesos, integraciones y desarrollo web aplicado a negocio.</p>
+        <h2 class="experience__section__title" id="exp-title" data-i18n="projectsTitle">Proyectos de desarrollo web</h2>
+        <p class="experience__section__intro" data-i18n="projectsIntro">Proyectos personales y de aprendizaje construidos con JavaScript, React y Node.js.</p>
         <div class="slide-container swiper">
             <div class="slide-content">
                 <div class="card-wrapper swiper-wrapper" role="list" aria-live="polite">

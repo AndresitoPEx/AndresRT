@@ -32,7 +32,7 @@ Everything lives in `index.html` plus per-feature files under `assets/css/` and 
 
 CSS is one file per section (`header.css`, `titular.css`, `services.css`, `exp.css`, `summary.css`, `contact-modern.css`, …), each linked from `<head>`. Base variables and resets live in `base.css` / `reset.css`; `zoho-accent.css` is a large overlay stylesheet applying the Zoho-inspired visual identity across all sections and loads last.
 
-Page sections in order: hero (`titular` + summary modal), `#sobre-mi`, `#servicios`, `#skills`, `#formacion`, `#exp-prof` (work experience), `#exp` (GitHub projects carousel), `#contacto`, footer.
+Page sections in order: hero (`titular` + summary modal + metrics strip), `#sobre-mi`, `#servicios`, `#skills` (two tiers: Zoho specialty + complementary web dev), `#formacion`, `#exp-prof` (work experience), `#casos` (hand-written Zoho case studies — problem/solution/result, styled by `case-studies.css`; the nav "Proyectos" item points here), `#exp` (GitHub projects carousel, demoted to secondary), `#contacto`, footer.
 
 ## Git
 

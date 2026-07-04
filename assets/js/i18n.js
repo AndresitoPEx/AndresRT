@@ -31,7 +31,7 @@ class I18nManager {
 
                 // Hero
                 greeting: 'Implemento y optimizo Zoho para que tu equipo venda más, atienda mejor y pierda menos tiempo.',
-                headline: 'Zoho Developer & CRM Consultant freelance enfocado en automatización, integración y adopción del CRM.',
+                headline: 'Andrés Romo · Zoho Developer | Automatización de Procesos | Especialista en Deluge & APIs',
                 heroCtaExperience: 'Ver experiencia',
                 heroCtaContact: 'Contactar',
                 heroCtaSummary: 'Resumen ejecutivo',
@@ -76,18 +76,22 @@ class I18nManager {
 
                 // Skills
                 skillsTitle: 'Stack técnico Zoho y desarrollo',
+                skillsGroupZoho: 'Especialidad Zoho',
+                skillsGroupDev: 'Desarrollo web (complemento)',
                 skillZohoCrm: 'Zoho CRM',
                 skillZohoDesk: 'Zoho Desk',
                 skillSalesIQ: 'Zoho SalesIQ',
+                skillZohoSign: 'Zoho Sign',
+                skillZohoBooks: 'Zoho Books / Inventory',
+                skillZohoForms: 'Zoho Forms / Projects',
+                skillAnalytics: 'Zoho Analytics',
+                skillFlowIntegrations: 'Zoho Flow / APIs',
                 skillWorkflows: 'Workflows y Blueprints',
                 skillDelugeCoql: 'Deluge y COQL',
-                skillFlowIntegrations: 'Zoho Flow / APIs',
-                skillAnalytics: 'Zoho Analytics',
-                skillJsTs: 'Zoho Sign',
-                skillReactAngular: 'Zoho Books / Inventory',
-                skillNodeExpress: 'Zoho Forms / Projects',
-                skillDatabases: 'JavaScript / TypeScript',
-                skillGitGithub: 'Soporte y capacitación',
+                skillDevJsTs: 'JavaScript / TypeScript',
+                skillDevReactNode: 'React / Node.js',
+                skillDevDatabases: 'PostgreSQL / SQL Server',
+                skillDevGit: 'Git / GitHub',
                 hobbiesTitle: 'Hobbies',
 
                 // Education
@@ -138,9 +142,34 @@ class I18nManager {
                 expDelta2: 'Backend con Node.js, Express, Prisma y PostgreSQL.',
                 expDelta3: 'Automatización de reportes de ventas e integración de pagos.',
 
+                // Case studies
+                casesTitle: 'Casos de estudio',
+                casesIntro: 'Problema, solución y resultado de automatizaciones reales construidas con Deluge, COQL y APIs del ecosistema Zoho.',
+                caseProblemLabel: 'Problema',
+                caseSolutionLabel: 'Solución',
+                caseResultLabel: 'Resultado',
+
+                case1Client: 'Red de franquicias inmobiliarias · vía partner Zoho',
+                case1Title: 'Sincronización CRM ↔ WorkDrive',
+                case1Problem: 'Tras una migración, ~95 registros del módulo de Franquicias quedaron sin el enlace a su carpeta de documentación en WorkDrive: la automatización original solo corría para registros nuevos. Los agentes no tenían acceso directo a los documentos desde el CRM.',
+                case1Solution: 'Script en Deluge con consulta COQL que reconcilia ambos sistemas: encuentra la carpeta de cada franquicia por coincidencia de sufijo (tolerante a mayúsculas y espacios), crea la subcarpeta estándar de documentación si falta y vincula la URL solo si el campo está vacío. Idempotente, con log de auditoría y pre-validación antes de tocar datos en producción.',
+                case1Result: '94 de 95 franquicias vinculadas automáticamente; la restante era una discrepancia real (carpeta nunca creada), detectada y reportada en vez de fallar en silencio. Re-ejecutable sin duplicar carpetas ni sobrescribir enlaces válidos.',
+
+                case2Client: 'Cable Red Perú · Telecomunicaciones',
+                case2Title: 'Automatización del ciclo de contratos con Zoho Sign',
+                case2Problem: 'Los contratos del equipo comercial se generaban y firmaban manualmente, con documentación dispersa: seguimiento lento, errores de versión y poca visibilidad del estado de cada contrato.',
+                case2Solution: 'Flujo CRM + Zoho Sign que genera el contrato desde el registro, lo envía a firma y actualiza el estado automáticamente, con la documentación comercial centralizada en el CRM; SalesIQ integrado con CRM y Desk para ventas y soporte.',
+                case2Result: 'Ciclo de contratos automatizado de extremo a extremo e información comercial y documental centralizada para todo el equipo de ventas.',
+
+                case3Client: 'SMF360 · Zoho Partner (USA / LATAM)',
+                case3Title: 'Bots de SalesIQ integrados con CRM y Desk',
+                case3Problem: 'La atención de primera línea y varios procesos internos dependían de tareas manuales repetitivas, con tiempos de respuesta variables y errores operativos.',
+                case3Solution: 'Bots en Zoho SalesIQ conectados con CRM y Desk para calificar y enrutar conversaciones, más automatizaciones en Deluge y COQL y optimización de blueprints para estandarizar la operación.',
+                case3Result: 'Menos tareas manuales, menor tasa de error operativo y una operación estandarizada sobre blueprints y workflows.',
+
                 // Projects
-                projectsTitle: 'Proyectos destacados',
-                projectsIntro: 'Proyectos enfocados en automatización de procesos, integraciones y desarrollo web aplicado a negocio.',
+                projectsTitle: 'Proyectos de desarrollo web',
+                projectsIntro: 'Proyectos personales y de aprendizaje construidos con JavaScript, React y Node.js.',
                 viewRepository: 'Ver repositorio',
                 viewDemo: 'Ver demo',
                 projectUpdatedLabel: 'Actualizado',
@@ -213,7 +242,7 @@ class I18nManager {
 
                 // Hero
                 greeting: 'I implement and optimize Zoho so your team sells more, serves better, and wastes less time.',
-                headline: 'Freelance Zoho Developer & CRM Consultant focused on automation, integration, and CRM adoption.',
+                headline: 'Andrés Romo · Zoho Developer | Process Automation | Deluge & APIs Specialist',
                 heroCtaExperience: 'View experience',
                 heroCtaContact: 'Contact',
                 heroCtaSummary: 'Executive summary',
@@ -258,18 +287,22 @@ class I18nManager {
 
                 // Skills
                 skillsTitle: 'Zoho and Development Stack',
+                skillsGroupZoho: 'Zoho Specialty',
+                skillsGroupDev: 'Web Development (complementary)',
                 skillZohoCrm: 'Zoho CRM',
                 skillZohoDesk: 'Zoho Desk',
                 skillSalesIQ: 'Zoho SalesIQ',
+                skillZohoSign: 'Zoho Sign',
+                skillZohoBooks: 'Zoho Books / Inventory',
+                skillZohoForms: 'Zoho Forms / Projects',
+                skillAnalytics: 'Zoho Analytics',
+                skillFlowIntegrations: 'Zoho Flow / APIs',
                 skillWorkflows: 'Workflows and Blueprints',
                 skillDelugeCoql: 'Deluge and COQL',
-                skillFlowIntegrations: 'Zoho Flow / APIs',
-                skillAnalytics: 'Zoho Analytics',
-                skillJsTs: 'Zoho Sign',
-                skillReactAngular: 'Zoho Books / Inventory',
-                skillNodeExpress: 'Zoho Forms / Projects',
-                skillDatabases: 'JavaScript / TypeScript',
-                skillGitGithub: 'Support and training',
+                skillDevJsTs: 'JavaScript / TypeScript',
+                skillDevReactNode: 'React / Node.js',
+                skillDevDatabases: 'PostgreSQL / SQL Server',
+                skillDevGit: 'Git / GitHub',
                 hobbiesTitle: 'Hobbies',
 
                 // Education
@@ -320,9 +353,34 @@ class I18nManager {
                 expDelta2: 'Backend development with Node.js, Express, Prisma, and PostgreSQL.',
                 expDelta3: 'Sales report automation and payment integration.',
 
+                // Case studies
+                casesTitle: 'Case Studies',
+                casesIntro: 'Problem, solution, and result from real automations built with Deluge, COQL, and Zoho ecosystem APIs.',
+                caseProblemLabel: 'Problem',
+                caseSolutionLabel: 'Solution',
+                caseResultLabel: 'Result',
+
+                case1Client: 'Real-estate franchise network · via Zoho partner',
+                case1Title: 'CRM ↔ WorkDrive sync',
+                case1Problem: 'After a migration, ~95 records in the Franchises module were missing the link to their WorkDrive documentation folder — the original automation only ran for newly created records. Agents had no direct access to the documents from the CRM.',
+                case1Solution: 'A Deluge script with a COQL query that reconciles both systems: it matches each franchise to its WorkDrive folder by name suffix (case- and whitespace-tolerant), creates the standard documentation subfolder when missing, and links the URL only when the field is empty. Idempotent, with an audit log and a pre-validation pass before touching production data.',
+                case1Result: '94 of 95 franchises linked automatically; the remaining one was a genuine discrepancy (folder never created), detected and reported instead of failing silently. Safe to re-run without duplicating folders or overwriting valid links.',
+
+                case2Client: 'Cable Red Perú · Telecommunications',
+                case2Title: 'Contract-cycle automation with Zoho Sign',
+                case2Problem: 'Sales contracts were generated and signed manually, with documentation scattered across tools: slow follow-up, version errors, and little visibility into each contract\'s status.',
+                case2Solution: 'A CRM + Zoho Sign flow that generates the contract from the record, sends it for signature, and updates the status automatically, with sales documentation centralized in the CRM; SalesIQ integrated with CRM and Desk for sales and support.',
+                case2Result: 'End-to-end automated contract cycle and centralized sales and documentation data for the whole commercial team.',
+
+                case3Client: 'SMF360 · Zoho Partner (USA / LATAM)',
+                case3Title: 'SalesIQ bots integrated with CRM and Desk',
+                case3Problem: 'First-line support and several internal processes relied on repetitive manual tasks, with inconsistent response times and operational errors.',
+                case3Solution: 'Zoho SalesIQ bots connected to CRM and Desk to qualify and route conversations, plus Deluge and COQL automations and blueprint optimization to standardize operations.',
+                case3Result: 'Fewer manual tasks, a lower operational error rate, and operations standardized on blueprints and workflows.',
+
                 // Projects
-                projectsTitle: 'Featured Projects',
-                projectsIntro: 'Projects focused on process automation, integrations, and business-oriented web development.',
+                projectsTitle: 'Web Development Projects',
+                projectsIntro: 'Personal and learning projects built with JavaScript, React, and Node.js.',
                 viewRepository: 'View repository',
                 viewDemo: 'View demo',
                 projectUpdatedLabel: 'Updated',
