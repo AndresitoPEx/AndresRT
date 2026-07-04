@@ -34,10 +34,6 @@ CSS is one file per section (`header.css`, `titular.css`, `services.css`, `exp.c
 
 Page sections in order: hero (`titular` + summary modal), `#sobre-mi`, `#servicios`, `#skills`, `#formacion`, `#exp-prof` (work experience), `#exp` (GitHub projects carousel), `#contacto`, footer.
 
-## Dead files
-
-Several files in `assets/` are unused (not linked from `index.html`): `enviar-formulario.js`, `exp-filters.js`, `exp-filters-simple.js`, `project-toggle.js`, `project-toggle-simple.js`, `contacto.css`, and the empty files `theme-manager.js`, `experience-tabs.js`, `dark-theme.css`. The live contact/theme logic is in `contact-modern.js` / `theme-toggle.js` — don't confuse them with these leftovers.
-
 ## Git
 
 The default branch is `master` and pushing to it deploys to production (see above). Commit messages mix Spanish and conventional-commit English.
