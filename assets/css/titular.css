@@ -146,8 +146,8 @@
     border-radius: 10px;
     border: 1px solid rgba(160, 224, 255, 0.28);
     background: rgba(13, 26, 54, 0.4);
+    flex: 1 1 150px;
     min-width: 150px;
-    max-width: 220px;
 }
 
 .hero__metrics-value {

@@ -13,26 +13,48 @@
 
 /* ---------- Estructural (ambos temas) ---------- */
 
-/* Hero sin foto grande: una sola columna de contenido */
-.title__div {
-    grid-template-columns: minmax(0, 1fr);
+/* Hero: foto como complemento en tarjeta con marco, texto protagonista */
+.title__media {
+    justify-self: end;
+    width: min(100%, 300px);
+    padding: 0.8rem;
+    border: 1px solid var(--senior-line);
+    border-radius: 16px;
+    background: var(--senior-surface);
+    box-shadow: none;
+    overflow: visible;
 }
 
-.hero__ident {
+.title__media::after {
+    display: none;
+}
+
+.title__profile {
+    width: 100%;
+    max-width: none;
+    border-radius: 10px;
+    opacity: 1;
+    filter: none;
+}
+
+.title__media-caption {
     display: flex;
-    align-items: center;
-    gap: 0.65rem;
-    margin: 0 0 1.1rem;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin: 0.7rem 0.15rem 0;
+}
+
+.title__media-name {
     font-size: 0.95rem;
     font-weight: 500;
+    color: var(--senior-text);
 }
 
-.hero__avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid rgba(140, 180, 220, 0.4);
+.title__media-role {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    color: var(--senior-text-soft);
 }
 
 /* Ritmo vertical y anchos consistentes entre secciones */
@@ -558,12 +580,9 @@ html:not([data-theme="dark"]) .boton-cv-mobile {
 }
 
 /* --- Hero --- */
-html:not([data-theme="dark"]) .hero__ident {
-    color: #475569;
-}
-
-html:not([data-theme="dark"]) .hero__avatar {
-    border-color: rgba(15, 23, 42, 0.12);
+html:not([data-theme="dark"]) .title__media {
+    background: #FFFFFF;
+    border-color: rgba(15, 23, 42, 0.1);
 }
 
 html:not([data-theme="dark"]) .title__bio {
