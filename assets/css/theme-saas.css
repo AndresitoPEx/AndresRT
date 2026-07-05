@@ -376,6 +376,124 @@
     width: min(1020px, 100%);
 }
 
+/* Proyectos de desarrollo web: grilla estática estilo pinned repos */
+.repo-grid {
+    width: min(1020px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.1rem;
+}
+
+.repo-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--senior-line);
+    border-radius: 12px;
+    padding: 1.15rem 1.2rem;
+    background: var(--senior-surface);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.repo-card:hover {
+    border-color: var(--senior-line-strong);
+    transform: translateY(-2px);
+}
+
+.repo-card__head {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.55rem;
+}
+
+.repo-card__glyph {
+    color: var(--senior-text-soft);
+    font-size: 0.95rem;
+}
+
+.repo-card__name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--senior-text);
+    margin: 0;
+}
+
+.repo-card__desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--senior-text-soft);
+    margin: 0 0 1rem;
+}
+
+.repo-card__foot {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+}
+
+.repo-card__lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+    color: var(--senior-text-soft);
+}
+
+.repo-card__lang-dot {
+    flex: 0 0 auto;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.repo-card__links {
+    display: inline-flex;
+    gap: 0.35rem;
+}
+
+.repo-card__link {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    color: var(--senior-text-soft);
+    border: 1px solid var(--senior-line);
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.repo-card__link:hover {
+    color: var(--senior-text);
+    border-color: var(--senior-line-strong);
+}
+
+.repo-grid .github-loading,
+.repo-grid .github-error {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 1.5rem 0;
+    color: var(--senior-text-soft);
+}
+
+@media only screen and (max-width: 1100px) {
+    .repo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .repo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .academic__grid {
         grid-template-columns: 1fr;
@@ -694,30 +812,38 @@ html:not([data-theme="dark"]) .cases__block--result > dd {
     color: #0F172A;
 }
 
-/* --- Proyectos (carrusel GitHub) --- */
-html:not([data-theme="dark"]) .card .name {
+/* --- Proyectos (grilla GitHub) --- */
+html:not([data-theme="dark"]) .repo-card {
+    background: #FFFFFF;
+    border-color: rgba(15, 23, 42, 0.1);
+}
+
+html:not([data-theme="dark"]) .repo-card:hover {
+    border-color: rgba(15, 23, 42, 0.22);
+}
+
+html:not([data-theme="dark"]) .repo-card__name {
     color: #0F172A;
 }
 
-html:not([data-theme="dark"]) .card .description {
+html:not([data-theme="dark"]) .repo-card__desc {
     color: #475569;
 }
 
-html:not([data-theme="dark"]) .project-meta,
-html:not([data-theme="dark"]) .card .stars,
-html:not([data-theme="dark"]) .card .updated {
+html:not([data-theme="dark"]) .repo-card__lang,
+html:not([data-theme="dark"]) .repo-card__glyph {
     color: #64748B;
 }
 
-html:not([data-theme="dark"]) .tech-badge {
-    background: #226DB4;
-    color: #FFFFFF;
+html:not([data-theme="dark"]) .repo-card__link {
+    color: #64748B;
+    border-color: rgba(15, 23, 42, 0.14);
 }
 
-html:not([data-theme="dark"]) .card .button,
-html:not([data-theme="dark"]) .card .button a {
-    background: #226DB4;
-    color: #FFFFFF;
+html:not([data-theme="dark"]) .repo-card__link:hover {
+    color: #226DB4;
+    border-color: rgba(34, 109, 180, 0.5);
+    background: #F8FAFC;
 }
 
 /* --- Resumen ejecutivo (modal) --- */
