@@ -35,13 +35,90 @@
     border: 2px solid rgba(140, 180, 220, 0.4);
 }
 
-.about__photo {
-    width: 116px;
-    height: 116px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto 1.5rem;
-    border: 3px solid rgba(140, 180, 220, 0.35);
+/* Ritmo vertical y anchos consistentes entre secciones */
+.about,
+.services,
+.skills,
+.academic,
+.experience-summary,
+.cases,
+.experience {
+    padding: 4.75rem 2rem;
+}
+
+.contact-section {
+    padding: 4.75rem 0;
+}
+
+.titular {
+    padding: 4.2rem 2rem 3.6rem;
+}
+
+.title__div {
+    width: min(1020px, 100%);
+}
+
+.about__title,
+.services__title,
+.skills__title,
+.academic__title,
+.experience-summary__title,
+.cases__title,
+.experience__section__title {
+    font-size: clamp(1.7rem, 2.4vw, 2.05rem);
+    margin: 0 0 0.85rem;
+}
+
+.skills__title,
+.academic__title {
+    margin-bottom: 2.2rem;
+}
+
+.services__subtitle,
+.experience-summary__intro,
+.cases__intro,
+.experience__section__intro {
+    max-width: 720px;
+    margin: 0 auto 2.6rem;
+}
+
+.skills__group {
+    width: min(1020px, 100%);
+}
+
+.skills__group .skills__container {
+    width: 100%;
+}
+
+.cases__grid {
+    width: min(1020px, 100%);
+}
+
+@media only screen and (max-width: 767px) {
+    .about,
+    .services,
+    .skills,
+    .academic,
+    .experience-summary,
+    .cases,
+    .experience {
+        padding: 3.4rem 1rem;
+    }
+
+    .contact-section {
+        padding: 3.4rem 0;
+    }
+}
+
+/* Contacto sin foto: recupera el punto de disponibilidad */
+.contact__status .status-dot {
+    display: inline-block;
+}
+
+/* La banda de chips de About no debe desbordar en anchos intermedios */
+.about__meta {
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
 /* Detalle terminal: métricas y labels de casos en mono */
@@ -152,8 +229,7 @@ html:not([data-theme="dark"]) .hero__ident {
     color: #475569;
 }
 
-html:not([data-theme="dark"]) .hero__avatar,
-html:not([data-theme="dark"]) .about__photo {
+html:not([data-theme="dark"]) .hero__avatar {
     border-color: rgba(15, 23, 42, 0.12);
 }
 
@@ -234,6 +310,11 @@ html:not([data-theme="dark"]) .contact__main-title {
 }
 
 /* --- Sobre mí --- */
+html:not([data-theme="dark"]) .about__divider {
+    background: #226DB4;
+    height: 3px;
+}
+
 html:not([data-theme="dark"]) .about__paragraph {
     color: #475569;
 }
