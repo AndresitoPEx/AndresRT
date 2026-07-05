@@ -2,7 +2,8 @@
 class ThemeManager {
     constructor() {
         this.themeToggle = document.getElementById('theme-toggle');
-        this.currentTheme = this.getStoredTheme() || this.getSystemTheme();
+        // Diseño claro primero: sin preferencia guardada, el sitio abre en claro
+        this.currentTheme = this.getStoredTheme() || 'light';
         this.init();
     }
 
@@ -106,17 +107,8 @@ class ThemeManager {
     }
 
     watchSystemTheme() {
-        if (window.matchMedia) {
-            const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-            
-            mediaQuery.addListener((e) => {
-                // Solo cambiar si no hay preferencia guardada
-                if (!this.getStoredTheme()) {
-                    const systemTheme = e.matches ? 'dark' : 'light';
-                    this.applyTheme(systemTheme);
-                }
-            });
-        }
+        // Con diseño claro por defecto ya no seguimos el tema del sistema;
+        // el usuario elige con el toggle y su preferencia persiste.
     }
 
     // Método público para forzar un tema
@@ -167,13 +159,11 @@ document.addEventListener('DOMContentLoaded', () => {
     window.themeManager = new ThemeManager();
 });
 
-// Aplicar tema inmediatamente para evitar flash
+// Aplicar tema inmediatamente para evitar flash (claro por defecto)
 (function() {
     const stored = localStorage.getItem('preferred-theme');
-    const system = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    const theme = stored || system;
-    
-    if (theme === 'dark') {
+
+    if (stored === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
     }
 })();

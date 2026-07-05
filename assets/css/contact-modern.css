@@ -3,7 +3,7 @@
     padding: 6rem 0;
     background: var(--color-de-fondo); /* Mantener fondo acorde al proyecto (no blanco en modo claro) */
     position: relative;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 [data-theme="dark"] .contact-section {
@@ -75,7 +75,7 @@ html:not([data-theme="dark"]) .form__textarea:focus {
     color: var(--text-primary);
     margin-bottom: 0.5rem;
     letter-spacing: -0.02em;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .contact__subtitle {
@@ -83,7 +83,7 @@ html:not([data-theme="dark"]) .form__textarea:focus {
     color: var(--text-cuaternario);
     margin-bottom: 2rem;
     font-weight: 400;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .contact__divider {
@@ -145,7 +145,7 @@ html:not([data-theme="dark"]) .form__textarea:focus {
     margin-top: 1rem;
     font-size: 0.9rem;
     color: var(--text-cuaternario);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .status-dot {
@@ -166,14 +166,14 @@ html:not([data-theme="dark"]) .form__textarea:focus {
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 0.5rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .contact__role {
     color: var(--text-cuaternario);
     font-weight: 500;
     margin-bottom: 0.75rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .contact__location {
@@ -183,7 +183,7 @@ html:not([data-theme="dark"]) .form__textarea:focus {
     gap: 0.5rem;
     color: var(--text-muted);
     font-size: 0.95rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Métodos de contacto */
@@ -271,7 +271,7 @@ html:not([data-theme="dark"]) .form__textarea:focus {
     font-weight: 500;
     color: var(--text-cuaternario);
     margin-bottom: 0.25rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .method__value {
@@ -279,7 +279,7 @@ html:not([data-theme="dark"]) .form__textarea:focus {
     font-size: 1rem;
     font-weight: 600;
     color: var(--text-primary);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .method__arrow {
@@ -334,14 +334,14 @@ html:not([data-theme="dark"]) .form__textarea:focus {
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 0.75rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .form__description {
     color: var(--text-cuaternario);
     font-size: 1rem;
     line-height: 1.6;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Campos del formulario */
@@ -367,7 +367,7 @@ html:not([data-theme="dark"]) .form__textarea:focus {
     font-weight: 500;
     color: var(--text-primary);
     margin-bottom: 0.5rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .form__input,
@@ -380,7 +380,7 @@ html:not([data-theme="dark"]) .form__textarea:focus {
     border: 1px solid var(--border-color);
     border-radius: 10px;
     transition: all 0.3s ease;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
 }
 
@@ -440,7 +440,7 @@ html:not([data-theme="dark"]) .form__textarea:focus {
     gap: 0.75rem;
     position: relative;
     overflow: hidden;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .form__submit::before {
@@ -481,7 +481,7 @@ html:not([data-theme="dark"]) .form__textarea:focus {
     opacity: 0;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .form__status.success {

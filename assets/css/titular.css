@@ -3,7 +3,7 @@
     overflow-x: clip;
     margin-top: 96px;
     padding: 4.2rem 1.2rem 2.2rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .title__div {
@@ -212,7 +212,7 @@
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .boton-curriculum:hover {

@@ -33,7 +33,7 @@ header>section{
 header>section>nav{
     display: flex;
     width: 58%;  
-    font-family: 'Ubuntu', sans-serif; 
+    font-family: 'Inter', sans-serif; 
 }
 header>section>nav>ul{
     display: flex;
@@ -146,7 +146,7 @@ header>section>nav>ul>li>a:hover::after{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
     transition: all 0.3s ease;
 }
 

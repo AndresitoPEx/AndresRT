@@ -13,7 +13,7 @@ body.summary-modal-open {
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.28s ease, visibility 0.28s ease;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .summary-modal.is-open {

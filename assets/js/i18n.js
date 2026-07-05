@@ -31,7 +31,7 @@ class I18nManager {
 
                 // Hero
                 greeting: 'Implemento y optimizo Zoho para que tu equipo venda más, atienda mejor y pierda menos tiempo.',
-                headline: 'Andrés Romo · Zoho Developer | Automatización de Procesos | Especialista en Deluge & APIs',
+                headline: 'Zoho Developer | Automatización de Procesos | Especialista en Deluge & APIs',
                 heroCtaExperience: 'Ver experiencia',
                 heroCtaContact: 'Contactar',
                 heroCtaSummary: 'Resumen ejecutivo',
@@ -249,7 +249,7 @@ class I18nManager {
 
                 // Hero
                 greeting: 'I implement and optimize Zoho so your team sells more, serves better, and wastes less time.',
-                headline: 'Andrés Romo · Zoho Developer | Process Automation | Deluge & APIs Specialist',
+                headline: 'Zoho Developer | Process Automation | Deluge & APIs Specialist',
                 heroCtaExperience: 'View experience',
                 heroCtaContact: 'Contact',
                 heroCtaSummary: 'Executive summary',

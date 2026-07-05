@@ -1,0 +1,514 @@
+/* =====================================================================
+   Dirección A — Consultor SaaS (claro primero) + detalles terminal (B)
+   Carga al final: sobreescribe zoho-accent.css y las hojas por sección.
+   El modo oscuro conserva el diseño anterior; el claro es el nuevo look.
+   ===================================================================== */
+
+:root {
+    --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+    --saas-accent: #226DB4;
+    --saas-accent-soft: #E6F1FB;
+    --saas-red: #E42527;
+}
+
+/* ---------- Estructural (ambos temas) ---------- */
+
+/* Hero sin foto grande: una sola columna de contenido */
+.title__div {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.hero__ident {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin: 0 0 1.1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.hero__avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(140, 180, 220, 0.4);
+}
+
+.about__photo {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    border: 3px solid rgba(140, 180, 220, 0.35);
+}
+
+/* Detalle terminal: métricas y labels de casos en mono */
+.hero__metrics-value {
+    font-family: var(--font-mono);
+}
+
+.cases__eyebrow,
+.cases__tags > li,
+.cases__block > dt {
+    font-family: var(--font-mono);
+}
+
+/* Tarjetas de caso como ventana de terminal sutil */
+.cases__card {
+    position: relative;
+    padding-top: 2.7rem;
+}
+
+.cases__card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 32px;
+    border-bottom: 1px solid rgba(160, 224, 255, 0.22);
+    border-radius: 14px 14px 0 0;
+    pointer-events: none;
+}
+
+.cases__card::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #E24B4A;
+    box-shadow: 13px 0 0 #F0B429, 26px 0 0 #1D9E75;
+}
+
+.cases__block > dt::before {
+    content: "$ ";
+    opacity: 0.75;
+}
+
+/* =====================================================================
+   TEMA CLARO — Dirección A
+   ===================================================================== */
+
+html:not([data-theme="dark"]) {
+    --degradado-fondo: #FAFBFC;
+    --color-primario: rgba(255, 255, 255, 0.92);
+    --color-terciario: #334155;
+    --color-de-link: #0F172A;
+    --color-de-fondo: #F1F5F9;
+    --color-fondo2: rgba(15, 23, 42, 0.04);
+    --color-cuaternario: #226DB4;
+    --accent-color: #226DB4;
+    --senior-text: #0F172A;
+    --senior-text-soft: #475569;
+    --senior-line: rgba(15, 23, 42, 0.1);
+    --senior-line-strong: rgba(15, 23, 42, 0.22);
+    --senior-surface: #FFFFFF;
+    --senior-surface-2: #F1F5F9;
+}
+
+html:not([data-theme="dark"]) body {
+    background: #FAFBFC;
+    color: #334155;
+}
+
+html:not([data-theme="dark"]) :where(a, button, input, textarea, select, [tabindex]):focus-visible {
+    outline-color: #226DB4;
+}
+
+/* --- Header --- */
+html:not([data-theme="dark"]) header > section {
+    box-shadow: 0 1px 0 rgba(15, 23, 42, 0.08);
+}
+
+html:not([data-theme="dark"]) .menu__header > a > img {
+    filter: invert(0.82) sepia(0.12) saturate(2) hue-rotate(180deg);
+}
+
+html:not([data-theme="dark"]) header > section > nav > ul > li > a:hover {
+    color: #0F172A;
+}
+
+html:not([data-theme="dark"]) .menu-toggle:hover {
+    color: #0F172A;
+}
+
+html:not([data-theme="dark"]) .theme-toggle,
+html:not([data-theme="dark"]) .language-toggle {
+    background: #F1F5F9;
+    border-color: rgba(15, 23, 42, 0.14);
+}
+
+html:not([data-theme="dark"]) .boton-cv-mobile {
+    background-color: #226DB4;
+}
+
+/* --- Hero --- */
+html:not([data-theme="dark"]) .hero__ident {
+    color: #475569;
+}
+
+html:not([data-theme="dark"]) .hero__avatar,
+html:not([data-theme="dark"]) .about__photo {
+    border-color: rgba(15, 23, 42, 0.12);
+}
+
+html:not([data-theme="dark"]) .title__bio {
+    color: #0F172A;
+}
+
+html:not([data-theme="dark"]) .title__subsection {
+    color: #475569;
+    font-weight: 400;
+}
+
+html:not([data-theme="dark"]) .hero__btn--primary {
+    background: #226DB4;
+    border-color: #226DB4;
+    color: #FFFFFF;
+}
+
+html:not([data-theme="dark"]) .hero__btn--primary::after {
+    display: none;
+}
+
+html:not([data-theme="dark"]) .hero__btn--primary:hover {
+    background: #1B5A96;
+    border-color: #1B5A96;
+}
+
+html:not([data-theme="dark"]) .hero__btn--secondary,
+html:not([data-theme="dark"]) .hero__btn--tertiary {
+    background: #FFFFFF;
+    border-color: rgba(15, 23, 42, 0.18);
+    color: #0F172A;
+}
+
+html:not([data-theme="dark"]) .hero__btn--secondary:hover,
+html:not([data-theme="dark"]) .hero__btn--tertiary:hover {
+    background: #F1F5F9;
+    border-color: rgba(15, 23, 42, 0.3);
+}
+
+html:not([data-theme="dark"]) .hero__metrics-item {
+    background: #FFFFFF;
+    border-color: rgba(15, 23, 42, 0.1);
+}
+
+html:not([data-theme="dark"]) .hero__metrics-value {
+    color: #226DB4;
+}
+
+html:not([data-theme="dark"]) .hero__metrics-label {
+    color: #64748B;
+}
+
+html:not([data-theme="dark"]) .title__network__item > a {
+    color: #334155;
+}
+
+html:not([data-theme="dark"]) .title__network__item > a::after {
+    background-color: #226DB4;
+}
+
+html:not([data-theme="dark"]) .boton-curriculum {
+    background: #226DB4;
+    color: #FFFFFF;
+}
+
+/* --- Títulos de sección --- */
+html:not([data-theme="dark"]) .title__bio,
+html:not([data-theme="dark"]) .about__title,
+html:not([data-theme="dark"]) .services__title,
+html:not([data-theme="dark"]) .skills__title,
+html:not([data-theme="dark"]) .academic__title,
+html:not([data-theme="dark"]) .experience-summary__title,
+html:not([data-theme="dark"]) .experience__section__title,
+html:not([data-theme="dark"]) .cases__title,
+html:not([data-theme="dark"]) .contact__main-title {
+    color: #0F172A;
+}
+
+/* --- Sobre mí --- */
+html:not([data-theme="dark"]) .about__paragraph {
+    color: #475569;
+}
+
+html:not([data-theme="dark"]) .about__meta-item {
+    color: #475569;
+}
+
+html:not([data-theme="dark"]) .about__meta-item i {
+    color: #226DB4;
+}
+
+/* --- Servicios --- */
+html:not([data-theme="dark"]) .services__icon {
+    color: #226DB4;
+}
+
+html:not([data-theme="dark"]) .services__card:hover {
+    background: rgba(34, 109, 180, 0.04);
+}
+
+/* --- Skills --- */
+html:not([data-theme="dark"]) .skills__subtitle {
+    color: #64748B;
+}
+
+html:not([data-theme="dark"]) .skills__group--dev .skills__subtitle {
+    color: #94A3B8;
+}
+
+html:not([data-theme="dark"]) .skills__container > .skills__box > ul > .skill__icon {
+    color: #226DB4;
+}
+
+html:not([data-theme="dark"]) .skills__group--dev .skills__container > .skills__box > ul > li {
+    color: #64748B;
+}
+
+html:not([data-theme="dark"]) .skills__group--dev .skills__container > .skills__box > ul > .skill__icon {
+    color: #94A3B8;
+}
+
+/* --- Formación --- */
+html:not([data-theme="dark"]) .academic__courses__box {
+    background: #FFFFFF;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+html:not([data-theme="dark"]) .academic__courses__box:hover {
+    border-color: rgba(15, 23, 42, 0.22);
+}
+
+html:not([data-theme="dark"]) .academic__courses__list {
+    background: #24344D;
+}
+
+html:not([data-theme="dark"]) .academic__courses__item__title > h4 {
+    color: #0F172A;
+}
+
+html:not([data-theme="dark"]) .academic__courses__item__subtitle > p {
+    color: #64748B;
+}
+
+html:not([data-theme="dark"]) .academic__extras__title:hover {
+    color: #0F172A;
+}
+
+html:not([data-theme="dark"]) .academic__cert-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+html:not([data-theme="dark"]) .academic__cert-card:hover {
+    background: #F8FAFC;
+}
+
+html:not([data-theme="dark"]) .academic__cert-text {
+    color: #475569;
+}
+
+html:not([data-theme="dark"]) .academic__language {
+    background: #FFFFFF;
+    color: #334155;
+}
+
+/* --- Experiencia --- */
+html:not([data-theme="dark"]) .experience-summary__intro,
+html:not([data-theme="dark"]) .cases__intro,
+html:not([data-theme="dark"]) .experience__section__intro,
+html:not([data-theme="dark"]) .services__subtitle {
+    color: #475569;
+}
+
+html:not([data-theme="dark"]) .experience-summary__card::before {
+    background: #226DB4;
+}
+
+html:not([data-theme="dark"]) .experience-summary__impact {
+    color: #226DB4;
+}
+
+/* --- Casos de estudio (terminal claro) --- */
+html:not([data-theme="dark"]) .cases__card {
+    background: #FFFFFF;
+    border-color: rgba(15, 23, 42, 0.1);
+}
+
+html:not([data-theme="dark"]) .cases__card:hover {
+    border-color: rgba(15, 23, 42, 0.22);
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.07);
+}
+
+html:not([data-theme="dark"]) .cases__card::before {
+    border-bottom-color: rgba(15, 23, 42, 0.08);
+    background: #F8FAFC;
+    border-radius: 13px 13px 0 0;
+}
+
+html:not([data-theme="dark"]) .cases__eyebrow {
+    color: #64748B;
+}
+
+html:not([data-theme="dark"]) .cases__card-title {
+    color: #0F172A;
+}
+
+html:not([data-theme="dark"]) .cases__tags > li {
+    background: #F8FAFC;
+    border-color: rgba(15, 23, 42, 0.12);
+    color: #334155;
+}
+
+html:not([data-theme="dark"]) .cases__block > dt {
+    color: #226DB4;
+}
+
+html:not([data-theme="dark"]) .cases__block > dd {
+    color: #475569;
+}
+
+html:not([data-theme="dark"]) .cases__block--result > dd {
+    color: #0F172A;
+}
+
+/* --- Proyectos (carrusel GitHub) --- */
+html:not([data-theme="dark"]) .card .name {
+    color: #0F172A;
+}
+
+html:not([data-theme="dark"]) .card .description {
+    color: #475569;
+}
+
+html:not([data-theme="dark"]) .project-meta,
+html:not([data-theme="dark"]) .card .stars,
+html:not([data-theme="dark"]) .card .updated {
+    color: #64748B;
+}
+
+html:not([data-theme="dark"]) .tech-badge {
+    background: #226DB4;
+    color: #FFFFFF;
+}
+
+html:not([data-theme="dark"]) .card .button,
+html:not([data-theme="dark"]) .card .button a {
+    background: #226DB4;
+    color: #FFFFFF;
+}
+
+/* --- Resumen ejecutivo (modal) --- */
+html:not([data-theme="dark"]) .summary-modal__backdrop {
+    background: rgba(15, 23, 42, 0.42);
+}
+
+html:not([data-theme="dark"]) .summary-modal__dialog {
+    background: #FFFFFF;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+html:not([data-theme="dark"]) .summary-modal__eyebrow {
+    color: #64748B;
+}
+
+html:not([data-theme="dark"]) .summary-modal__title {
+    color: #0F172A;
+}
+
+html:not([data-theme="dark"]) .summary-modal__subtitle {
+    color: #475569;
+}
+
+html:not([data-theme="dark"]) .summary-modal__metric {
+    background: #F8FAFC;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+html:not([data-theme="dark"]) .summary-modal__metric-value {
+    color: #226DB4;
+    font-family: var(--font-mono);
+}
+
+html:not([data-theme="dark"]) .summary-modal__metric-label {
+    color: #475569;
+}
+
+html:not([data-theme="dark"]) .summary-modal__close {
+    background: #F1F5F9;
+    color: #334155;
+}
+
+/* --- Contacto --- */
+html:not([data-theme="dark"]) .contact__profile,
+html:not([data-theme="dark"]) .contact__form-section {
+    background: #FFFFFF;
+    border-color: rgba(15, 23, 42, 0.1);
+}
+
+html:not([data-theme="dark"]) .contact__profile:hover {
+    background: #FFFFFF;
+    border-color: rgba(15, 23, 42, 0.22);
+}
+
+html:not([data-theme="dark"]) .contact__methods {
+    background: #FFFFFF;
+    border-color: rgba(15, 23, 42, 0.1);
+}
+
+html:not([data-theme="dark"]) .contact__method,
+html:not([data-theme="dark"]) .contact__method:nth-child(even) {
+    background: #FFFFFF;
+    border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+
+html:not([data-theme="dark"]) .contact__method:hover {
+    background: #F8FAFC;
+}
+
+html:not([data-theme="dark"]) .form__input,
+html:not([data-theme="dark"]) .form__textarea {
+    background: #FFFFFF;
+    border-color: rgba(15, 23, 42, 0.16);
+    color: #0F172A;
+}
+
+html:not([data-theme="dark"]) .form__input::placeholder,
+html:not([data-theme="dark"]) .form__textarea::placeholder {
+    color: #94A3B8;
+}
+
+html:not([data-theme="dark"]) .form__input:focus,
+html:not([data-theme="dark"]) .form__textarea:focus {
+    background: #FFFFFF;
+    border-color: #226DB4;
+    box-shadow: 0 0 0 3px rgba(34, 109, 180, 0.14);
+}
+
+html:not([data-theme="dark"]) .form__submit {
+    background: #226DB4;
+    color: #FFFFFF;
+}
+
+/* --- Footer --- */
+html:not([data-theme="dark"]) .footer {
+    background-color: #FFFFFF;
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    color: #64748B;
+}
+
+/* --- Loader --- */
+html:not([data-theme="dark"]) .loader {
+    background: #FAFBFC;
+}
+
+html:not([data-theme="dark"]) .loader-content {
+    color: #334155;
+}
