@@ -538,84 +538,58 @@
     <!-- Sección de Contacto -->
     <section class="contact-section" id="contacto">
         <div class="contact__wrapper">
-            <div class="contact__header">
-                <h2 class="contact__main-title" data-i18n="contactTitle">Contacto</h2>
-                <p class="contact__subtitle" data-i18n="contactSubtitle">¿Necesitas implementar Zoho, automatizar procesos o integrar herramientas?</p>
-                <div class="contact__divider"></div>
-            </div>
-            
             <div class="contact__grid">
-                <!-- Información Personal -->
-                <div class="contact__info-section">
-                    <div class="contact__profile">
-                        <div class="contact__status">
-                            <span class="status-dot"></span>
-                            <span data-i18n="contactAvailable">Disponible para proyectos freelance de implementación y consultoría Zoho</span>
-                        </div>
-                        <div class="contact__details">
-                            <h3 class="contact__name">Jorge Andrés Romo Turco</h3>
-                            <p class="contact__role" data-i18n="contactRole">Zoho Developer & CRM Consultant Freelance</p>
-                            <p class="contact__location">
-                                <i class="fa-solid fa-location-dot"></i>
-                                Huancayo, Perú
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact__methods">
-                        <a href="mailto:andresrt952@gmail.com" class="contact__method email">
-                            <div class="method__icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="method__info">
-                                <span class="method__label" data-i18n="contactEmailMe">Email</span>
-                                <span class="method__value">andresrt952@gmail.com</span>
-                            </div>
-                            <i class="fa-solid fa-arrow-up-right-from-square method__arrow"></i>
-                        </a>
-                        
-                        <a href="https://wa.me/51955583026" class="contact__method whatsapp" target="_blank">
-                            <div class="method__icon">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                            <div class="method__info">
-                                <span class="method__label">WhatsApp</span>
-                                <span class="method__value">+51 955 583 026</span>
-                            </div>
-                            <i class="fa-solid fa-arrow-up-right-from-square method__arrow"></i>
-                        </a>
-                        
-                        <a href="tel:+51955583026" class="contact__method phone">
-                            <div class="method__icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="method__info">
-                                <span class="method__label" data-i18n="contactPhone">Teléfono</span>
-                                <span class="method__value">+51 955 583 026</span>
-                            </div>
-                            <i class="fa-solid fa-arrow-up-right-from-square method__arrow"></i>
-                        </a>
-                        
-                        <a href="https://linkedin.com/in/andres-rt-xd" class="contact__method linkedin" target="_blank">
-                            <div class="method__icon">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </div>
-                            <div class="method__info">
-                                <span class="method__label">LinkedIn</span>
-                                <span class="method__value">andres-rt-xd</span>
-                            </div>
-                            <i class="fa-solid fa-arrow-up-right-from-square method__arrow"></i>
-                        </a>
-                    </div>
+                <!-- Columna de introducción y canales directos -->
+                <div class="contact__intro">
+                    <p class="contact__eyebrow" data-i18n="contactEyebrow">// contacto</p>
+                    <h2 class="contact__main-title" data-i18n="contactSubtitle">¿Necesitas implementar Zoho, automatizar procesos o integrar herramientas?</h2>
+                    <p class="contact__pitch" data-i18n="contactText">Cuéntame tu proceso actual y te propongo una solución clara, escalable y medible.</p>
+                    <p class="contact__badge">
+                        <span class="contact__badge-dot" aria-hidden="true"></span>
+                        <span data-i18n="contactAvailable">Disponible para proyectos freelance de implementación y consultoría Zoho</span>
+                    </p>
+                    <ul class="contact__channels" role="list">
+                        <li>
+                            <a href="mailto:andresrt952@gmail.com" class="contact__channel">
+                                <span class="contact__channel-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                                <span class="contact__channel-info">
+                                    <span class="contact__channel-label">Email</span>
+                                    <span class="contact__channel-value">andresrt952@gmail.com</span>
+                                </span>
+                                <i class="fa-solid fa-arrow-up-right-from-square contact__channel-arrow" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/51955583026" class="contact__channel" target="_blank" rel="noopener noreferrer">
+                                <span class="contact__channel-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+                                <span class="contact__channel-info">
+                                    <span class="contact__channel-label">WhatsApp</span>
+                                    <span class="contact__channel-value">+51 955 583 026</span>
+                                </span>
+                                <i class="fa-solid fa-arrow-up-right-from-square contact__channel-arrow" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/andres-rt-xd" class="contact__channel" target="_blank" rel="noopener noreferrer">
+                                <span class="contact__channel-icon"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></span>
+                                <span class="contact__channel-info">
+                                    <span class="contact__channel-label">LinkedIn</span>
+                                    <span class="contact__channel-value">andres-rt-xd</span>
+                                </span>
+                                <i class="fa-solid fa-arrow-up-right-from-square contact__channel-arrow" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="contact__meta-line">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span data-i18n="contactRemote">Huancayo, Perú · Remoto para LATAM y USA</span>
+                    </p>
                 </div>
-                
+
                 <!-- Formulario -->
                 <div class="contact__form-section">
                     <div class="form__header">
                         <h3 class="form__title" data-i18n="contactFormTitle">Envíame un mensaje</h3>
-                        <p class="form__description" data-i18n="contactText">
-                            Cuéntame tu proceso actual y te propongo una solución clara, escalable y medible.
-                        </p>
                     </div>
                     
                     <form class="contact__form" id="contact-form" action="https://formspree.io/f/mvonqqko" method="POST">

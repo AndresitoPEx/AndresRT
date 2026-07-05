@@ -187,6 +187,8 @@ class I18nManager {
 
                 // Contact
                 contactTitle: 'Contacto',
+                contactEyebrow: '// contacto',
+                contactRemote: 'Huancayo, Perú · Remoto para LATAM y USA',
                 contactSubtitle: '¿Necesitas implementar Zoho, automatizar procesos o integrar herramientas?',
                 contactAvailable: 'Disponible para proyectos freelance de implementación y consultoría Zoho',
                 contactFormTitle: 'Envíame un mensaje',
@@ -405,6 +407,8 @@ class I18nManager {
 
                 // Contact
                 contactTitle: 'Contact',
+                contactEyebrow: '// contact',
+                contactRemote: 'Huancayo, Peru · Remote for LATAM and USA',
                 contactSubtitle: 'Need Zoho implementation, process automation, or tool integrations?',
                 contactAvailable: 'Available for freelance Zoho implementation and consulting projects',
                 contactFormTitle: 'Send me a message',
