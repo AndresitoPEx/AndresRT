@@ -97,8 +97,11 @@ class I18nManager {
                 // Education
                 educationTitle: 'Formación académica y certificaciones',
                 eduOneTitle: 'Programa Oracle Next Education Front-end',
+                eduOneInst: 'Oracle · Alura Latam',
                 eduContiTitle: 'Técnico en Desarrollo de Sistemas de Información',
+                eduContiInst: 'Instituto Continental',
                 eduCertTitle: 'Cursos y certificaciones técnicas (SQL, Cloud, IA, Scrum)',
+                eduCertInst: 'freeCodeCamp · LinkedIn Learning · Alura',
                 eduCertPeriod: '2021 - 2024',
                 certsTitle: 'Certificaciones destacadas',
                 cert1: 'Fundamentos profesionales de IA generativa (Microsoft - LinkedIn, 2024)',
@@ -317,8 +320,11 @@ class I18nManager {
                 // Education
                 educationTitle: 'Education and Certifications',
                 eduOneTitle: 'Oracle Next Education Front-end Program',
+                eduOneInst: 'Oracle · Alura Latam',
                 eduContiTitle: 'Information Systems Development Technician',
+                eduContiInst: 'Instituto Continental',
                 eduCertTitle: 'Technical courses and certifications (SQL, Cloud, AI, Scrum)',
+                eduCertInst: 'freeCodeCamp · LinkedIn Learning · Alura',
                 eduCertPeriod: '2021 - 2024',
                 certsTitle: 'Highlighted Certifications',
                 cert1: 'Generative AI Professional Foundations (Microsoft - LinkedIn, 2024)',

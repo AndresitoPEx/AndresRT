@@ -311,6 +311,77 @@
     opacity: 0.75;
 }
 
+/* Formación rediseñada: tarjetas sin logos, periodo en mono */
+.academic__grid {
+    width: min(1020px, 100%);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.1rem;
+    margin-top: 0.4rem;
+}
+
+.academic__entry {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    border: 1px solid var(--senior-line);
+    border-radius: 12px;
+    padding: 1.35rem 1.25rem;
+    background: var(--senior-surface);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.academic__entry:hover {
+    border-color: var(--senior-line-strong);
+    transform: translateY(-2px);
+}
+
+.academic__entry-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    background: var(--senior-surface-2);
+    color: var(--senior-text);
+    margin-bottom: 0.95rem;
+}
+
+.academic__entry-title {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--senior-text);
+    margin: 0 0 0.35rem;
+}
+
+.academic__entry-inst {
+    font-size: 0.88rem;
+    color: var(--senior-text-soft);
+    margin: 0 0 0.85rem;
+}
+
+.academic__entry-period {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.05em;
+    color: var(--senior-text-soft);
+    margin: auto 0 0;
+}
+
+.academic__extras {
+    width: min(1020px, 100%);
+}
+
+@media only screen and (max-width: 900px) {
+    .academic__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* =====================================================================
    TEMA CLARO — Dirección A
    ===================================================================== */
@@ -502,25 +573,32 @@ html:not([data-theme="dark"]) .skills__group--dev .skills__container > .skills__
 }
 
 /* --- Formación --- */
-html:not([data-theme="dark"]) .academic__courses__box {
+html:not([data-theme="dark"]) .academic__entry {
     background: #FFFFFF;
-    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-color: rgba(15, 23, 42, 0.1);
 }
 
-html:not([data-theme="dark"]) .academic__courses__box:hover {
+html:not([data-theme="dark"]) .academic__entry:hover {
     border-color: rgba(15, 23, 42, 0.22);
 }
 
-html:not([data-theme="dark"]) .academic__courses__list {
-    background: #24344D;
+html:not([data-theme="dark"]) .academic__entry-icon {
+    background: #E6F1FB;
+    color: #226DB4;
 }
 
-html:not([data-theme="dark"]) .academic__courses__item__title > h4 {
+html:not([data-theme="dark"]) .academic__entry-inst,
+html:not([data-theme="dark"]) .academic__entry-period {
+    color: #64748B;
+}
+
+html:not([data-theme="dark"]) .academic__extras__title {
     color: #0F172A;
 }
 
-html:not([data-theme="dark"]) .academic__courses__item__subtitle > p {
-    color: #64748B;
+html:not([data-theme="dark"]) .academic__extras__title::before {
+    background: #226DB4;
+    box-shadow: none;
 }
 
 html:not([data-theme="dark"]) .academic__extras__title:hover {
@@ -528,12 +606,24 @@ html:not([data-theme="dark"]) .academic__extras__title:hover {
 }
 
 html:not([data-theme="dark"]) .academic__cert-card {
+    --cert-accent: #226DB4;
     background: #FFFFFF;
     border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: none;
+    min-height: 0;
+    align-items: center;
 }
 
 html:not([data-theme="dark"]) .academic__cert-card:hover {
     background: #F8FAFC;
+    box-shadow: none;
+    filter: none;
+}
+
+html:not([data-theme="dark"]) .academic__cert-card .academic__cert-icon {
+    background: #E6F1FB;
+    border-color: transparent;
+    color: #226DB4;
 }
 
 html:not([data-theme="dark"]) .academic__cert-text {

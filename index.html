@@ -313,44 +313,25 @@
     <!-- Sección de Formación académica -->
     <section class="academic" id="formacion">
         <h2 class="academic__title" data-i18n="educationTitle">Formación académica y certificaciones</h2>
-        <div class="academic__courses">
-
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets/img/ONE.png"></li>
-                </ul>
-                <div class="academic__courses__item__title">
-                    <h4 data-i18n="eduOneTitle">Programa Oracle Next Education Front-end</h4>
-                </div>
-                <div class="academic__courses__item__subtitle">
-                    <p>2022 - 2023</p>
-                </div>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets/img/conti.png"></li>
-                </ul>
-                <div class="academic__courses__item__title">
-                    <h4 data-i18n="eduContiTitle">Técnico en Desarrollo de Sistemas de Información</h4>
-                </div>
-                <div class="academic__courses__item__subtitle">
-                    <p>2021 - 2023</p>
-                </div>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets/img/free.png"></li>
-                </ul>
-                <div class="academic__courses__item__title">
-                    <h4 data-i18n="eduCertTitle">Cursos y certificaciones técnicas (SQL, Cloud, IA, Scrum)</h4>
-                </div>
-                <div class="academic__courses__item__subtitle">
-                    <p data-i18n="eduCertPeriod">2021 - 2024</p>
-                </div>
-            </div>
+        <div class="academic__grid">
+            <article class="academic__entry">
+                <span class="academic__entry-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+                <h3 class="academic__entry-title" data-i18n="eduOneTitle">Programa Oracle Next Education Front-end</h3>
+                <p class="academic__entry-inst" data-i18n="eduOneInst">Oracle · Alura Latam</p>
+                <p class="academic__entry-period">2022 - 2023</p>
+            </article>
+            <article class="academic__entry">
+                <span class="academic__entry-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></span>
+                <h3 class="academic__entry-title" data-i18n="eduContiTitle">Técnico en Desarrollo de Sistemas de Información</h3>
+                <p class="academic__entry-inst" data-i18n="eduContiInst">Instituto Continental</p>
+                <p class="academic__entry-period">2021 - 2023</p>
+            </article>
+            <article class="academic__entry">
+                <span class="academic__entry-icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></span>
+                <h3 class="academic__entry-title" data-i18n="eduCertTitle">Cursos y certificaciones técnicas (SQL, Cloud, IA, Scrum)</h3>
+                <p class="academic__entry-inst" data-i18n="eduCertInst">freeCodeCamp · LinkedIn Learning · Alura</p>
+                <p class="academic__entry-period" data-i18n="eduCertPeriod">2021 - 2024</p>
+            </article>
         </div>
         <div class="academic__extras">
             <h3 class="academic__extras__title" data-i18n="certsTitle" role="button" tabindex="0" aria-expanded="true" aria-controls="certificaciones-lista">Certificaciones destacadas</h3>
